@@ -3,18 +3,13 @@
 
 
 <div class="main-content">
- <header class="section sec1 header active-sect" id="home">
-        <div class="header-content">
-            <div class="left-header">
-            </div>
-            <div class="right-header">
-            </div>
-        </div>
-    </header>
 
+
+    {{ partial "home.html" .}}
 
     <main>
-        <section class="section sec2 about"     id="about"></section>
+        {{ partial "about.html" .}}
+
         <section class="section sec3 portfolio" id="portfolio"></section>
         <section class="section sec4 blogs"     id="blogs"></section>
         <section class="section sec5 contact"   id="contact"></section>
@@ -87,7 +82,7 @@ function PageTransitions() {
     let curHash = window.location.hash;
 
     if (!isRegisterSectionID(curHash.slice(1))) {
-        // window.location.hash = 'home';
+        window.location.hash = 'home';
     } else {
         activeSection(curHash.slice(1))
     }

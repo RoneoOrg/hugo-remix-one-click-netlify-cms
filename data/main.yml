@@ -1,0 +1,20 @@
+home:
+  title: "Hello, We are <span>Kimix</span>"
+  slogan: Hello from julito
+  shortDescription:  We are a professional chemicals supplier, devoted to providing high quality products, efficient service, and driving value improvement for clients all over the world.
+  image: "/media/header.png"
+about:
+  title: "About <span>Us</span>"
+  backgroundTitle: ""
+  items:
+  - icon : fa-business-time
+    title : We're Creative
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+
+  - icon : fa-calculator
+    title : We're Professional
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+
+  - icon : fa-bullseye
+    title : We're Genius
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
