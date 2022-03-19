@@ -87,7 +87,7 @@ function PageTransitions() {
     let curHash = window.location.hash;
 
     if (!isRegisterSectionID(curHash.slice(1))) {
-        window.location.hash = 'home';
+        // window.location.hash = 'home';
     } else {
         activeSection(curHash.slice(1))
     }
