@@ -30,10 +30,10 @@
 
 
 
-// Download Button
+// Button
 .btn-container {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     align-self: flex-start;
 }
 
@@ -97,7 +97,20 @@
     }
 }
 
+.submit-btn {
+    @extend .download-btn;
+    cursor: pointer;
+}
 
+.mail-btn {
+    @extend .download-btn;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+}
 
 // Main Title
 .main-title{

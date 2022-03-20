@@ -13,7 +13,7 @@
       'products',
       'scenes',
       'news',
-      'contact'
+      'contact',
   ]
   
   function isRegisterSectionID(id) {
@@ -48,7 +48,12 @@
   
   
   function PageTransitions() {
-      let curHash = window.location.hash;
+      let sectionId = window.location.hash.slice(1);
+
+
+      if (isIndex() && isRegisterSectionID(sectionId)) {
+        activeSection(sectionId);
+      }
   
     
       sectGroup.addEventListener('click', (e)=>{

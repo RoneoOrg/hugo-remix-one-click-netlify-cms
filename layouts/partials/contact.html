@@ -1,0 +1,108 @@
+{{ $data := site.Data.contact }}
+
+
+<section class="section sec6 contact"   id="contact">
+    <div class="main-title">
+        <h2> {{ $data.title | safeHTML }} 
+            <span class="bg-text"> {{ $data.backgroundTitle }}</span>
+        </h2>
+        <div class="border"></div>
+    </div>
+    
+
+    <div class="contact-content-con">
+        <div class="left-contact">
+            <h4>{{ $data.subtitle }}</h4>
+            <p>{{ $data.detail }} </p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Location:</span>
+                    </div>
+                    <p>
+                        <span>{{$data.location}}</span>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email:</span>
+                    </div>
+                    <p>
+                        <span>{{$data.email}}</span>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-fax"></i>
+                        <span>Fax:</span>
+                    </div>
+                    <p>
+                        <span>{{$data.fax}}</span>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                        <span>Mobile Number:</span>
+                    </div>
+                    <p>
+                        <span>{{$data.phone}}</span>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <i class="fas fa-globe-africa"></i>
+                        <span>Languages:</span>
+                    </div>
+                    <p>
+                        <span>{{$data.languages}}</span>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-icons">
+                <div class="contact-icon">
+                    <a href="www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="wwww.twttier.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-contact">
+            <form action="" class="contact-form">
+                <div class="input-control i-c-2">
+                    <input type="text" required placeholder="YOUR NAME">
+                    <input type="email" required placeholder="YOUR EMAIL">
+                </div>
+                <div class="input-control">
+                    <input type="text" required placeholder="ENTER SUBJECT">
+                </div>
+                <div class="input-control">
+                    <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                </div>
+                <div class="button-group">
+                    <div class="btn-container">
+                        <div class="submit-btn">
+                            <span class="btn-text">submit</span>
+                            <span class="btn-icon"><i class="fas fa-arrow-up-wide-short"></i></span>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a href="mailto:{{$data.email}}?subject=Let's talk some business&body=Hi, Kimix" class="mail-btn">
+                            <span class="btn-text">mail us directly</span>
+                            <span class="btn-icon"><i class="fas fa-arrows-down-to-people"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</section>
+

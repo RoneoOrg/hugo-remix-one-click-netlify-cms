@@ -44,7 +44,7 @@
 
 body {
     background-color: var(--color-primary);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     color: var(--color-white);
     transition: all .4s ease-in-out;
@@ -77,31 +77,10 @@ section {
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
     background-color: var(--color-primary);
-}
-
-
-.sec1{
     display: none;
     transform: translateY(0) scale(1);
 }
 
-.sec2{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-.sec3{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-.sec4{
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.sec5{
-    display: none;
-    transform: translateY(0) scale(1);
-}
 
 
 .active-sect {
@@ -353,6 +332,99 @@ section#news {
 }
 
 
+/* Contact Section*/
+section#contact{
+    .contact-content-con {
+        display: flex;
+        padding-top: 3.5rem;
+        .left-contact{
+            flex: 2;
+
+            h4 {
+                margin-top: 1rem;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 1rem 0;
+                line-height: 2rem;
+            }
+
+            .contact-info {
+                .contact-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    p {
+                        margin: .3rem 0 !important;
+                        padding: 0 !important;
+                    }
+   
+                }
+            }
+
+            .contact-icon{
+                display: flex;
+                margin-top: 2rem;
+                a{
+                    display: flex;
+                    align-items: center;
+                    color: var(--color-white);
+                    background-color: var(--color-grey-5);
+                    cursor: pointer;
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin: 0 .4rem;
+                    transition: all .4s ease-in-out;
+                    &:hover{
+                        background-color: var(--color-secondary);
+                        i{
+                            color: var(--color-primary);
+                        }
+                    }
+                    i{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .right-contact {
+            flex: 3;
+            margin-left: 3rem;
+            .input-control{
+                margin: 1.5rem 0;
+                input, textarea{
+                    border-radius: 30px;
+                    font-weight: inherit;
+                    font-size: inherit;
+                    font-family: inherit;
+                    padding: .8rem 1.1rem;
+                    outline: none;
+                    border: none;
+                    background-color: var(--color-grey-5);
+                    width: 100%;
+                    color: var(--color-white);
+                    resize: none;
+                }
+            }
+
+            .i-c-2{
+                display: flex;
+                :last-child{
+                    margin-left: 1.5rem;
+                }
+            }
+
+        }
+    }
+}
 
 @import './components.scss';
 @import './news.scss';
