@@ -69,8 +69,13 @@
           const id = e.target.window.location.hash.slice(1);
           activeSection(id);
       })
-  
-  
+      const themeBtn = document.querySelector('.theme-btn');
+      themeBtn.addEventListener('click',() =>{
+        let element = document.body;
+        element.classList.toggle('light-mode');
+    })
+
+
   }
   
   
