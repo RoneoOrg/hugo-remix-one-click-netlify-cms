@@ -21,8 +21,14 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options:["category1", "category2", "category3"]}
-      - { label: "Industry", name: "industry", widget: "select", options:["industry1", "industry2"] }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["category1", "category2", "category3"]
+      - label: "Industry"
+        name: "industry"
+        widget: "select"
+        options: ["industry3", "industry1", "industry2"]
       - { label: "Cover Image", name: "image", widget: "image" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
