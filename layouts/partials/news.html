@@ -1,0 +1,29 @@
+{{ $data := site.Data.news }}
+
+
+<section class="section sec5 news"      id="news">
+<div class="main-title">
+    <h2> {{ $data.title | safeHTML }} 
+        <span class="bg-text"> {{ $data.backgroundTitle }}</span>
+    </h2>
+    <div class="border"></div>
+</div>
+
+<div class="news">
+
+{{ range first 3 (where site.RegularPages "Type" "==" "news")}}
+
+<div class="new" onclick="location.href = '{{ .Permalink }}';">
+
+    <img src=" {{ .Params.image }} " alt="">
+    <div class="news-text">
+        <h4>{{ .Title }}</h4>
+        <!-- <h5>{{ .Date }}</h5> -->
+        <p>{{  .Summary }}</p>
+    </div>
+</div>
+
+{{ end }}
+
+</div>
+</section>

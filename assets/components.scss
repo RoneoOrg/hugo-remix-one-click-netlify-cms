@@ -1,5 +1,35 @@
 /* Independent Component */
 
+// Section Port Text
+.port-text {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+// Show More Button
+.show-more {
+    position: absolute;
+    top: 30px;
+    padding: 15px 30px;
+    background-color: var(--color-extra);
+    font-size: 1b.5rem;
+    transition: all 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.view-more {
+    @extend .show-more;
+    position: relative;
+    
+}
+
+
+
 // Download Button
 .btn-container {
     display: flex;

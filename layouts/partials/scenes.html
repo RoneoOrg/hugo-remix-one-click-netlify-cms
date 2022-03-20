@@ -1,0 +1,18 @@
+{{ $data := site.Data.scenes }}
+
+
+<section class="section sec4 scenes"    id="scenes">
+<div class="main-title">
+    <h2> {{ $data.title | safeHTML }} 
+        <span class="bg-text"> {{ $data.backgroundTitle }}</span>
+    </h2>
+    <div class="border"></div>
+</div>
+
+<p class="port-text">
+    {{ $data.portText }}
+</p>
+
+
+
+</section>

@@ -1,4 +1,79 @@
+</div>
 
+<script>
+  const sections = document.querySelectorAll('.section');
+  const sectBtnGroup = document.querySelectorAll('.controls');
+  const sectBtns = document.querySelectorAll('.control');
+  
+  const sectGroup = document.querySelector('.main-content');
+  
+  const sectionsId = [
+      'home',
+      'about',
+      'products',
+      'scenes',
+      'news',
+      'contact'
+  ]
+  
+  function isRegisterSectionID(id) {
+      return sectionsId.includes(id)
+  }
+
+  function isIndex() {
+      return window.location.pathname === '/';
+  }
+  
+  
+  function activeSection(id) {
+      if (isRegisterSectionID(id)) {
+  
+          // active btn
+          sectBtns.forEach((btn)=>{
+              btn.classList.remove('active-btn');
+              if (btn.dataset.id === id) {
+                  btn.classList.add('active-btn')
+              }
+          })
+  
+          // active sections
+          sections.forEach((section)=>{
+              section.classList.remove('active-sect');
+              if (section.id === id) {
+                  section.classList.add('active-sect')
+              }
+          })
+      }
+  }
+  
+  
+  function PageTransitions() {
+      let curHash = window.location.hash;
+  
+    
+      sectGroup.addEventListener('click', (e)=>{
+          const id = e.target.dataset.id;
+          if (id) {
+              window.location.href = '/#' + id;
+          }
+      })
+  
+  
+      // focus on hash-change
+      window.addEventListener("hashchange", function(e){
+          const id = e.target.window.location.hash.slice(1);
+          activeSection(id);
+      })
+  
+  
+  }
+  
+  
+  PageTransitions()
+  
+  
+  </script>
+  
 	
 <footer>
 	<!-- <p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p> -->

@@ -1,114 +1,19 @@
+
 {{ partial "header.html" .}}
 
-
-
-<div class="main-content">
 
 
     {{ partial "home.html" .}}
 
     <main>
         {{ partial "about.html" .}}
-
-        <section class="section sec3 portfolio" id="portfolio"></section>
-        <section class="section sec4 blogs"     id="blogs"></section>
-        <section class="section sec5 contact"   id="contact"></section>
+        {{ partial "products.html" .}}
+        {{ partial "scenes.html" .}}
+        {{ partial "news.html" .}}
+        <section class="section sec6 contact"   id="contact">6</section>
     </main>
 
-    <div class="controls">
-        <div class="control control-1 active-btn" data-id="home">
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control control-2 " data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control control-3 " data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control control-4 " data-id="blogs">
-            <i class="fas fa-newspaper"></i>
-        </div>
-        <div class="control control-5 " data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
 
-</div>
-
-
-<script>
-const sections = document.querySelectorAll('.section');
-const sectBtnGroup = document.querySelectorAll('.controls');
-const sectBtns = document.querySelectorAll('.control');
-
-const sectGroup = document.querySelector('.main-content');
-
-const sectionsId = [
-    'home',
-    'about',
-    'portfolio',
-    'blogs',
-    'contact'
-]
-
-function isRegisterSectionID(id) {
-    return sectionsId.includes(id)
-}
-
-
-function activeSection(id) {
-    if (isRegisterSectionID(id)) {
-
-        // active btn
-        sectBtns.forEach((btn)=>{
-            btn.classList.remove('active-btn');
-            if (btn.dataset.id === id) {
-                btn.classList.add('active-btn')
-            }
-        })
-
-        // active sections
-        sections.forEach((section)=>{
-            section.classList.remove('active-sect');
-            if (section.id === id) {
-                section.classList.add('active-sect')
-            }
-        })
-    }
-}
-
-
-function PageTransitions() {
-    let curHash = window.location.hash;
-
-    if (!isRegisterSectionID(curHash.slice(1))) {
-        window.location.hash = 'home';
-    } else {
-        activeSection(curHash.slice(1))
-    }
-
-    sectGroup.addEventListener('click', (e)=>{
-        const id = e.target.dataset.id;
-        if (id) {
-            window.location.hash = id;
-        }
-    })
-
-
-    // focus on hash-change
-    window.addEventListener("hashchange", function(e){
-        const id = e.target.window.location.hash.slice(1);
-        activeSection(id);
-    })
-
-
-}
-
-
-PageTransitions()
-
-
-</script>
 
 
 {{ partial "footer.html" .}}
