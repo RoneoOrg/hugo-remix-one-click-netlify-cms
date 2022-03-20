@@ -1,18 +1,18 @@
 <!-- {{ $data := index site.Data site.Language.Lang}} -->
-{{ $data := site.Data.main }}
+{{ $data := site.Data.about }}
 
 <section class="section sec2 about" id="about">
 
 <div class="main-title">
-    <h2> {{ $data.about.title | safeHTML }} 
-        <span class="bg-text"> {{ $data.about.backgroundTitle }}</span>
+    <h2> {{ $data.title | safeHTML }} 
+        <span class="bg-text"> {{ $data.backgroundTitle }}</span>
     </h2>
     <div class="border"></div>
 </div>
 
 
 <div class="about-cards">
-{{ range $data.about.items }}
+{{ range $data.items }}
 
 <div class="block">
     <div class="icon-box"><i class="fas {{.icon}}"></i></div>

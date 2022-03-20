@@ -1,43 +1,53 @@
+# using git as backend store
 backend:
   name: git-gateway
   branch: main
-media_folder: "static/images" # Folder where user uploaded files should go
-public_folder: "images"
+media_folder: "static/media" # Folder where user uploaded files should go
+public_folder: "media"
+
+# allow local visit
+local_backend: true
+
+# i18n https://www.netlifycms.org/docs/beta-features/#i18n-support
+
+
+# collections configuration
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/post
-    label: "Posts" # Used in the UI
-    folder: "content/posts" # The path to the folder where the documents are stored
+  - name: "news"
+    identifier_field: name
+    label: "News"
+    folder: "content/news"
     path: "{{slug}}/index"
-    media_folder: "" # Save images in the post's own folder instead of the static folder
-    public_folder: ""
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
+    create: true
+    fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
+  - name: "sections"
+    label: "Sections"
     files:
-      - file: "content/_index.md"
-        label: "Home Page"
+      - file: "data/home.yml"
+        label: "Home Section"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Blurb", name: "blurb", widget: "text" }
-          - {
-              label: "Section",
-              name: "section",
-              widget: "object",
-              fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Text", name: "text", widget: "text" },
-                ],
-            }
-      - file: "content/about/index.md"
-        label: "About"
+          [
+            { label: "Title", name: "title", widget: string },
+            { label: "Slogan", name: "slogan", widget: string },
+            { label: "Description", name: "shortDescription", widget: "text" },
+            { label: "Header Image", name: "image", widget: "image" }
+          ]
+      - file: "data/about.yml"
+        label: "About Section"
         name: "about"
+        description: "Go to edit the about section"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "text" }
+          [
+            { label: "Title", name: "title", widget: string },
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
+            { label: "Items", name: "items", widget: "list", fields: [
+              { label: "Icon", name: "icon", widget: string },
+              { label: "Title", name: "title", widget: string },
+              { label: "Content", name: "content", widget: text },
+            ]}
+          ]

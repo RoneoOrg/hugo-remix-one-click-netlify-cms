@@ -1,5 +1,5 @@
 <!-- {{ $data := index site.Data site.Language.Lang}} -->
-{{ $data := site.Data.main }}
+{{ $data := site.Data.home }}
 
 <header class="section sec1 header active-sect" id="home">
 
@@ -8,13 +8,13 @@
         <div class="left-header">
             <div class="h-shape"></div>
             <div class="image">
-                <img src="{{$data.home.image}}" alt="">
+                <img src="{{$data.image}}" alt="">
             </div>
         </div>
 
         <div class="right-header">
-            <h1 class="name">{{ $data.home.title  | safeHTML  }}</h1>
-            <p>{{ $data.home.shortDescription }}</p>
+            <h1 class="name">{{ $data.title  | safeHTML  }}</h1>
+            <p>{{ $data.shortDescription }}</p>
 
             <div class="btn-container">
                 <a href="/files/dioxide.pdf" class="download-btn" download>
