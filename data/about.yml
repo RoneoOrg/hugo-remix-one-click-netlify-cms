@@ -1,14 +1,15 @@
-title: "About <span>Us</span>"
-backgroundTitle: ""
+title: About <span>Us</span>
+backgroundTitle: Hello THishi some
 items:
-- icon : fa-business-time
-  title : We're Creative
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
-
-- icon : fa-calculator
-  title : We're Professional
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
-
-- icon : fa-bullseye
-  title : We're Genius
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon: fa-business-time
+    title: We're Creative
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+      libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon: fa-calculator
+    title: We're Professional
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+      libero, perspiciatis eos provident laborum eum dignissimos.
+  - icon: fa-bullseye
+    title: We're Genius
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+      libero, perspiciatis eos provident laborum eum dignissimos.
