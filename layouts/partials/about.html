@@ -1,31 +1,32 @@
 <!-- {{ $data := index site.Data site.Language.Lang}} -->
 {{ $data := site.Data.about }}
 
-<section class="section sec2 about" id="about">
+<section class="section sec2 content-sec" id="about">
 
-<div class="main-title">
-    <h2> {{ $data.title | safeHTML }} 
-        <span class="bg-text"> {{ $data.backgroundTitle }}</span>
-    </h2>
-    <div class="border"></div>
-</div>
-
-
-<div class="about-cards">
-{{ range $data.items }}
-
-<div class="block">
-    <div class="icon-box"><i class="fas {{.icon}}"></i></div>
-    <div class="about-text">
-        <h3>{{ .title }}</h3>
-        <p>{{ .content }}</p>
+    <div class="main-title">
+        <h2> {{ $data.title | safeHTML }}
+            <span class="bg-text"> {{ $data.backgroundTitle }}</span>
+        </h2>
+        <div class="border"></div>
     </div>
-</div>
 
-{{ end }}
+    <p class="sub-title">
+        {{ $data.portText }}
+    </p>
 
-</div>
+    <div class="about-cards">
+        {{ range $data.items }}
 
+        <div class="block">
+            <div class="icon-box"><i class="fas {{.icon}}"></i></div>
+            <div class="about-text">
+                <h3>{{ .title }}</h3>
+                <p>{{ .content }}</p>
+            </div>
+        </div>
 
+        {{ end }}
+
+    </div>
 
 </section>

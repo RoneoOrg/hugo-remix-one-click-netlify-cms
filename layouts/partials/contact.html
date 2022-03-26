@@ -1,14 +1,13 @@
 {{ $data := site.Data.contact }}
 
 
-<section class="section sec6 contact"   id="contact">
+<section class="section sec6  content-sec" id="contact">
     <div class="main-title">
-        <h2> {{ $data.title | safeHTML }} 
+        <h2> {{ $data.title | safeHTML }}
             <span class="bg-text"> {{ $data.backgroundTitle }}</span>
         </h2>
         <div class="border"></div>
     </div>
-    
 
     <div class="contact-content-con">
         <div class="left-contact">
@@ -85,17 +84,19 @@
                 <div class="input-control">
                     <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
                 </div>
-                <div class="button-group">
+                <div class="btn-container-group">
                     <div class="btn-container">
-                        <div class="submit-btn">
+                        <a>
                             <span class="btn-text">submit</span>
                             <span class="btn-icon"><i class="fas fa-arrow-up-wide-short"></i></span>
-                        </div>
+                            <i class="bg"></i>
+                        </a>
                     </div>
                     <div class="btn-container">
-                        <a href="mailto:{{$data.email}}?subject=Let's talk some business&body=Hi, Kimix" class="mail-btn">
+                        <a href="mailto:{{$data.email}}?subject=Let's talk some business&body=Hi, Kimix">
                             <span class="btn-text">mail us directly</span>
                             <span class="btn-icon"><i class="fas fa-arrows-down-to-people"></i></span>
+                            <i class="bg"></i>
                         </a>
                     </div>
                 </div>
@@ -105,4 +106,3 @@
     </div>
 
 </section>
-

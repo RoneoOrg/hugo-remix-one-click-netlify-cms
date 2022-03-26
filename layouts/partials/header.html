@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kimix</title>
-
-    {{ $sass := resources.Get "main.scss" }}
-    {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
-
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.0/css/all.css" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
-
-</head>
-
-<body>
-
-    <div class="main-content">
-
-        {{ partial "controls.html" .}}
+<div class="header-bar">
+    <div class="logo"></div>
+    <div class="nav">
+        <a class="item active" href="/#home" data-id="home">Home</a>
+        <a class="item" href="/#about" data-id="about">About</a>
+        <a class="item" href="/#product" data-id="product">Product</a>
+        <a class="item" href="/#solution" data-id="solution">Solution</a>
+        <a class="item" href="/#news" data-id="news">News</a>
+        <a class="item" href="/#contact" data-id="contact">Contact</a>
+    </div>
+</div>

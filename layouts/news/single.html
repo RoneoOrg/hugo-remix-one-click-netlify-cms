@@ -1,15 +1,16 @@
-{{ partial "header.html" .}}
+<!DOCTYPE html>
+<html lang="en">
 
+<!-- head link and script -->
+{{ partial "head.html" .}}
 
-
-<div class="new-page">
-
-    <h1> {{ .Title}} </h1>
-
-    <div class="new-content">
-        {{ .Content }}
+<body>
+    <div class="main-content">
+        <h1> {{ .Title}} </h1>
+        <div class="new-content">
+            {{ .Content }}
+        </div>
     </div>
-</div>
+</body>
 
-
-{{ partial "footer.html" .}}
+</html>
