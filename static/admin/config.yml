@@ -54,7 +54,7 @@ collections:
       locales: [en, zh]
     files:
       - file: "data/home.yml"
-        i18n. true
+        i18n: true
         label: "Home Section"
         name: "home"
         fields:
