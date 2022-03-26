@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head link and script -->
+{{ partial "head.html" .}}
+
+{{ $productSass := resources.Get "product.scss" }}
+{{ $productStyle := $productSass | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
+
+{{ $productJs := resources.Get "product.js" }}
+<script src="{{$productJs.RelPermalink}}"></script>
+
+<body>
+    <div class="product-page">
+        <div class="banner">
+            <img src="/media/category3.jpg">
+            <h1> {{ .Title}} </h1>
+        </div>
+        <div class="container">
+            <!-- <div class="left"></div> -->
+            <div class="main">
+                <div class="title">
+                    Product Description
+                </div>
+                <div class="content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer copyright -->
+    {{ partial "footer.html" .}}
+</body>
+
+</html>

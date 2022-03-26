@@ -15,6 +15,22 @@
   justify-content: flex-end;
   box-sizing: border-box;
   z-index: 100;
+  transition: all 0.2s ease-in-out;
+
+  &.scroll {
+    background-color: var(--color-white);
+
+    .nav {
+      .item {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .mainer {
+    display: flex;
+    align-items: center;
+  }
 
   .nav {
     display: flex;
@@ -47,6 +63,19 @@
         }
       }
     }
+  }
+
+  .theme {
+    // margin-left: 1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.23);
+    width: 1.8rem;
+    height: 1.8rem;
+    text-align: center;
+    line-height: 1.8rem;
+    border-radius: 2rem;
+    background-color: var(--color-white);
+    color: var(--color-primary);
   }
 }
 
@@ -244,6 +273,18 @@
           color: var(--color-white);
           padding: 2rem 1rem 1rem;
         }
+
+        .show-more {
+          background-color: var(--color-primary);
+          padding: 1rem;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
       }
     }
   }
@@ -257,23 +298,38 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
-    overflow: hidden;
+    position: relative;
 
     .item {
-      height: 35rem;
-      overflow: hidden;
+      height: 20rem;
       position: relative;
       border-radius: 10px;
       cursor: pointer;
       border: 2px solid var(--color-secondary);
       box-sizing: border-box;
 
+      &:hover {
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+        .img {
+          transform: scale(1.1);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .text {
+          opacity: 0;
+        }
+      }
+
       .img,
-      img {
+      .img img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
       }
 
       .text {
@@ -281,11 +337,12 @@
         bottom: 0;
         right: 0;
         width: 80%;
-        height: 10rem;
+        height: 7rem;
         background-color: var(--color-secondary);
         box-sizing: border-box;
         padding: 1rem;
         border-radius: 5px 0 0 0;
+        transition: all 0.2s ease-in-out;
 
         h3 {
           font-size: 1.2rem;
@@ -453,5 +510,20 @@
         }
       }
     }
+  }
+}
+
+.footer {
+  color: var(--color-white);
+  padding: 2rem;
+  text-align: center;
+
+  span,
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }

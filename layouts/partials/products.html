@@ -16,7 +16,7 @@
 
 
     <div class="categories">
-        {{ range $data.categories }}
+        <!-- {{ range $data.categories }}
         <div class="category">
             <div class="image"><img src="{{.coverImage}}" alt="">
                 <h3>{{.title}}</h3>
@@ -27,7 +27,20 @@
             </div>
         </div>
 
-        {{ end}}
+        {{ end}} -->
+        {{ range first 6 (where site.RegularPages "Type" "==" "products")}}
+
+        <div class="category">
+            <div class="image"><img src="{{ .Params.image }} " alt="">
+                <h3>{{.Title}}</h3>
+            </div>
+            <div class="hover-items">
+                <div class="show-more" onclick="location.href = '{{ .RelPermalink }}';">View More</div>
+                <p>{{.Summary}}</p>
+            </div>
+        </div>
+
+        {{ end }}
     </div>
 
 

@@ -4,13 +4,21 @@
 <!-- head link and script -->
 {{ partial "head.html" .}}
 
+{{ $newsSass := resources.Get "news.scss" }}
+{{ $newsStyle := $newsSass | resources.ToCSS | resources.Fingerprint }}
+
+<link rel="stylesheet" href="{{ $newsStyle.RelPermalink }}" integrity="{{ $newsStyle.Data.Integrity }}" />
+
 <body>
-    <div class="main-content">
+    <div class="new-page">
         <h1> {{ .Title}} </h1>
-        <div class="new-content">
+        <div class="news-content">
             {{ .Content }}
         </div>
     </div>
+
+    <!-- footer copyright -->
+    {{ partial "footer.html" .}}
 </body>
 
 </html>

@@ -4,6 +4,7 @@
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  transform: translateZ(0);
 
   &.content-sec {
     padding: 8rem 2rem 2rem;
@@ -31,7 +32,6 @@
       transform: translate(-50%, -90%);
       font-weight: 800;
       font-size: 6.3rem;
-      opacity: 0.9;
       white-space: nowrap;
     }
   }
