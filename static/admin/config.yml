@@ -50,7 +50,7 @@ collections:
   - name: "sections"
     label: "Sections"
     i18n: 
-      structure: multiple_files
+      structure: single_file
       locales: [en, zh]
     files:
       - file: "data/home.yml"
