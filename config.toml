@@ -1,3 +1,26 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://kimix.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Kimx Chemical Col.Ltd'
+defaultContentLanguage = 'en'
+
+
+
+# Languages  
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+home = "Home"
+copyright = "Copyright &copy; 2022 Designed & Developed by [OhBonsai](https://github.com/OhBonsai) "
+
+[Languages.zh]
+languageName = "中文"
+languageCode = "zh-zh"
+contentDir = "content/chinese"
+weight = 2
+home = "主页"
+copyright = "Copyright &copy; 2022 Designed & Developed by [OhBonsai](https://github.com/OhBonsai)"
+
+
+

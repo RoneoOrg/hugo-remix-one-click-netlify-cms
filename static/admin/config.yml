@@ -9,7 +9,10 @@ public_folder: "media"
 local_backend: true
 
 # i18n https://www.netlifycms.org/docs/beta-features/#i18n-support
-
+i18n:
+  structure: multiple_folders
+  locales: [en, zh]
+  default_locale: en
 
 # collections configuration
 collections:
@@ -46,16 +49,20 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "sections"
     label: "Sections"
+    i18n: 
+      structure: single_file
+      locales: [en, zh]
     files:
       - file: "data/home.yml"
+        i18n. true
         label: "Home Section"
         name: "home"
         fields:
           [
-            { label: "Title", name: "title", widget: string },
-            { label: "Slogan", name: "slogan", widget: string },
-            { label: "Description", name: "shortDescription", widget: "text" },
-            { label: "Header Image", name: "image", widget: "image" }
+            { label: "Title", name: "title", widget: string, i18n: true},
+            { label: "Slogan", name: "slogan", widget: string, i18n: true},
+            { label: "Description", name: "shortDescription", widget: "text", i18n: true},
+            { label: "Header Image", name: "image", widget: "image", i18n: true},
           ]
       - file: "data/about.yml"
         label: "About Section"
