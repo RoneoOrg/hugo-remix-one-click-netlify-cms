@@ -4,6 +4,7 @@ let clientHeight = 0;
 let navEle = undefined;
 let themeEle = undefined;
 
+// 屏幕高度
 function getClientHeight() {
   let height = 0;
   if (document.body.clientHeight && document.documentElement.clientHeight) {
@@ -20,6 +21,7 @@ function getClientHeight() {
   return height;
 }
 
+// 初始化
 function init() {
   console.log("document ready!");
   initData();
@@ -27,6 +29,7 @@ function init() {
   initScroll();
 }
 
+// 数据初始化
 function initData() {
   clientHeight = getClientHeight();
   navEle = document.querySelector(".header-bar");
@@ -37,16 +40,26 @@ function initData() {
   }
 }
 
+// 导航栏初始化
 function initNav() {
-  const navitems = document.querySelectorAll(".nav .item");
+  const navItems = document.querySelectorAll(".nav .item");
   const themeEle = document.querySelector(".header-bar .theme");
+  const langEle = document.querySelector(".header-bar .lang");
+  const listItems = document.querySelectorAll(".nav .item ul li");
 
-  if (navitems) {
-    for (let item of navitems) {
+  if (navItems) {
+    for (let item of navItems) {
       item.onclick = function (e) {
         e.preventDefault();
         const target = e.target;
-        const id = target.getAttribute("data-id");
+        const parentTarget = e.target.parentElement;
+        const id = target.getAttribute("data-id") || parentTarget.getAttribute("data-id");
+
+        if (location.pathname !== "/") {
+          location.href = "/#" + id;
+          return;
+        }
+
         const nextDom = document.querySelector("#" + id);
         if (nextDom) {
           const top = nextDom.offsetTop;
@@ -69,8 +82,29 @@ function initNav() {
       localStorage.setItem("theme", val);
     };
   }
+
+  if (langEle) {
+    langEle.onclick = function () {
+      alert("你点击了我");
+    };
+  }
+
+  if (listItems) {
+    for (let item of listItems) {
+      item.onclick = function (e) {
+        const target = e.target;
+        if (target.tagName === "SPAN" || target.parentElement.tagName === "A") {
+          return;
+        }
+        e.preventDefault();
+        const id = target.getAttribute("data-id");
+        alert("点击了子菜单");
+      };
+    }
+  }
 }
 
+// 滚动初始化
 function initScroll() {
   window.onscroll = function (e) {
     if (document.scrollingElement.scrollTop >= clientHeight) {
