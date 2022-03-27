@@ -1,0 +1,154 @@
+@media only screen and (max-width: 1000px) {
+  html {
+    .main-title {
+      h2 {
+        font-size: 2.4rem;
+
+        .bg-text {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .section {
+      &.content-sec {
+        padding: 4rem 2rem 2rem;
+      }
+    }
+
+    .btn-container-group {
+      flex-direction: column;
+
+      .btn-container,
+      .btn-container + .btn-container {
+        margin: 1rem auto;
+      }
+    }
+
+    .header-bar {
+      &.open-menu {
+        background-color: var(--color-white);
+        .nav {
+          display: flex;
+        }
+      }
+      .nav {
+        display: none;
+        position: fixed;
+        top: 3.6rem;
+        left: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: var(--color-white);
+
+        .item {
+          color: var(--color-black);
+          padding: 1rem 0;
+        }
+      }
+
+      .menu {
+        display: block;
+      }
+    }
+
+    .sec1 {
+      position: relative;
+      .left-header {
+        width: 100%;
+        .h-shape {
+          clip-path: polygon(0 0, 10% 0, 60% 100%, 0% 100%);
+        }
+        .image {
+          display: none;
+        }
+      }
+
+      .right-header {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 2rem;
+
+        .name {
+          font-size: 2.4rem;
+        }
+
+        .btn-container {
+          a {
+            margin: 0 auto;
+            background-color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    .sec2 {
+      .about-cards {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .sec3 {
+      .categories {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .sec4 {
+      .senes-box {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .sec5 {
+      .news {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .sec6 {
+      .contact-content-con {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        box-sizing: border-box;
+
+        .left-contact {
+          & > h4 {
+            text-align: center;
+          }
+        }
+
+        .right-contact {
+          margin: 0;
+          flex: 1;
+          flex-grow: 1;
+          width: 100%;
+
+          .input-control {
+            input,
+            textarea {
+              display: block;
+              width: 100%;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+  }
+}

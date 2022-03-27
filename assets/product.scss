@@ -117,3 +117,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  html {
+    .product-page {
+      .container {
+        flex-direction: column;
+
+        .side-menu,
+        .main {
+          width: 100%;
+          margin: 0 0 2rem;
+        }
+      }
+    }
+  }
+}

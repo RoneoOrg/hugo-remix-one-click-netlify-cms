@@ -42,10 +42,12 @@ function initData() {
 
 // 导航栏初始化
 function initNav() {
+  const headerEle = document.querySelector(".header-bar");
   const navItems = document.querySelectorAll(".nav .item");
   const themeEle = document.querySelector(".header-bar .theme");
   const langEle = document.querySelector(".header-bar .lang");
   const listItems = document.querySelectorAll(".nav .item ul li");
+  const menuEle = document.querySelector(".header-bar .menu");
 
   if (navItems) {
     for (let item of navItems) {
@@ -101,6 +103,13 @@ function initNav() {
         alert("点击了子菜单");
       };
     }
+  }
+
+  if (menuEle) {
+    menuEle.onclick = function () {
+      const className = headerEle.getAttribute("class");
+      headerEle.setAttribute("class", className === "header-bar open-menu" ? "header-bar" : "header-bar open-menu");
+    };
   }
 }
 
