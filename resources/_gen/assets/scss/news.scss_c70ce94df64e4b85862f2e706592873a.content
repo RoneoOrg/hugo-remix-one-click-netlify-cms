@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300);
+.new-page {
+  padding: 1rem;
+  /* https://github.com/mrmrs/fluidity */ }
+  @media print {
+    .new-page *,
+    .new-page *:before,
+    .new-page *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important; }
+    .new-page a,
+    .new-page a:visited {
+      text-decoration: underline; }
+    .new-page a[href]:after {
+      content: " (" attr(href) ")"; }
+    .new-page abbr[title]:after {
+      content: " (" attr(title) ")"; }
+    .new-page a[href^="#"]:after,
+    .new-page a[href^="javascript:"]:after {
+      content: ""; }
+    .new-page pre,
+    .new-page blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid; }
+    .new-page thead {
+      display: table-header-group; }
+    .new-page tr,
+    .new-page img {
+      page-break-inside: avoid; }
+    .new-page img {
+      max-width: 100% !important; }
+    .new-page p,
+    .new-page h2,
+    .new-page h3 {
+      orphans: 3;
+      widows: 3; }
+    .new-page h2,
+    .new-page h3 {
+      page-break-after: avoid; } }
+  .new-page html {
+    font-size: 12px; }
+  @media screen and (min-width: 32rem) and (max-width: 48rem) {
+    .new-page html {
+      font-size: 15px; } }
+  @media screen and (min-width: 48rem) {
+    .new-page html {
+      font-size: 16px; } }
+  .new-page body {
+    line-height: 1.85; }
+  .new-page p,
+  .new-page .air-p {
+    font-size: 1rem;
+    margin-bottom: 1.3rem; }
+  .new-page h1,
+  .new-page .air-h1,
+  .new-page h2,
+  .new-page .air-h2,
+  .new-page h3,
+  .new-page .air-h3,
+  .new-page h4,
+  .new-page .air-h4 {
+    margin: 1.414rem 0 0.5rem;
+    font-weight: inherit;
+    line-height: 1.42; }
+  .new-page h1,
+  .new-page .air-h1 {
+    margin-top: 0;
+    font-size: 3.998rem; }
+  .new-page h2,
+  .new-page .air-h2 {
+    font-size: 2.827rem; }
+  .new-page h3,
+  .new-page .air-h3 {
+    font-size: 1.999rem; }
+  .new-page h4,
+  .new-page .air-h4 {
+    font-size: 1.414rem; }
+  .new-page h5,
+  .new-page .air-h5 {
+    font-size: 1.121rem; }
+  .new-page h6,
+  .new-page .air-h6 {
+    font-size: 0.88rem; }
+  .new-page small,
+  .new-page .air-small {
+    font-size: 0.707em; }
+  .new-page img,
+  .new-page canvas,
+  .new-page iframe,
+  .new-page video,
+  .new-page svg,
+  .new-page select,
+  .new-page textarea {
+    max-width: 100%; }
+  .new-page body {
+    color: var(--color-white);
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: 300;
+    margin: 6rem auto 1rem;
+    max-width: 48rem;
+    text-align: center; }
+  .new-page img {
+    border-radius: 50%;
+    height: 200px;
+    margin: 0 auto;
+    width: 200px; }
+  .new-page a,
+  .new-page a:visited {
+    color: #3498db; }
+  .new-page a:hover,
+  .new-page a:focus,
+  .new-page a:active {
+    color: #2980b9; }
+  .new-page pre {
+    background-color: #fafafa;
+    padding: 1rem;
+    text-align: left; }
+  .new-page blockquote {
+    margin: 0;
+    border-left: 5px solid #7a7a7a;
+    font-style: italic;
+    padding: 1.33em;
+    text-align: left; }
+  .new-page ul,
+  .new-page ol,
+  .new-page li {
+    text-align: left; }
+  .new-page p {
+    color: #777; }
