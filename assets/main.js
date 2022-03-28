@@ -94,13 +94,10 @@ function initNav() {
   if (listItems) {
     for (let item of listItems) {
       item.onclick = function (e) {
+        e.stopPropagation();
+        e.preventDefault()
         const target = e.target;
-        if (target.tagName === "SPAN" || target.parentElement.tagName === "A") {
-          return;
-        }
-        e.preventDefault();
-        const id = target.getAttribute("data-id");
-        alert("点击了子菜单");
+        alert("点击了子菜单" + target.innerHTML);
       };
     }
   }
