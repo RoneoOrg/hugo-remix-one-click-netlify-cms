@@ -165,6 +165,27 @@
     display: none;
   }
 }
+.white-header {
+  .header-bar {
+    background-color: var(--color-white);
+
+    .nav {
+      .item {
+        color: var(--color-primary);
+      }
+    }
+
+    .theme,
+    .lang,
+    .menu {
+      box-shadow: none;
+      &:hover {
+        color: var(--color-white);
+        background-color: var(--color-secondary);
+      }
+    }
+  }
+}
 
 // home
 .sec1 {
