@@ -1,18 +1,56 @@
 {{ $data := site.Data.scenes }}
 
 
-<section class="section sec4 scenes"    id="scenes">
-<div class="main-title">
-    <h2> {{ $data.title | safeHTML }} 
-        <span class="bg-text"> {{ $data.backgroundTitle }}</span>
-    </h2>
-    <div class="border"></div>
-</div>
+<section class="section sec4 content-sec" id="solution">
+    <div class="main-title">
+        <h2> {{ $data.title | safeHTML }}
+            <span class="bg-text"> {{ $data.backgroundTitle }}</span>
+        </h2>
+        <div class="border"></div>
+    </div>
 
-<p class="port-text">
-    {{ $data.portText }}
-</p>
+    <p class="sub-title">
+        {{ $data.portText }}
+    </p>
 
+    <div class="senes-box">
+        <div class="item">
+            <div class="img">
+                <img src="/media/scence1.jpg">
+            </div>
+            <div class="text">
+                <h3>SORA gardens</h3>
+                <p>Some description of SORA gardens</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img">
+                <img src="/media/scence2.jpg">
+            </div>
+            <div class="text">
+                <h3>SORA gardens</h3>
+                <p>Some description of SORA gardens</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img">
+                <img src="/media/scence3.jpg">
+            </div>
+            <div class="text">
+                <h3>SORA gardens</h3>
+                <p>Some description of SORA gardens</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img">
+                <img src="/media/scence4.jpg">
+            </div>
+            <div class="text">
+                <h3>SORA gardens</h3>
+                <p>Some description of SORA gardens</p>
+            </div>
+        </div>
+    </div>
 
 
 </section>

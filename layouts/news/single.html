@@ -1,15 +1,24 @@
-{{ partial "header.html" .}}
+<!DOCTYPE html>
+<html lang="en">
 
+<!-- head link and script -->
+{{ partial "head.html" .}}
 
+{{ $newsSass := resources.Get "news.scss" }}
+{{ $newsStyle := $newsSass | resources.ToCSS | resources.Fingerprint }}
 
-<div class="new-page">
+<link rel="stylesheet" href="{{ $newsStyle.RelPermalink }}" integrity="{{ $newsStyle.Data.Integrity }}" />
 
-    <h1> {{ .Title}} </h1>
-
-    <div class="new-content">
-        {{ .Content }}
+<body>
+    <div class="new-page">
+        <h1> {{ .Title}} </h1>
+        <div class="news-content">
+            {{ .Content }}
+        </div>
     </div>
-</div>
 
+    <!-- footer copyright -->
+    {{ partial "footer.html" .}}
+</body>
 
-{{ partial "footer.html" .}}
+</html>

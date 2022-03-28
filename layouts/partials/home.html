@@ -2,27 +2,21 @@
 {{ $data := index site.Data (print "home." site.Language.Lang) }}
 
 
-<header class="section sec1 header active-sect" id="home">
+<section class="section sec1" id="home">
+    <div class="left-header">
+        <div class="h-shape"></div>
+        <img src="{{$data.image}}" class="image">
+    </div>
+    <div class="right-header">
+        <h1 class="name">{{ $data.title | safeHTML }}</h1>
+        <p>{{ $data.shortDescription }}</p>
 
-
-    <div class="header-content">
-        <div class="left-header">
-            <div class="h-shape"></div>
-            <div class="image">
-                <img src="{{$data.image}}" alt="">
-            </div>
-        </div>
-
-        <div class="right-header">
-            <h1 class="name">{{ $data.title  | safeHTML  }}</h1>
-            <p>{{ $data.shortDescription }}</p>
-
-            <div class="btn-container">
-                <a href="/files/dioxide.pdf" class="download-btn" target="_blank">
-                    <span class="btn-text">View Productions</span>
-                    <span class="btn-icon"><i class="fas fa-eye"></i></span>
-                </a>
-            </div>
+        <div class="btn-container">
+            <a href="/files/dioxide.pdf" target="_blank">
+                <span class="btn-text">View Productions</span>
+                <span class="btn-icon"><i class="fas fa-eye"></i></span>
+                <i class="bg"></i>
+            </a>
         </div>
     </div>
-</header>
+</section>

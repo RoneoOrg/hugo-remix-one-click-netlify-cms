@@ -1,15 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode2">
 
-{{ partial "header.html" .}}
+<!-- head link and script -->
+{{ partial "head.html" .}}
 
+<body>
+    <!-- navigation header -->
+    {{ partial "header.html" .}}
 
-    {{ partial "home.html" .}}
-    <main>
+    <!-- section list -->
+    <div class="main-content">
+        {{ partial "home.html" .}}
         {{ partial "about.html" .}}
         {{ partial "products.html" .}}
         {{ partial "scenes.html" .}}
         {{ partial "news.html" .}}
         {{ partial "contact.html" .}}
-    </main>
+    </div>
 
+    <!-- footer copyright -->
+    {{ partial "footer.html" .}}
 
-{{ partial "footer.html" .}}
+</body>
+
+</html>

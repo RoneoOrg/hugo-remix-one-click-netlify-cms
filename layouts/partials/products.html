@@ -1,34 +1,47 @@
 <!-- {{ $data := index site.Data site.Language.Lang}} -->
 {{ $data := site.Data.products }}
 
-<section class="section sec3 products" id="products">
+<section class="section sec3 content-sec" id="product">
 
-<div class="main-title">
-    <h2> {{ $data.title | safeHTML }} 
-        <span class="bg-text"> {{ $data.backgroundTitle }}</span>
-    </h2>
-    <div class="border"></div>
-</div>
-
-<p class="port-text">
-    {{ $data.portText }}
-</p>
-
-
-<div class="categories">
-{{ range $data.categories }}
-<div class="category">
-    <div class="image"><img src="{{.coverImage}}" alt="">
-        <h3>{{.title}}</h3>
+    <div class="main-title">
+        <h2> {{ $data.title | safeHTML }}
+            <span class="bg-text"> {{ $data.backgroundTitle }}</span>
+        </h2>
+        <div class="border"></div>
     </div>
-    <div class="hover-items">
-        <div class="show-more">View More</div>
-        <p>{{.description}}</p>
-    </div>
-</div>
 
-{{ end}}
-</div>
+    <p class="sub-title">
+        {{ $data.portText }}
+    </p>
+
+
+    <div class="categories">
+        <!-- {{ range $data.categories }}
+        <div class="category">
+            <div class="image"><img src="{{.coverImage}}" alt="">
+                <h3>{{.title}}</h3>
+            </div>
+            <div class="hover-items">
+                <div class="show-more">View More</div>
+                <p>{{.description}}</p>
+            </div>
+        </div>
+
+        {{ end}} -->
+        {{ range first 6 (where site.RegularPages "Type" "==" "products")}}
+
+        <div class="category">
+            <div class="image"><img src="{{ .Params.image }} " alt="">
+                <h3>{{.Title}}</h3>
+            </div>
+            <div class="hover-items">
+                <div class="show-more" onclick="location.href = '{{ .RelPermalink }}';">View More</div>
+                <p>{{.Summary}}</p>
+            </div>
+        </div>
+
+        {{ end }}
+    </div>
 
 
 </section>
