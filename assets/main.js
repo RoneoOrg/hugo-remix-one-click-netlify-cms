@@ -49,6 +49,7 @@ function initNav() {
   const listItems = document.querySelectorAll(".nav .item ul li");
   const menuEle = document.querySelector(".header-bar .menu");
 
+  // 菜单点击
   if (navItems) {
     for (let item of navItems) {
       item.onclick = function (e) {
@@ -75,6 +76,7 @@ function initNav() {
     }
   }
 
+  // 主题切换点击
   if (themeEle) {
     themeEle.onclick = function () {
       const html = document.querySelector("html");
@@ -85,12 +87,14 @@ function initNav() {
     };
   }
 
+  // 语言切换点击
   if (langEle) {
     langEle.onclick = function () {
       alert("你点击了我");
     };
   }
 
+  // 子菜单点击
   if (listItems) {
     for (let item of listItems) {
       item.onclick = function (e) {
@@ -102,6 +106,7 @@ function initNav() {
     }
   }
 
+  // 手机版的展开菜单点击
   if (menuEle) {
     menuEle.onclick = function () {
       const className = headerEle.getAttribute("class");

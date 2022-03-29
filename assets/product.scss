@@ -1,5 +1,7 @@
 .product-page {
   padding-top: 4rem;
+
+  // 顶部头图
   .banner {
     height: 20rem;
     position: relative;
@@ -24,9 +26,12 @@
     }
   }
 
+  // 主内容
   .container {
     padding: 1rem;
     display: flex;
+
+    // 左侧菜单
     .side-menu {
       width: 15rem;
       flex-shrink: 0;
@@ -95,6 +100,8 @@
         }
       }
     }
+
+    // 右侧详细内容
     .main {
       flex-grow: 1;
       margin-left: 3rem;
@@ -118,6 +125,7 @@
   }
 }
 
+// 该页面独立的媒体查询
 @media only screen and (max-width: 1000px) {
   html {
     .product-page {
