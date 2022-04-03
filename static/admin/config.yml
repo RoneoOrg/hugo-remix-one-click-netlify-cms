@@ -15,9 +15,6 @@ i18n:
   default_locale: en
 
 
-
-
-
 # collections configuration
 collections:
   - name: "news"
@@ -54,8 +51,7 @@ collections:
         name: "categories"
         widget: "select"
         multiple: true
-        options: [ "Cellulose Ethers", "Iron Oxide Pigment", "Titanium Dioxide",
-                   "Redispersible Powder", "Petroleum Resin", "Sodium Sarcosinate"  ]
+        options: [ "Cellulose Ethers", "Iron Oxide Pigment", "Titanium Dioxide", "Redispersible Powder", "Petroleum Resin", "Sodium Sarcosinate"  ]
       - { label: "Cover Image", name: "image", widget: "image" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
