@@ -16,38 +16,6 @@ i18n:
 
 # collections configuration
 collections:
-  - name: "products"
-    identifier_field: name
-    label: "Products"
-    folder: "content/products"
-    path: "{{slug}}/index"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        options: ["category1", "category2", "category3"]
-      - label: "Industry"
-        name: "industry"
-        widget: "select"
-        options: ["industry3", "industry1", "industry2"]
-      - { label: "Cover Image", name: "image", widget: "image" }
-      - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Cover", name: "image", widget: "image" }
-  - name: "news"
-    identifier_field: name
-    label: "News"
-    folder: "content/news"
-    path: "{{slug}}/index"
-    create: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Cover Image", name: "image", widget: "image" }
-      - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
   - name: "sections"
     label: "Sections"
     i18n: 
