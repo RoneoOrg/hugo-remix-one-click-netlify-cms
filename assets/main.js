@@ -90,7 +90,16 @@ function initNav() {
   // 语言切换点击
   if (langEle) {
     langEle.onclick = function () {
-      alert("你点击了我");
+      switch (langEle.textContent) {
+        case "en":
+          location.href = "/zh"
+          console.log(location.href);
+          break;
+        case "zh":
+          location.href = "/"
+          console.log(langEle.textContent);
+          break;
+      }
     };
   }
 

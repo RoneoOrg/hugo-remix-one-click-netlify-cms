@@ -1,9 +1,5 @@
 
-
-
-
-
-{{ $data := index site.Data (print "head." site.Language.Lang) }}
+{{ $data := index site.Data.head site.Language.Lang }}
 {{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
 {{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
 
@@ -17,11 +13,11 @@
     </div>
     <div class="mainer">
         <div class="nav">
-            <a class="item" href="/#home" data-id="home">Home</a>
-            <a class="item" href="/#about" data-id="about">About</a>
+            <a class="item" href="/#home" data-id="home">{{$data.keywords.home}}</a>
+            <a class="item" href="/#about" data-id="about">{{$data.keywords.about}}</a>
 
             <a class="item" href="/#product" data-id="product">
-                <span>Product</span>
+                <span>{{$data.keywords.product}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
                     {{range $categories}}
@@ -31,7 +27,7 @@
             </a>
             
             <a class="item" href="/#solution" data-id="solution">
-                <span>Solution</span>
+                <span>{{$data.keywords.solution}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
                     {{range $scenes}}
@@ -39,13 +35,13 @@
                     {{ end }}
                 </ul>
             </a>
-            <a class="item" href="/#news" data-id="news">News</a>
-            <a class="item" href="/#contact" data-id="contact">Contact</a>
+            <a class="item" href="/#news" data-id="news">{{$data.keywords.news}}</a>
+            <a class="item" href="/#contact" data-id="contact">{{$data.keywords.contact}}</a>
         </div>
         <div class="theme">
             <i class="fas fa-adjust"></i>
         </div>
-        <div class="lang">ZH</div>
+        <div class="lang">{{site.Language.mark}}</div>
         <div class="menu">
             <i class="fa-solid fa-bars"></i>
         </div>

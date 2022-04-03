@@ -4,9 +4,9 @@ en:
   shortDescription: " We are a professional chemicals supplier, devoted to
     providing high quality products, efficient service, and driving value
     improvement for clients all over the world."
-  image: media/header.png
+  image: /media/header.png
 zh:
-  image: media/header.png
+  image: /media/header.png
   title: 你好，我们是 <span>凯美斯</span>
   slogan: Hello from julito
   shortDescription: " We are a professional chemicals supplier, devoted to
