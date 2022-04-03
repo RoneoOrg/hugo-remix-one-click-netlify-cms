@@ -1,4 +1,4 @@
-{{ $data := site.Data.news }}
+{{ $data := index site.Data.news site.Language.Lang }}
 
 
 <section class="section sec5 content-sec" id="news">
@@ -13,9 +13,18 @@
         {{ $data.portText }}
     </p>
 
+    {{printf "abc %v\n" .sections}}
+
+
+    {{ range  site.RegularPages }}
+    {{printf "%v" .}}
+    {{ end }}
+
     <div class="news">
 
-        {{ range first 6 (where site.RegularPages "Type" "==" "news")}}
+
+
+        {{ range first 6 (where site.Pages "Type" "==" "news")}}
 
         <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
 

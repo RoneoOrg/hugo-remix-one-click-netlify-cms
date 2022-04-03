@@ -6,19 +6,19 @@ en:
     - coverImage: /media/scene1.jpg
       title: construction
       icon: fa-person-digging
-      description: Cellulose ethers comprise methylcellulose, ethylcellulose, hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
+      description: Cellulose ethers comprise methylcellulose
     - coverImage: /media/scene1.jpg
       title: food
       icon: fa-burger
-      description: Cellulose ethers comprise methylcellulose, ethylcellulose, hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
+      description: Cellulose ethers comprise methylcellulose
     - coverImage: /media/scene1.jpg
       title: oil
       icon: fa-oil-well
-      description: Cellulose ethers comprise methylcellulose, ethylcellulose, hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
+      description: Cellulose ethers comprise methylcellulose,
     - coverImage: /media/scene1.jpg
       title: pill
       icon: fa-capsules
-      description: Cellulose ethers comprise methylcellulose, ethylcellulose, hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
+      description: Cellulose ethers comprise methylcellulose
 zh:
   title: <span>Solutions</span> by Industry
   backgroundTitle: Welcome

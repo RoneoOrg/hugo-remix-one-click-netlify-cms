@@ -1,5 +1,5 @@
 <!-- {{ $data := index site.Data site.Language.Lang}} -->
-{{ $data := index site.Data (print "home." site.Language.Lang) }}
+{{ $data := index site.Data.home  site.Language.Lang }}
 
 
 <section class="section sec1" id="home">
