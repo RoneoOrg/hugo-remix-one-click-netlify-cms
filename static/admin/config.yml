@@ -42,7 +42,7 @@ collections:
     label: "news"
     folder: "content"
     path: "news/{{slug}}"
-    filter: { field: "language", value: "en" }
+    filter: { field: "nType", value: "new" }
     i18n:
       structure: multiple_folders
       locales: [english, chinese]
