@@ -39,7 +39,7 @@ i18n:
 # collections configuration
 collections:
   - name: "news"
-    label: "News"
+    label: "news"
     folder: "content/news"
     path: "{{slug}}/index"
     i18n:
@@ -47,11 +47,13 @@ collections:
       locales: [english, chinese]
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string", i18n: true},
-      - { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate"},
-      - { label: "Cover Image", name: "image", widget: "image" , i18n: true},
-      - { label: "Summary", name: "summary", widget: "text", i18n: true},
-      - { label: "Body", name: "body", widget: "markdown"},
+      [
+        { label: "Title", name: "title", widget: "string", i18n: true},
+        { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
+        { label: "Cover Image", name: "image", widget: "image" , i18n: true },
+        { label: "Summary", name: "summary", widget: "text", i18n: true },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
   - name: "sections"
     label: "Sections"
     i18n: 
