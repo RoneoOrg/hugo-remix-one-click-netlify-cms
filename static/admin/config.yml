@@ -32,6 +32,9 @@ collections:
             { label: "Slogan", name: "slogan", widget: string, i18n: true},
             { label: "Description", name: "shortDescription", widget: "text", i18n: true},
             { label: "Header Image", name: "image", widget: "image", i18n: true},
+            { label: "register", name: "register", widget: string, i18n: true },
+            { label: "copyright", name: "copyright", widget: string, i18n: true },
+            { label: "Register Url", name: "registerUrl", widget: string, i18n: true },
           ]
       - file: "data/about.yml"
         label: "About Section"
@@ -57,7 +60,7 @@ collections:
             { label: "Title", name: "title", widget: string, i18n: true},
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
             { label: "PortText", name: "portText", widget: "text", i18n: true},
-            { label: "Items", name: "items", widget: "list", fields: [
+            { label: "Categories", name: "categories", widget: "list", fields: [
               { label: "CoverImage", name: "coverImage", widget: string , i18n: true},
               { label: "Title", name: "title", widget: string, i18n: true},
               { label: "Description", name: "description", widget: text , i18n: true},
@@ -72,6 +75,12 @@ collections:
             { label: "Title", name: "title", widget: string, i18n: true},
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
             { label: "PortText", name: "portText", widget: "text", i18n: true},
+            { label: "scenes", name: "scenes", widget: "list", fields: [
+              { label: "CoverImage", name: "coverImage", widget: string , i18n: true },
+              { label: "Title", name: "title", widget: string, i18n: true },
+              { label: "Description", name: "description", widget: text , i18n: true },
+              { label: "icon", name: "icon", widget: string , i18n: true },
+            ] }
           ]
       - file: "data/news.yml"
         label: "News Section"
@@ -81,6 +90,7 @@ collections:
           [
             { label: "Title", name: "title", widget: string, i18n: true},
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
+            { label: "portText", name: "portText", widget: string, i18n: true },
           ]
       - file: "data/contact.yml"
         label: "Contact Section"
@@ -97,5 +107,4 @@ collections:
             { label: "Fax", name: "fax", widget: string, i18n: true},
             { label: "Phone", name: "phone", widget: string , i18n: true},
             { label: "Languages", name: "languages", widget: string, i18n: true},
-
           ]
