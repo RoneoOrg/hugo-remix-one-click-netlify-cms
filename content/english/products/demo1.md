@@ -1,6 +1,7 @@
 ---
 title: "what kind"
 image: /media/category1.jpg
+nType: product
 categories:
     - hello
     - yello

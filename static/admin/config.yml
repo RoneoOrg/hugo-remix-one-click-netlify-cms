@@ -42,12 +42,14 @@ collections:
     label: "news"
     folder: "content"
     path: "news/{{slug}}"
+    filter: { field: "language", value: "en" }
     i18n:
       structure: multiple_folders
       locales: [english, chinese]
     create: true
     fields:
       [
+        { label: "Type", name: "nType", widget: "string", i18n: "duplicate", default: "new" },
         { label: "Title", name: "title", widget: "string", i18n: true},
         { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
         { label: "Cover Image", name: "image", widget: "image" , i18n: true },
