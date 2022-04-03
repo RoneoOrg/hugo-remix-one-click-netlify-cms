@@ -1,12 +1,26 @@
-title: <span>Contact</span> Us
-backgroundTitle: Contact
-subtitle: Contact Me HERE
-detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
-  provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis
-  asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
-  adipisci.
-location: Hangzhou, China
-email: sales@kimix.com.cn
-fax: +86 571 8839 0023
-phone: "+86 571 8839 2710 "
-languages: English,Chinese,Spanish
+en:
+  title: <span>Contact</span> Us
+  backgroundTitle: Contact
+  subtitle: Contact Me HERE
+  detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
+    provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis
+    asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
+    adipisci.
+  location: Hangzhou, China
+  email: sales@kimix.com.cn
+  fax: +86 571 8839 0023
+  phone: "+86 571 8839 2710 "
+  languages: English,Chinese,Spanish
+zh:
+  title: <span>Contact</span> Us
+  backgroundTitle: Contact
+  subtitle: Contact Me HERE
+  detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
+    provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis
+    asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore
+    adipisci.
+  location: Hangzhou, China
+  email: sales@kimix.com.cn
+  fax: +86 571 8839 0023
+  phone: "+86 571 8839 2710 "
+  languages: English,Chinese,Spanish

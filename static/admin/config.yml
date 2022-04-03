@@ -68,61 +68,66 @@ collections:
       - file: "data/about.yml"
         label: "About Section"
         name: "about"
+        i18n: true
         description: "Go to edit the about section"
         fields:
           [
-            { label: "Title", name: "title", widget: string },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
+            { label: "Title", name: "title", widget: string, i18n: true},
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
             { label: "Items", name: "items", widget: "list", fields: [
-              { label: "Icon", name: "icon", widget: string },
-              { label: "Title", name: "title", widget: string },
-              { label: "Content", name: "content", widget: text },
+              { label: "Icon", name: "icon", widget: string , i18n: true},
+              { label: "Title", name: "title", widget: string, i18n: true},
+              { label: "Content", name: "content", widget: text, i18n: true},
             ]}
           ]
       - file: "data/products.yml"
         label: "Production Section"
         name: "productions"
+        i18n: true
         fields:
           [
-            { label: "Title", name: "title", widget: string },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
-            { label: "PortText", name: "portText", widget: "text" },
+            { label: "Title", name: "title", widget: string, i18n: true},
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
+            { label: "PortText", name: "portText", widget: "text", i18n: true},
             { label: "Items", name: "items", widget: "list", fields: [
-              { label: "CoverImage", name: "coverImage", widget: string },
-              { label: "Title", name: "title", widget: string },
-              { label: "Description", name: "description", widget: text },
+              { label: "CoverImage", name: "coverImage", widget: string , i18n: true},
+              { label: "Title", name: "title", widget: string, i18n: true},
+              { label: "Description", name: "description", widget: text , i18n: true},
             ]}
           ]
       - file: "data/scenes.yml"
         label: "Industry Section"
         name: "industry"
+        i18n: true
         fields:
           [
-            { label: "Title", name: "title", widget: string },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
-            { label: "PortText", name: "portText", widget: "text" },
+            { label: "Title", name: "title", widget: string, i18n: true},
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
+            { label: "PortText", name: "portText", widget: "text", i18n: true},
           ]
       - file: "data/news.yml"
         label: "News Section"
         name: "news"
+        i18n: true
         fields:
           [
-            { label: "Title", name: "title", widget: string },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
+            { label: "Title", name: "title", widget: string, i18n: true},
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
           ]
       - file: "data/contact.yml"
         label: "Contact Section"
         name: "contact"
+        i18n: true
         fields:
           [
-            { label: "Title", name: "title", widget: string },
-            { label: "BackgroundTitle", name: "backgroundTitle", widget: string },
-            { label: "Subtitle", name: "subtitle", widget: string },
-            { label: "Detail", name: "detail", widget: string },
-            { label: "Location", name: "location", widget: string },
-            { label: "Email", name: "email", widget: string },
-            { label: "Fax", name: "fax", widget: string },
-            { label: "Phone", name: "phone", widget: string },
-            { label: "Languages", name: "languages", widget: string },
+            { label: "Title", name: "title", widget: string, i18n: true},
+            { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
+            { label: "Subtitle", name: "subtitle", widget: string, i18n: true},
+            { label: "Detail", name: "detail", widget: string, i18n: true},
+            { label: "Location", name: "location", widget: string , i18n: true},
+            { label: "Email", name: "email", widget: string , i18n: true},
+            { label: "Fax", name: "fax", widget: string, i18n: true},
+            { label: "Phone", name: "phone", widget: string , i18n: true},
+            { label: "Languages", name: "languages", widget: string, i18n: true},
 
           ]
