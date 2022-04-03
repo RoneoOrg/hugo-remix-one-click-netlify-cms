@@ -1,5 +1,6 @@
 <!-- {{ $data := index site.Data site.Language.Lang}} -->
 {{ $data := index site.Data.products site.Language.Lang }}
+{{ $categories := index site.Params.categories site.Language.Lang }}
 
 <section class="section sec3 content-sec" id="product">
 
@@ -19,7 +20,7 @@
         {{ range $data.categories }}
         <div class="category">
             <div class="image"><img src="{{.coverImage}}" alt="">
-                <h3>{{.title}}</h3>
+                <h3>{{index  $categories  .cSlug}}</h3>
             </div>
             <div class="hover-items">
                 <div class="show-more">

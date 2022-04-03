@@ -4,9 +4,6 @@ title: what kind
 categories:
   - Cellulose Ethers
 image: /media/category1.jpg
-scenes:
-  - shopping
-  - swiming
 summary: hadfasdfsdaf
 ---
 

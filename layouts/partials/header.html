@@ -1,6 +1,6 @@
 
 {{ $data := index site.Data.header site.Language.Lang }}
-{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
+{{ $categories := index site.Params.categories site.Language.Lang }}
 {{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
 
 
@@ -20,8 +20,8 @@
                 <span>{{$data.keywords.product}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    {{range $categories}}
-                    <li>{{ .title }}</li>
+                    {{range $k, $v := $categories}}
+                    <li>{{ $v }}</li>
                     {{ end }}
                 </ul>
             </a>

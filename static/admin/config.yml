@@ -51,7 +51,13 @@ collections:
         name: "categories"
         widget: "select"
         multiple: true
-        options: [ "Cellulose Ethers", "Iron Oxide Pigment", "Titanium Dioxide", "Redispersible Powder", "Petroleum Resin", "Sodium Sarcosinate"  ]
+        options:
+          - { label: "Cellulose Ethers", value: "c1" }
+          - { label: "Iron Oxide Pigment", value: "c2" }
+          - { label: "Titanium Dioxide", value: "c3" }
+          - { label: "Redispersible Powde", value: "c4" }
+          - { label: "Petroleum Resin", value: "c5" }
+          - { label: "Sodium Sarcosinate", value: "c6" }
       - { label: "Cover Image", name: "image", widget: "image" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }

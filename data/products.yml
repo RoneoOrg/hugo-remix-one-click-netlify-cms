@@ -4,22 +4,22 @@ en:
   portText: "Here is some of our products that we've provided in various country"
   categories:
     - coverImage: /media/category1.jpg
-      title: Cellulose Ethers
+      cSlug: c1
       description: Cellulose ethers comprise methylcellulose, ethylcellulose, hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
     - coverImage: /media/category2.jpg
-      title: Iron Oxide Pigment
+      cSlug: c2
       description: Kimpigment serials cover synthetic iron oxide and chrome oxide with a wide range of color shade, and enjoy a good reputation due to the good opacity
     - coverImage: /media/category3.jpg
-      title: Titanium Dioxide
+      cSlug: c3
       description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With year's development, it enjoys a good reputation in worldwide market for the consistent quality, good whiteness, strong hiding power and reducing power
     - coverImage: /media/category4.jpg
-      title: Redispersible Powder
+      cSlug: c4
       description: Kimpolyer re-dispersible polymer powders is spray dried re-dispersible emulsion power, designed for the construction industry to enhance the properties of dry mortar blends, able to re-dispersible in water and  react with hydrate product of cement/gypsum and stuffing, form composite membrane with good mechanics intensity
     - coverImage: /media/category5.jpg
-      title: Petroleum Resin
+      cSlug: c5
       description: Kimresin C9 is aromatic hydrocarbon resin produced by the remaining (C9 fraction) of petroleum cracking, through catalyzed polymerization. It has the characteristics of low acid value
     - coverImage: /media/category6.jpg
-      title: Sodium Sarcosinate
+      cSlug: c6
       description:  a colorless to yellowish liquid. It is miscible with water in all proportions.
 zh:
   title: Our <span>Products</span>
@@ -27,20 +27,20 @@ zh:
   portText: "Here is some of our products that we've provided in various country"
   categories:
     - coverImage: /media/category1.jpg
-      title: Cellulose Ethers
+      cSlug: c1
       description: Cellulose ethers comprise methylcellulose, ethylcellulose, hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
     - coverImage: /media/category2.jpg
-      title: Iron Oxide Pigment
+      cSlug: c2
       description: Kimpigment serials cover synthetic iron oxide and chrome oxide with a wide range of color shade, and enjoy a good reputation due to the good opacity
     - coverImage: /media/category3.jpg
-      title: Titanium Dioxide
+      cSlug: c3
       description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With year's development, it enjoys a good reputation in worldwide market for the consistent quality, good whiteness, strong hiding power and reducing power
     - coverImage: /media/category4.jpg
-      title: Redispersible Powder
+      cSlug: c4
       description: Kimpolyer re-dispersible polymer powders is spray dried re-dispersible emulsion power, designed for the construction industry to enhance the properties of dry mortar blends, able to re-dispersible in water and  react with hydrate product of cement/gypsum and stuffing, form composite membrane with good mechanics intensity
     - coverImage: /media/category5.jpg
-      title: Petroleum Resin
+      cSlug: c5
       description: Kimresin C9 is aromatic hydrocarbon resin produced by the remaining (C9 fraction) of petroleum cracking, through catalyzed polymerization. It has the characteristics of low acid value
     - coverImage: /media/category6.jpg
-      title: Sodium Sarcosinate
+      cSlug: c6
       description:  a colorless to yellowish liquid. It is miscible with water in all proportions.
