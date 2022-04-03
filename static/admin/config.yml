@@ -45,7 +45,7 @@ collections:
           [
             { label: "Title", name: "title", widget: string, i18n: true},
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
-            { label: "Items", name: "items", widget: "list", fields: [
+            { label: "Items", name: "items", widget: "list", i18n: true, fields: [
               { label: "Icon", name: "icon", widget: string , i18n: true},
               { label: "Title", name: "title", widget: string, i18n: true},
               { label: "Content", name: "content", widget: text, i18n: true},
@@ -60,7 +60,7 @@ collections:
             { label: "Title", name: "title", widget: string, i18n: true},
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
             { label: "PortText", name: "portText", widget: "text", i18n: true},
-            { label: "Categories", name: "categories", widget: "list", fields: [
+            { label: "Categories", name: "categories", widget: "list", i18n: true, fields: [
               { label: "CoverImage", name: "coverImage", widget: string , i18n: true},
               { label: "Title", name: "title", widget: string, i18n: true},
               { label: "Description", name: "description", widget: text , i18n: true},
@@ -75,7 +75,7 @@ collections:
             { label: "Title", name: "title", widget: string, i18n: true},
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true},
             { label: "PortText", name: "portText", widget: "text", i18n: true},
-            { label: "scenes", name: "scenes", widget: "list", fields: [
+            { label: "scenes", name: "scenes", widget: "list", i18n: true, fields: [
               { label: "CoverImage", name: "coverImage", widget: string , i18n: true },
               { label: "Title", name: "title", widget: string, i18n: true },
               { label: "Description", name: "description", widget: text , i18n: true },
