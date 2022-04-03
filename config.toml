@@ -23,4 +23,6 @@ home = "主页"
 copyright = "Copyright &copy; 2022 Designed & Developed by [OhBonsai](https://github.com/OhBonsai)"
 
 
-
+[taxonomies]
+  category= "categories"
+  scene = "scenes"

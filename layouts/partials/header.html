@@ -1,3 +1,16 @@
+
+
+
+
+
+{{ $data := index site.Data (print "head." site.Language.Lang) }}
+{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
+{{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
+
+
+
+
+
 <div class="header-bar">
     <div class="logo">
         <img src="/media/logo.png">
@@ -6,31 +19,24 @@
         <div class="nav">
             <a class="item" href="/#home" data-id="home">Home</a>
             <a class="item" href="/#about" data-id="about">About</a>
+
             <a class="item" href="/#product" data-id="product">
                 <span>Product</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    <li>product1</li>
-                    <li>
-                        <span>product2</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                        <ul>
-                            <li>sub product1</li>
-                            <li>sub product2</li>
-                        </ul>
-                    </li>
-                    <li>product3</li>
-                    <li>product4</li>
+                    {{range $categories}}
+                    <li>{{ .title }}</li>
+                    {{ end }}
                 </ul>
             </a>
+            
             <a class="item" href="/#solution" data-id="solution">
                 <span>Solution</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    <li>solution1</li>
-                    <li>solution2</li>
-                    <li>solution3</li>
-                    <li>solution4</li>
+                    {{range $scenes}}
+                    <li><i class="fa-solid {{.icon}}"></i>{{ .title }}</li>
+                    {{ end }}
                 </ul>
             </a>
             <a class="item" href="/#news" data-id="news">News</a>
