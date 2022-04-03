@@ -1,13 +1,13 @@
 ---
-title: "what kind"
-image: /media/category1.jpg
 nType: product
+title: what kind
 categories:
-    - hello
-    - yello
+  - Cellulose Ethers
+image: /media/category1.jpg
 scenes:
-    - shopping
-    - swiming
+  - shopping
+  - swiming
+summary: hadfasdfsdaf
 ---
 
 Design is not just what it looks like and feels like. Design is how it works.
