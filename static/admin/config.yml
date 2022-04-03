@@ -40,8 +40,8 @@ i18n:
 collections:
   - name: "news"
     label: "news"
-    folder: "content/news"
-    path: "{{slug}}/index"
+    folder: "content"
+    path: "news/{{slug}}"
     i18n:
       structure: multiple_folders
       locales: [english, chinese]
