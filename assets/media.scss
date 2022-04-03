@@ -45,6 +45,30 @@
         .item {
           color: var(--color-black);
           padding: 1rem 0;
+          border-bottom: 1px solid var(--color-grey-1);
+
+          &:hover {
+            color: var(--color-secondary) !important;
+          }
+
+          & .fa-solid {
+            display: none;
+          }
+
+          & ul {
+            display: block !important;
+            position: static !important;
+            box-shadow: none !important;
+            margin-top: 0.5rem;
+
+            li {
+              border-bottom: 0;
+              &:hover {
+                background-color: transparent !important;
+                color: var(--color-secondary) !important;
+              }
+            }
+          }
         }
       }
 
