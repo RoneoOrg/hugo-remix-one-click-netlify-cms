@@ -15,25 +15,7 @@ i18n:
   default_locale: en
 
 
-#    - name: "products"
-#      label: "Products"
-#      folder: "content/products"
-#      path: "{{slug}}/index"
-#      create: true
-#      fields:
-#        - { label: "Title", name: "title", widget: "string" }
-#        - label: "Category"
-#          name: "category"
-#          widget: "select"
-#          options: [ "category1", "category2", "category3" ]
-#        - label: "Industry"
-#          name: "industry"
-#          widget: "select"
-#          options: [ "industry3", "industry1", "industry2" ]
-#        - { label: "Cover Image", name: "image", widget: "image" }
-#        - { label: "Summary", name: "summary", widget: "text" }
-#        - { label: "Body", name: "body", widget: "markdown" }
-#        - { label: "Cover", name: "image", widget: "image" }
+
 
 
 # collections configuration
@@ -56,6 +38,27 @@ collections:
         { label: "Summary", name: "summary", widget: "text", i18n: true },
         { label: "Body", name: "body", widget: "markdown", i18n: true },
       ]
+  - name: "products"
+    label: "Products"
+    folder: "content"
+    path: "products/{{slug}}"
+    i18n:
+      structure: multiple_folders
+      locales: [ english, chinese ]
+    create: true
+    filter: { field: "nType", value: "product" }
+    fields:
+      - { label: "Type", name: "nType", widget: "string", i18n: "duplicate", default: "product" },
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Category"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        options: [ "Cellulose Ethers", "Iron Oxide Pigment", "Titanium Dioxide",
+                   "Redispersible Powder", "Petroleum Resin", "Sodium Sarcosinate"  ]
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "sections"
     label: "Sections"
     i18n:
