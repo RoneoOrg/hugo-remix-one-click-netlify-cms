@@ -43,6 +43,7 @@ collections:
     folder: "content"
     path: "news/{{slug}}"
     filter: { field: "nType", value: "new" }
+    media_folder: "static/media"
     i18n:
       structure: multiple_folders
       locales: [english, chinese]
@@ -54,7 +55,7 @@ collections:
         { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
         { label: "Cover Image", name: "image", widget: "image" , i18n: true },
         { label: "Summary", name: "summary", widget: "text", i18n: true },
-        { label: "Body", name: "body", widget: "markdown" },
+        { label: "Body", name: "body", widget: "markdown", i18n: true },
       ]
   - name: "sections"
     label: "Sections"
