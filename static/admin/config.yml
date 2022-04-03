@@ -36,16 +36,16 @@ collections:
         { label: "Body", name: "body", widget: "markdown", i18n: true },
       ]
   - name: "products"
-    label: "Products"
+    label: "products"
     folder: "content"
     path: "products/{{slug}}"
+    filter: { field: "nType", value: "product" }
     i18n:
       structure: multiple_folders
       locales: [ english, chinese ]
     create: true
-    filter: { field: "nType", value: "product" }
     fields:
-      - { label: "Type", name: "nType", widget: "string", i18n: "duplicate", default: "product" },
+      - { label: "Type", name: "nType", widget: "string", i18n: "duplicate", default: "product" }
       - { label: "Title", name: "title", widget: "string" }
       - label: "Category"
         name: "categories"
