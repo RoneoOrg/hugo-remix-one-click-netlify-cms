@@ -15,15 +15,11 @@
 
 
 
-    {{ range  site.RegularPages }}
-    {{printf "%v" .}}
-    {{ end }}
-
     <div class="news">
 
 
 
-        {{ range first 6 (where site.Pages "Type" "==" "news")}}
+        {{ range first 6 (where site.RegularPages "Type" "==" "news")}}
 
         <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
 
