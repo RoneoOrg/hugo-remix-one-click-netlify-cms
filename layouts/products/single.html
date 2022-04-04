@@ -24,8 +24,10 @@
 <!-- head link and script -->
 {{ partial "head.html" .}}
 
-{{ $productSass := resources.Get "product.scss" }}
-{{ $productStyle := $productSass | resources.ToCSS | resources.Fingerprint }}
+{{ $productStyle := resources.Get "product.scss" | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
+
+{{ $productStyle := resources.Get "markdown.scss" | resources.ToCSS | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
 
 {{ $productJs := resources.Get "product.js" }}
@@ -65,7 +67,7 @@
                 <div class="title">
                     {{.Title}}
                 </div>
-                <div class="content">
+                <div class="md-content">
                     {{ .Content }}
                 </div>
             </div>

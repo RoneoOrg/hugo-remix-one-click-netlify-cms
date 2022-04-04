@@ -25,21 +25,3 @@ mark = "中"
   category= "categories"
   scene = "scenes"
 
-
-[Params.categories.en]
-  c1 = "Cellulose Ethers"
-  c2 = "Iron Oxide Pigment"
-  c3 = "Titanium Dioxide"
-  c4 = "Redispersible Powder"
-  c5 = "Petroleum Resin"
-  c6 = "Sodium Sarcosinate"
-
-[Params.categories.zh]
-  c1 = "类型1"
-  c2 = "类型2"
-  c3 = "类型3"
-  c4 = "类型4"
-  c5 = "类型5"
-  c6 = "类型6"
-
-
