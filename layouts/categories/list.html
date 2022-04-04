@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+    <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
+        <ul>
+            {{ range $key, $value := $taxonomy }}
+            <li> {{ $key }} </li>
+            <ul>
+                {{ range $value.Pages }}
+                <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </ul>
+    </li>
+    {{ end }}
+</ul>
+</body>
+</html>

@@ -105,14 +105,14 @@ function initNav() {
 
   // 子菜单点击
   if (listItems) {
-    for (let item of listItems) {
-      item.onclick = function (e) {
-        e.stopPropagation();
-        e.preventDefault()
-        const target = e.target;
-        alert("点击了子菜单" + target.innerHTML);
-      };
-    }
+    // for (let item of listItems) {
+    //   item.onclick = function (e) {
+    //     e.stopPropagation();
+    //     e.preventDefault()
+    //     const target = e.target;
+    //     alert("点击了子菜单" + target.innerHTML);
+    //   };
+    // }
   }
 
   // 手机版的展开菜单点击

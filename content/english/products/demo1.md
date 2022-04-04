@@ -2,7 +2,7 @@
 nType: product
 title: what kind
 categories:
-  - Cellulose Ethers
+  - c1
 image: /media/category1.jpg
 summary: hadfasdfsdaf
 ---

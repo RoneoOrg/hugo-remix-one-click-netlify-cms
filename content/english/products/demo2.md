@@ -3,7 +3,7 @@ title: "what kind2"
 image: /media/category1.jpg
 nType: product
 categories:
-    - hello
+    - c2
 ---
 
 > Design is not just what it looks like and feels like. Design is how it works.
