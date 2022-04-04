@@ -1,0 +1,81 @@
+<!--data-->
+
+
+{{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
+{{ $existScenes :=  site.Taxonomies.scenes }}
+{{ $cMapping := dict "" ""}}
+{{ range $scenes }}
+{{ $cMapping = merge $cMapping (dict .cSlug .)}}
+{{ end}}
+
+
+{{ $curSceneSlug := index .Params.scenes 0}}
+{{ $curSceneCfg := index $cMapping $curSceneSlug}}
+{{ $curSceneVar := index site.Taxonomies.scenes $curSceneSlug}}
+
+{{ $glossary := index site.Data.glossary site.Language.Lang }}
+
+<!--data-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head link and script -->
+{{ partial "head.html" .}}
+
+{{ $productStyle := resources.Get "product.scss" | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
+
+{{ $productStyle := resources.Get "markdown.scss" | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
+
+{{ $productJs := resources.Get "product.js" }}
+<script src="{{$productJs.RelPermalink}}"></script>
+
+<body>
+    <!-- navigation header -->
+    <div class="white-header">
+        {{ partial "header.html" .}}
+    </div>
+
+
+    <div class="product-page">
+        <div class="banner">
+            <img src="{{ $curSceneCfg.coverImage }}">
+            <h1> {{  $curSceneCfg.name }} </h1>
+        </div>
+
+        <div class="container">
+            <div class="side-menu">
+                <div class="title">
+                    {{printf "%s %s" $curSceneCfg.name $glossary.list}}
+                </div>
+
+                <ul class="list">
+                    {{range $curSceneVar.Pages}}
+                    <li onclick="location.href = '{{.Permalink}}'">
+                        <div>
+                            <span>{{.Title}}</span>
+                        </div>
+                    </li>
+                    {{end}}
+                </ul>
+            </div>
+
+            <div class="main">
+                <div class="title">
+                    {{.Title}}
+                </div>
+                <div class="md-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer copyright -->
+    {{ partial "footer.html" .}}
+</body>
+
+</html>
