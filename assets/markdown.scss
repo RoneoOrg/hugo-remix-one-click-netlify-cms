@@ -1,6 +1,6 @@
 .md-content {
   * {
-    color:#34495e;
+    color: var(--color-grey-3);
   }
 
   p{
@@ -14,7 +14,7 @@
   }
 
   blockquote {
-    border-left: 4px solid #42b983;
+    border-left: 4px solid var(--color-grey-2);
     padding: 0 15px !important;
     margin: 0px;
   }
@@ -30,7 +30,7 @@
   }
 
   pre {
-    background-color: #f8f8f8;
+    background-color: var(--color-white);
     border-radius: 3px;
     word-wrap: break-word;
     padding: 12px 13px;
@@ -50,7 +50,7 @@
 
   h1:before, h2:before{
     content: "#";
-    color: #42b983;
+    color: var(--color-primary);
     position: absolute;
     left: -0.8em;
     top: -2px;
@@ -69,7 +69,7 @@
   }
 
   a {
-    color: #42b983 !important;
+    color: var(--color-secondary) !important;
     text-decoration: none !important;
   }
 
@@ -85,24 +85,24 @@
     height: 4px;
     padding: 0;
     margin: 16px 0;
-    background-color: #e7e7e7;
+    background-color: var(--color-white);
     border: 0 none;
     overflow: hidden;
     box-sizing: content-box;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color-white);
   }
 
   pre {
-    background: #f2f2f2 !important;
+    background: var(--color-white) !important;
     padding: 12px 13px;
   }
 
   code {
     margin: 0 2px;
     padding: 3px 5px;
-    color: #e96900;
+    color: var(--color-secondary);
     border-radius: 2px;
     white-space: inherit;
-    background-color: #f8f8f8;
+    background-color: var(--color-white);
   }
 }

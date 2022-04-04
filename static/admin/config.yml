@@ -36,7 +36,7 @@ collections:
         { label: "Body", name: "body", widget: "markdown", i18n: true },
       ]
   - name: "products"
-    label: "products"
+    label: "Products"
     folder: "content"
     path: "products/{{slug}}"
     filter: { field: "nType", value: "product" }
@@ -61,6 +61,31 @@ collections:
       - { label: "Cover Image", name: "image", widget: "image" }
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "scenes"
+    label: "Scene"
+    folder: "content"
+    path: "scenes/{{slug}}"
+    filter: { field: "nType", value: "scene" }
+    i18n:
+      structure: multiple_folders
+      locales: [ english, chinese ]
+    create: true
+    fields:
+      - { label: "Type", name: "nType", widget: "string", i18n: "duplicate", default: "scene" }
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Scene"
+        name: "scenes"
+        widget: "select"
+        multiple: true
+        options: [
+          { label: "化工", value: "s1" },
+          { label: "食品", value: "s2" },
+          { label: "石油", value: "s3" },
+          { label: "制药", value: "s4" },
+        ]
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "sections"
     label: "Sections"
     i18n:
@@ -77,9 +102,9 @@ collections:
             { label: "Slogan", name: "slogan", widget: string, i18n: true },
             { label: "Description", name: "shortDescription", widget: "text", i18n: true },
             { label: "Header Image", name: "image", widget: "image", i18n: true },
-            { label: "register", name: "register", widget: string, i18n: true },
-            { label: "copyright", name: "copyright", widget: string, i18n: true },
-            { label: "Register Url", name: "registerUrl", widget: string, i18n: true },
+            { label: "注册", name: "register", widget: string, i18n: true },
+            { label: "版权", name: "copyright", widget: string, i18n: true },
+#            { label: "Register Url", name: "registerUrl", widget: string, i18n: true },
           ]
       - file: "data/about.yml"
         label: "About Section"
@@ -94,6 +119,7 @@ collections:
               { label: "Icon", name: "icon", widget: string , i18n: true },
               { label: "Title", name: "title", widget: string, i18n: true },
               { label: "Content", name: "content", widget: text, i18n: true },
+
             ] }
           ]
       - file: "data/products.yml"
@@ -107,7 +133,15 @@ collections:
             { label: "PortText", name: "portText", widget: "text", i18n: true },
             { label: "Categories", name: "categories", widget: "list", i18n: true, fields: [
               { label: "CoverImage", name: "coverImage", widget: string , i18n: true },
-              { label: "Title", name: "title", widget: string, i18n: true },
+              { label: "Name", name: "name", widget: string, i18n: true },
+              { label: "Category", name: "cSlug", widget: select, i18n: true, options: [
+                { label: "Cellulose Ethers", value: "c1" },
+                { label: "Iron Oxide Pigment", value: "c2" },
+                { label: "Titanium Dioxide", value: "c3" },
+                { label: "Redispersible Powde", value: "c4" },
+                { label: "Petroleum Resin", value: "c5" },
+                { label: "Sodium Sarcosinate", value: "c6" },
+              ] },
               { label: "Description", name: "description", widget: text , i18n: true },
             ] }
           ]
@@ -122,7 +156,13 @@ collections:
             { label: "PortText", name: "portText", widget: "text", i18n: true },
             { label: "scenes", name: "scenes", widget: "list", i18n: true, fields: [
               { label: "CoverImage", name: "coverImage", widget: string , i18n: true },
-              { label: "Title", name: "title", widget: string, i18n: true },
+              { label: "Name", name: "name", widget: string, i18n: true },
+              { label: "Scene", name: "cSlug", widget: select, i18n: true, options: [
+                { label: "化工", value: "s1" },
+                { label: "食品", value: "s2" },
+                { label: "石油", value: "s3" },
+                { label: "制药", value: "s4" },
+              ]},
               { label: "Description", name: "description", widget: text , i18n: true },
               { label: "icon", name: "icon", widget: string , i18n: true },
             ] }
@@ -152,4 +192,18 @@ collections:
             { label: "Fax", name: "fax", widget: string, i18n: true },
             { label: "Phone", name: "phone", widget: string , i18n: true },
             { label: "Languages", name: "languages", widget: string, i18n: true },
+          ]
+      - file: "data/glossary.yml"
+        label: "Glossary Section"
+        name: "glossary"
+        i18n: true
+        fields:
+          [
+            { label: "home", name: "home", widget: string, i18n: true },
+            { label: "about", name: "about", widget: string, i18n: true },
+            { label: "product", name: "product", widget: string, i18n: true },
+            { label: "solution", name: "solution", widget: string, i18n: true },
+            { label: "news", name: "news", widget: string, i18n: true },
+            { label: "contact", name: "contact", widget: string, i18n: true },
+            { label: "list", name: "list", widget: string, i18n: true },
           ]

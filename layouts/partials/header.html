@@ -2,12 +2,18 @@
 {{ $glossary := index site.Data.glossary site.Language.Lang }}
 
 {{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
+{{ $existScenes :=  site.Taxonomies.scenes }}
+{{ $sMapping := dict "" ""}}
+{{ range $scenes }}
+{{ $sMapping = merge $sMapping (dict .cSlug .)}}
+{{ end}}
+
 
 {{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
 {{ $existCategories :=  site.Taxonomies.categories }}
 {{ $cMapping := dict "" ""}}
 {{ range $categories }}
-    {{ $cMapping = merge $cMapping (dict .cSlug .name)}}
+    {{ $cMapping = merge $cMapping (dict .cSlug .)}}
 {{ end}}
 
 
@@ -27,7 +33,8 @@
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
                     {{range $cSlug, $c := $existCategories}}
-                    <li onclick="location.href='{{ (index $c 0).RelPermalink }}'">{{ index $cMapping $cSlug }}</li>
+                    {{$curCategory := index $cMapping $cSlug }}
+                    <li onclick="location.href='{{ (index $c 0).RelPermalink }}'">{{ $curCategory.name }}</li>
                     {{ end }}
                 </ul>
             </a>
@@ -36,11 +43,17 @@
                 <span>{{$glossary.solution}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    {{range $scenes}}
-                    <li><i class="fa-solid {{.icon}}"></i>{{ .title }}</li>
+                    {{range $sSlug, $s := $existScenes}}
+                    <li onclick="location.href='{{ (index $s 0).RelPermalink }}'">
+                        {{$curScene := index $sMapping $sSlug }}
+                        <i class="fa-solid {{$curScene.icon}}"></i>
+                        {{ $curScene.name }}
+                    </li>
                     {{ end }}
                 </ul>
             </a>
+
+
             <a class="item" href="/#news" data-id="news">{{$glossary.news}}</a>
             <a class="item" href="/#contact" data-id="contact">{{$glossary.contact}}</a>
         </div>

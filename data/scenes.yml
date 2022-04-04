@@ -4,19 +4,23 @@ en:
   portText: " Here are our industry solutions that have helped many customers"
   scenes:
     - coverImage: /media/scene1.jpg
-      title: construction
+      name: construction
+      cSlug: s1
       icon: fa-person-digging
       description: Cellulose ethers comprise methylcellulose
     - coverImage: /media/scene1.jpg
-      title: food
+      name: food
+      cSlug: s2
       icon: fa-burger
       description: Cellulose ethers comprise methylcellulose
     - coverImage: /media/scene1.jpg
-      title: oil
+      name: oil
+      cSlug: s3
       icon: fa-oil-well
       description: Cellulose ethers comprise methylcellulose,
     - coverImage: /media/scene1.jpg
-      title: pill
+      name: pill
+      cSlug: s4
       icon: fa-capsules
       description: Cellulose ethers comprise methylcellulose
 zh:
@@ -25,18 +29,22 @@ zh:
   portText: " Here are our industry solutions that have helped many customers"
   scenes:
     - coverImage: /media/scene1.jpg
-      title: construction
+      name: 化工
       icon: fa-person-digging
+      cSlug: s1
       description: Cellulose ethers comprise methylcellulose
     - coverImage: /media/scene1.jpg
-      title: food
+      name: 食品
       icon: fa-burger
+      cSlug: s2
       description: Cellulose ethers comprise methylcellulose
     - coverImage: /media/scene1.jpg
-      title: oil
+      name: 石油
+      cSlug: s3
       icon: fa-oil-well
       description: Cellulose ethers comprise methylcellulose,
     - coverImage: /media/scene1.jpg
-      title: pill
+      name: 制药
+      cSlug: s4
       icon: fa-capsules
       description: Cellulose ethers comprise methylcellulose
