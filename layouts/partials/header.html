@@ -27,7 +27,7 @@
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
                     {{range $cSlug, $c := $existCategories}}
-                    <li onclick="location.href='{{ (index $c 0).RelPermalink }}'">{{ index $cMapping $cSlug }}</li>
+                    <li onclick="handleHeaderSubMenuClick(event, '{{ (index $c 0).RelPermalink }}')">{{ index $cMapping $cSlug }}</li>
                     {{ end }}
                 </ul>
             </a>
