@@ -96,16 +96,14 @@ collections:
         i18n: true
         label: "Home Section"
         name: "home"
-        fields:
-          [
-            { label: "Title", name: "title", widget: string, i18n: true },
-            { label: "Slogan", name: "slogan", widget: string, i18n: true },
-            { label: "Description", name: "shortDescription", widget: "text", i18n: true },
-            { label: "Header Image", name: "image", widget: "image", i18n: true },
-            { label: "注册", name: "register", widget: string, i18n: true },
-            { label: "版权", name: "copyright", widget: string, i18n: true },
-#            { label: "Register Url", name: "registerUrl", widget: string, i18n: true },
-          ]
+        fields: [
+          { label: "Title", name: "title", widget: string, i18n: true },
+          { label: "Slogan", name: "slogan", widget: string, i18n: true },
+          { label: "Description", name: "shortDescription", widget: "text", i18n: true },
+          { label: "Header Image", name: "image", widget: "image", i18n: true },
+          { label: "注册", name: "register", widget: string, i18n: true },
+          { label: "版权", name: "copyright", widget: string, i18n: true },
+        ]
       - file: "data/about.yml"
         label: "About Section"
         name: "about"
@@ -162,7 +160,7 @@ collections:
                 { label: "食品", value: "s2" },
                 { label: "石油", value: "s3" },
                 { label: "制药", value: "s4" },
-              ]},
+              ] },
               { label: "Description", name: "description", widget: text , i18n: true },
               { label: "icon", name: "icon", widget: string , i18n: true },
             ] }
