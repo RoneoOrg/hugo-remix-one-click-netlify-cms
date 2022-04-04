@@ -116,9 +116,8 @@ collections:
             { label: "Items", name: "items", widget: "list", i18n: true, fields: [
               { label: "Icon", name: "icon", widget: string , i18n: true },
               { label: "Title", name: "title", widget: string, i18n: true },
-              { label: "Content", name: "content", widget: text, i18n: true },
-
-            ] }
+              { label: "Content", name: "content", widget: text, i18n: true }]
+            }
           ]
       - file: "data/products.yml"
         label: "Production Section"
