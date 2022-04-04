@@ -1,8 +1,13 @@
-
 {{ $data := index site.Data.header site.Language.Lang }}
-{{ $categories := index site.Params.categories site.Language.Lang }}
-{{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
+{{ $glossary := index site.Data.glossary site.Language.Lang }}
 
+{{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
+{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
+{{ $existCategories :=  site.Taxonomies.categories }}
+{{ $cMapping := dict "" ""}}
+{{ range $categories }}
+    {{ $cMapping = merge $cMapping (dict .cSlug .name)}}
+{{ end}}
 
 
 
@@ -13,21 +18,21 @@
     </div>
     <div class="mainer">
         <div class="nav">
-            <a class="item" href="/#home" data-id="home">{{$data.keywords.home}}</a>
-            <a class="item" href="/#about" data-id="about">{{$data.keywords.about}}</a>
+            <a class="item" href="/#home" data-id="home">{{$glossary.home}}</a>
+            <a class="item" href="/#about" data-id="about">{{$glossary.about}}</a>
 
             <a class="item" href="/#product" data-id="product">
-                <span>{{$data.keywords.product}}</span>
+                <span>{{$glossary.product}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    {{range $k, $v := $categories}}
-                    <li>{{ $v }}</li>
+                    {{range $cSlug, $c := $existCategories}}
+                    <li onclick="location.href='{{ (index $c 0).Permalink }}'">{{ index $cMapping $cSlug }}</li>
                     {{ end }}
                 </ul>
             </a>
             
             <a class="item" href="/#solution" data-id="solution">
-                <span>{{$data.keywords.solution}}</span>
+                <span>{{$glossary.solution}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
                     {{range $scenes}}
@@ -35,8 +40,8 @@
                     {{ end }}
                 </ul>
             </a>
-            <a class="item" href="/#news" data-id="news">{{$data.keywords.news}}</a>
-            <a class="item" href="/#contact" data-id="contact">{{$data.keywords.contact}}</a>
+            <a class="item" href="/#news" data-id="news">{{$glossary.news}}</a>
+            <a class="item" href="/#contact" data-id="contact">{{$glossary.contact}}</a>
         </div>
         <div class="theme">
             <i class="fas fa-adjust"></i>

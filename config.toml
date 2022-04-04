@@ -42,6 +42,4 @@ mark = "中"
   c5 = "类型5"
   c6 = "类型6"
 
-[Params.scenes]
-  s1 = "abc"
 
