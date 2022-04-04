@@ -1,4 +1,4 @@
-{{ $data := site.Data.scenes }}
+{{ $data := index site.Data.scenes site.Language.Lang }}
 
 
 <section class="section sec4 content-sec" id="solution">
@@ -13,43 +13,18 @@
         {{ $data.portText }}
     </p>
 
-    <div class="senes-box">
+    <div class="scenes-box">
+        {{ range $data.scenes }}
         <div class="item">
             <div class="img">
-                <img src="/media/scence1.jpg">
+                <img src="{{.coverImage}}">
             </div>
             <div class="text">
-                <h3>SORA gardens</h3>
-                <p>Some description of SORA gardens</p>
+                <h3><i class="fa-solid {{.icon}}"></i>{{.title}}</h3>
+                <p>{{.description}}</p>
             </div>
         </div>
-        <div class="item">
-            <div class="img">
-                <img src="/media/scence2.jpg">
-            </div>
-            <div class="text">
-                <h3>SORA gardens</h3>
-                <p>Some description of SORA gardens</p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img">
-                <img src="/media/scence3.jpg">
-            </div>
-            <div class="text">
-                <h3>SORA gardens</h3>
-                <p>Some description of SORA gardens</p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="img">
-                <img src="/media/scence4.jpg">
-            </div>
-            <div class="text">
-                <h3>SORA gardens</h3>
-                <p>Some description of SORA gardens</p>
-            </div>
-        </div>
+        {{end}}
     </div>
 
 

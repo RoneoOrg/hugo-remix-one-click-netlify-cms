@@ -1,4 +1,4 @@
-{{ $data := site.Data.news }}
+{{ $data := index site.Data.news site.Language.Lang }}
 
 
 <section class="section sec5 content-sec" id="news">
@@ -13,7 +13,11 @@
         {{ $data.portText }}
     </p>
 
+
+
     <div class="news">
+
+
 
         {{ range first 6 (where site.RegularPages "Type" "==" "news")}}
 

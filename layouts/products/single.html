@@ -1,3 +1,23 @@
+<!--data-->
+
+
+{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
+{{ $existCategories :=  site.Taxonomies.categories }}
+{{ $cMapping := dict "" ""}}
+{{ range $categories }}
+{{ $cMapping = merge $cMapping (dict .cSlug .)}}
+{{ end}}
+
+
+{{ $curCategorySlug := index .Params.categories 0}}
+{{ $curCategoryCfg := index $cMapping $curCategorySlug}}
+{{ $curCategoryVar := index site.Taxonomies.categories $curCategorySlug}}
+
+{{ $glossary := index site.Data.glossary site.Language.Lang }}
+
+<!--data-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,83 +36,34 @@
     <div class="white-header">
         {{ partial "header.html" .}}
     </div>
+
+
     <div class="product-page">
         <div class="banner">
-            <img src="/media/category3.jpg">
-            <h1> {{ .Title}} </h1>
+            <img src="{{ $curCategoryCfg.coverImage }}">
+            <h1> {{  $curCategoryCfg.name }} </h1>
         </div>
+
         <div class="container">
             <div class="side-menu">
                 <div class="title">
-                    Product List
+                    {{printf "%s %s" $curCategoryCfg.name $glossary.list}}
                 </div>
+
                 <ul class="list">
-                    <li class="open">
+                    {{range $curCategoryVar.Pages}}
+                    <li onclick="location.href = '{{.Permalink}}'">
                         <div>
-                            <i class="fa-solid fa-angle-right"></i>
-                            <span>product1</span>
-                        </div>
-                        <ul class="list">
-                            <li>
-                                <div>
-                                    <span>sub product1</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <span>sub product2</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <span>sub product3</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div>
-                            <i class="fa-solid fa-angle-right"></i>
-                            <span>product2</span>
-                        </div>
-                        <ul class="list">
-                            <li>
-                                <div>
-                                    <span>sub product4</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <span>sub product5</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div>
-                            <span>product3</span>
+                            <span>{{.Title}}</span>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <span>product4</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>product5</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>product6</span>
-                        </div>
-                    </li>
+                    {{end}}
                 </ul>
             </div>
+
             <div class="main">
                 <div class="title">
-                    Product Description
+                    {{.Title}}
                 </div>
                 <div class="content">
                     {{ .Content }}

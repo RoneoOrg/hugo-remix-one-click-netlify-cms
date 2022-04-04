@@ -429,7 +429,7 @@
 
 // solution
 .sec4 {
-  .senes-box {
+  .scenes-box {
     width: 80%;
     margin: 2rem auto 0;
     display: grid;
@@ -529,7 +529,7 @@
       object-fit: cover;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      filter: grayscale(100%);
+      //filter: grayscale(100%);
       transition: all 0.4s ease-in-out;
     }
     .news-text {
@@ -665,3 +665,5 @@
     text-decoration: underline;
   }
 }
+
+// add by penzai

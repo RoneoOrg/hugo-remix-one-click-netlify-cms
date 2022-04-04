@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head.html" .}}
+
+{{ $productSass := resources.Get "product.scss" }}
+{{ $productStyle := $productSass | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
+
+{{ $productJs := resources.Get "product.js" }}
+<script src="{{$productJs.RelPermalink}}"></script>
+
+
+
+<body>
+<!-- navigation header -->
+<div class="white-header">
+    {{ partial "header.html" .}}
+</div>
+
+
+<div class="product-page">
+    <div class="banner">
+        <img src="/media/category3.jpg">
+        <h1> {{ .Title}} </h1>
+    </div>
+
+
+    <div class="container">
+        <div class="side-menu">
+            <div class="title">
+                Product List
+            </div>
+            <ul class="list">
+                <li class="open">
+                    <div>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span>product1</span>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <div>
+                                <span>sub product1</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>sub product2</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>sub product3</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span>product2</span>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <div>
+                                <span>sub product4</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>sub product5</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <span>product3</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>product4</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>product5</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>product6</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="title">
+                Product Description
+            </div>
+            <div class="content">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer copyright -->
+{{ partial "footer.html" .}}
+</body>
+
+</html>

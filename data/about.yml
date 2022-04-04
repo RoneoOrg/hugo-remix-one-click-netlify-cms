@@ -1,16 +1,34 @@
-title: About <span>Us</span>
-backgroundTitle: Learn more
-portText: Learn more about us
-items:
-  - icon: fa-business-time
-    title: We're Creative
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-      libero, perspiciatis eos provident laborum eum dignissimos.
-  - icon: fa-calculator
-    title: We're Professional
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-      libero, perspiciatis eos provident laborum eum dignissimos.
-  - icon: fa-bullseye
-    title: We're Genius
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
-      libero, perspiciatis eos provident laborum eum dignissimos.
+en:
+  title: About <span>Us</span>
+  backgroundTitle: Learn more
+  portText: Learn more about us
+  items:
+    - icon: fa-business-time
+      title: We're Creative
+      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+        libero, perspiciatis eos provident laborum eum dignissimos.
+    - icon: fa-calculator
+      title: We're Professional
+      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+        libero, perspiciatis eos provident laborum eum dignissimos.
+    - icon: fa-bullseye
+      title: We're Genius
+      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+        libero, perspiciatis eos provident laborum eum dignissimos.
+zh:
+  title: About <span>Us</span>
+  backgroundTitle: Learn more
+  portText: Learn more about us
+  items:
+    - icon: fa-business-time
+      title: 我们贼有创意
+      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+        libero, perspiciatis eos provident laborum eum dignissimos.
+    - icon: fa-calculator
+      title: We're Professional
+      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+        libero, perspiciatis eos provident laborum eum dignissimos.
+    - icon: fa-bullseye
+      title: We're Genius
+      content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
+        libero, perspiciatis eos provident laborum eum dignissimos.

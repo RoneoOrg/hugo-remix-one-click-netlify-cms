@@ -1,3 +1,8 @@
-title: Our <span>News</span>
-backgroundTitle: News
-portText: The latest news about us
+en:
+  title: Our <span>News</span>
+  backgroundTitle: News
+  portText: The latest news about us
+zh:
+  title: Our <span>News</span>
+  backgroundTitle: News
+  portText: The latest news about us
