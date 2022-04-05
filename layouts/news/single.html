@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
 <!-- head link and script -->
 {{ partial "head.html" .}}
 
-{{ $newsSass := resources.Get "news.scss" }}
-{{ $newsStyle := $newsSass | resources.ToCSS | resources.Fingerprint }}
 
-<link rel="stylesheet" href="{{ $newsStyle.RelPermalink }}" integrity="{{ $newsStyle.Data.Integrity }}" />
+{{ $productStyle := resources.Get "news.scss" | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
+
+
+{{ $productStyle := resources.Get "markdown.scss" | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
+
 
 <body>
-    <div class="new-page">
-        <h1> {{ .Title}} </h1>
-        <div class="news-content">
-            {{ .Content }}
-        </div>
-    </div>
+<!-- navigation header -->
+<div class="white-header">
+    {{ partial "header.html" .}}
+</div>
 
-    <!-- footer copyright -->
-    {{ partial "footer.html" .}}
+
+<div class="article-container">
+    <h1 class="title">
+        {{.Title}}
+    </h1>
+    <div class="md-content">
+        {{ .Content }}
+    </div>
+</div>
+
+<!-- footer copyright -->
+{{ partial "footer.html" .}}
 </body>
 
 </html>

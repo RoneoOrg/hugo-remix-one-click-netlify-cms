@@ -1,17 +1,17 @@
 <!--data-->
 
 
-{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
-{{ $existCategories :=  site.Taxonomies.categories }}
+{{ $scenes := index (index site.Data.scenes site.Language.Lang) "scenes"}}
+{{ $existScenes :=  site.Taxonomies.scenes }}
 {{ $cMapping := dict "" ""}}
-{{ range $categories }}
+{{ range $scenes }}
 {{ $cMapping = merge $cMapping (dict .cSlug .)}}
 {{ end}}
 
 
-{{ $curCategorySlug := index .Params.categories 0}}
-{{ $curCategoryCfg := index $cMapping $curCategorySlug}}
-{{ $curCategoryVar := index site.Taxonomies.categories $curCategorySlug}}
+{{ $curSceneSlug := index .Params.scenes 0}}
+{{ $curSceneCfg := index $cMapping $curSceneSlug}}
+{{ $curSceneVar := index site.Taxonomies.scenes $curSceneSlug}}
 
 {{ $glossary := index site.Data.glossary site.Language.Lang }}
 
@@ -42,18 +42,18 @@
 
     <div class="product-page">
         <div class="banner">
-            <img src="{{ $curCategoryCfg.coverImage }}">
-            <h1> {{  $curCategoryCfg.name }} </h1>
+            <img src="{{ $curSceneCfg.coverImage }}">
+            <h1> {{  $curSceneCfg.name }} </h1>
         </div>
 
         <div class="container">
             <div class="side-menu">
                 <div class="title">
-                    {{printf "%s %s" $curCategoryCfg.name $glossary.list}}
+                    {{printf "%s %s" $curSceneCfg.name $glossary.list}}
                 </div>
 
                 <ul class="list">
-                    {{range $curCategoryVar.Pages}}
+                    {{range $curSceneVar.Pages}}
                     <li onclick="location.href = '{{.RelPermalink}}'">
                         <div>
                             <span>{{.Title}}</span>
