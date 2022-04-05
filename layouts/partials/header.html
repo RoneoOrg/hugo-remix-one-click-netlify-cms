@@ -34,7 +34,7 @@
                 <ul>
                     {{range $cSlug, $c := $existCategories}}
                     {{$curCategory := index $cMapping $cSlug }}
-                    <li onclick="location.href='{{ (index $c 0).RelPermalink }}'">{{ $curCategory.name }}</li>
+                    <li onclick="handleHeaderSubMenuClick(event, '{{ (index $c 0).RelPermalink }}')">{{ $curCategory.name }}</li>
                     {{ end }}
                 </ul>
             </a>

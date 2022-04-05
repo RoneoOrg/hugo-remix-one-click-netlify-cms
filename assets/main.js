@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", init);
 let clientHeight = 0;
 let navEle = undefined;
 let themeEle = undefined;
+let sectionEle = undefined;
 
 // 屏幕高度
 function getClientHeight() {
@@ -21,6 +22,19 @@ function getClientHeight() {
   return height;
 }
 
+// hash修改
+function changeHash(id) {
+  const url = location.pathname + "#" + id;
+  history.replaceState(null, null, url);
+}
+
+// header子菜单点击
+function handleHeaderSubMenuClick(e, href) {
+  e.stopPropagation();
+  e.preventDefault();
+  location.href = href;
+}
+
 // 初始化
 function init() {
   console.log("document ready!");
@@ -33,6 +47,7 @@ function init() {
 function initData() {
   clientHeight = getClientHeight();
   navEle = document.querySelector(".header-bar");
+  sectionEle = document.querySelectorAll("section.section");
   const theme = localStorage.getItem("theme");
   if (theme) {
     const html = document.querySelector("html");
@@ -56,14 +71,12 @@ function initNav() {
         e.preventDefault();
         const target = e.target;
         const parentTarget = e.target.parentElement;
-        const id = target.getAttribute("data-id") || parentTarget.getAttribute("data-id");
-
-        if (location.pathname !== "/") {
-          location.href = "/#" + id;
-          return;
-        }
+        const id =
+          target.getAttribute("data-id") ||
+          parentTarget.getAttribute("data-id");
 
         const nextDom = document.querySelector("#" + id);
+        // 如果有目标元素才进行跳转
         if (nextDom) {
           const top = nextDom.offsetTop;
           document.scrollingElement.scrollTo({
@@ -71,6 +84,16 @@ function initNav() {
             left: 0,
             behavior: "smooth",
           });
+
+          setTimeout(() => {
+            changeHash(id);
+          }, 1000);
+        } else if (location.pathname !== "/" || location.pathname !== "/zh/") {
+          if (location.pathname.indexOf("/zh") > -1) {
+            location.href = "/zh/#" + id;
+          } else {
+            location.href = "/#" + id;
+          }
         }
       };
     }
@@ -90,47 +113,70 @@ function initNav() {
   // 语言切换点击
   if (langEle) {
     langEle.onclick = function () {
-      switch (langEle.textContent) {
+      switch (langEle.innerText) {
         case "en":
-          location.href = "/zh"
-          console.log(location.href);
+          location.href = "/zh";
           break;
         case "zh":
-          location.href = "/"
-          console.log(langEle.textContent);
+          location.href = "/";
           break;
       }
     };
   }
 
   // 子菜单点击
-  if (listItems) {
-    // for (let item of listItems) {
-    //   item.onclick = function (e) {
-    //     e.stopPropagation();
-    //     e.preventDefault()
-    //     const target = e.target;
-    //     alert("点击了子菜单" + target.innerHTML);
-    //   };
-    // }
-  }
+  // if (listItems) {
+  // for (let item of listItems) {
+  // item.onclick = function (e) {
+  // e.stopPropagation();
+  // e.preventDefault()
+  // const target = e.target;
+  // alert("点击了子菜单" + target.innerHTML);
+  // };
+  // }
+  // }
 
   // 手机版的展开菜单点击
   if (menuEle) {
     menuEle.onclick = function () {
       const className = headerEle.getAttribute("class");
-      headerEle.setAttribute("class", className === "header-bar open-menu" ? "header-bar" : "header-bar open-menu");
+      headerEle.setAttribute(
+        "class",
+        className === "header-bar open-menu"
+          ? "header-bar"
+          : "header-bar open-menu"
+      );
     };
   }
 }
 
 // 滚动初始化
 function initScroll() {
+  let timer;
   window.onscroll = function (e) {
+    if (timer) {
+      return;
+    } else {
+      timer = setTimeout(() => {
+        clearTimeout(timer);
+        timer = undefined;
+      }, 300);
+    }
     if (document.scrollingElement.scrollTop >= clientHeight) {
       navEle.setAttribute("class", "header-bar scroll");
     } else {
       navEle.setAttribute("class", "header-bar");
+    }
+    let target;
+    for (let ele of sectionEle) {
+      const r = ele.getBoundingClientRect();
+      if (r.top <= 0) {
+        target = ele;
+      }
+    }
+    if (target) {
+      const id = target.getAttribute("id");
+      changeHash(id);
     }
   };
 }
