@@ -42,7 +42,7 @@ en:
         proportions.
 zh:
   title: Our <span>Products</span>
-  backgroundTitle: Products
+  backgroundTitle: 产品
   portText: Here is some of our products that we've provided in various country
   categories:
     - coverImage: /media/category1.jpg
@@ -82,3 +82,15 @@ zh:
       name: 类型6
       description: a colorless to yellowish liquid. It is miscible with water in all
         proportions.
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
