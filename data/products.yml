@@ -47,27 +47,29 @@ zh:
   categories:
     - coverImage: /media/category1.jpg
       cSlug: c1
-      name: 类型1
+      name: 纤维素醚
       description: Cellulose ethers comprise methylcellulose, ethylcellulose,
         hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
     - coverImage: /media/category2.jpg
       cSlug: c2
-      name: 类型2
+      name: 氧化铁颜料
       description: Kimpigment serials cover synthetic iron oxide and chrome oxide with
         a wide range of color shade, and enjoy a good reputation due to the good
         opacity
     - coverImage: /media/category3.jpg
       cSlug: c3
-      name: 类型3
+      name: 钛白粉
       description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With
         year's development, it enjoys a good reputation in worldwide market for
         the consistent quality, good whiteness, strong hiding power and reducing
         power
     - coverImage: /media/category4.jpg
       cSlug: c4
-      name: 类型4
+      name: 可再分散乳胶粉
       description: Kimpolyer re-dispersible polymer powders is spray dried
         re-dispersible emulsion power, designed for the construction industry to
         enhance the properties of dry mortar blends, able to re-dispersible in
         water and  react with hydrate product of cement/gypsum and stuffing,
         form composite membrane with good mechanics intensity
+    - coverImage: /media/category4.jpg
+      name: 其他化工品
