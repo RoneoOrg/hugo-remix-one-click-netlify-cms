@@ -1,6 +1,6 @@
 ---
 nType: product
-title: what kind
+title: what kind1
 categories:
   - c1
 image: /media/category1.jpg
