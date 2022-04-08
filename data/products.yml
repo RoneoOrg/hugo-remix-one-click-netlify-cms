@@ -16,14 +16,14 @@ en:
         opacity
     - coverImage: /media/category3.jpg
       cSlug: c3
-      name: 类型3
+      name: Titanium dioxide
       description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With
         year's development, it enjoys a good reputation in worldwide market for
         the consistent quality, good whiteness, strong hiding power and reducing
         power
     - coverImage: /media/category4.jpg
       cSlug: c4
-      name: 类型4
+      name: Re-dispersible polymer powder
       description: Kimpolyer re-dispersible polymer powders is spray dried
         re-dispersible emulsion power, designed for the construction industry to
         enhance the properties of dry mortar blends, able to re-dispersible in
@@ -31,7 +31,7 @@ en:
         form composite membrane with good mechanics intensity
     - coverImage: /media/category5.jpg
       cSlug: c5
-      name: 类型5
+      name: Other chemical products
       description: Kimresin C9 is aromatic hydrocarbon resin produced by the remaining
         (C9 fraction) of petroleum cracking, through catalyzed polymerization.
         It has the characteristics of low acid value
