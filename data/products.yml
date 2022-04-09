@@ -10,13 +10,13 @@ en:
         hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
     - coverImage: /media/category2.jpg
       cSlug: c2
-      name: Iron oxide pigment
+      name: Titanium dioxide
       description: Kimpigment serials cover synthetic iron oxide and chrome oxide with
         a wide range of color shade, and enjoy a good reputation due to the good
         opacity
     - coverImage: /media/category3.jpg
       cSlug: c3
-      name: Titanium dioxide
+      name: Iron oxide pigment
       description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With
         year's development, it enjoys a good reputation in worldwide market for
         the consistent quality, good whiteness, strong hiding power and reducing
@@ -31,15 +31,10 @@ en:
         form composite membrane with good mechanics intensity
     - coverImage: /media/category5.jpg
       cSlug: c5
-      name: Other chemical products
+      name: Others
       description: Kimresin C9 is aromatic hydrocarbon resin produced by the remaining
         (C9 fraction) of petroleum cracking, through catalyzed polymerization.
         It has the characteristics of low acid value
-    - coverImage: /media/category6.jpg
-      cSlug: c6
-      name: 类型6
-      description: a colorless to yellowish liquid. It is miscible with water in all
-        proportions.
 zh:
   title: 我们的 <span>产品</span>
   backgroundTitle: 产品
@@ -52,13 +47,13 @@ zh:
         hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
     - coverImage: /media/category2.jpg
       cSlug: c2
-      name: 氧化铁颜料
+      name: 钛白粉
       description: Kimpigment serials cover synthetic iron oxide and chrome oxide with
         a wide range of color shade, and enjoy a good reputation due to the good
         opacity
     - coverImage: /media/category3.jpg
       cSlug: c3
-      name: 钛白粉
+      name: 氧化铁颜料
       description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With
         year's development, it enjoys a good reputation in worldwide market for
         the consistent quality, good whiteness, strong hiding power and reducing
@@ -72,4 +67,4 @@ zh:
         water and  react with hydrate product of cement/gypsum and stuffing,
         form composite membrane with good mechanics intensity
     - coverImage: /media/category4.jpg
-      name: 其他化工品
+      name:  其他建筑、涂料助剂
