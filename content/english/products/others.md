@@ -1,5 +1,5 @@
 ---
-nType: Others construction and paints addtitives
+nType: product
 title: Others construction and paints addtitives
 categories:
   - c5

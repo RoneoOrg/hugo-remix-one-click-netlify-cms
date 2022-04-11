@@ -1,5 +1,5 @@
 ---
-nType: Iron oxide pigment
+nType: product
 title: Iron oxide pigment
 categories:
   - c3

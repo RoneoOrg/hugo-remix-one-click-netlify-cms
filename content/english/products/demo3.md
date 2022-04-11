@@ -1,5 +1,5 @@
 ---
-nType: Re-dispersible polymer powder
+nType: product
 title: Re-dispersible polymer powder
 categories:
   - c4
