@@ -1,7 +1,7 @@
 en:
   title: Our <span>Products</span>
   backgroundTitle: Products
-  portText: Here is some of our products that we've provided in various country
+  portText: Kimix provides our customers high quality materials
   categories:
     - coverImage: /media/category1.jpg
       cSlug: c1
