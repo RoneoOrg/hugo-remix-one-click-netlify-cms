@@ -58,7 +58,7 @@ collections:
           { label: "可再分散乳胶粉", value: "c4" },
           { label: "其他建筑、涂料助剂", value: "c5" },
         ]
-      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "scenes"
@@ -83,7 +83,7 @@ collections:
           { label: "石油", value: "s3" },
           { label: "制药", value: "s4" },
         ]
-      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "sections"
@@ -100,7 +100,7 @@ collections:
           { label: "Title", name: "title", widget: string, i18n: true },
           { label: "Slogan", name: "slogan", widget: string, i18n: true },
           { label: "Description", name: "shortDescription", widget: "text", i18n: true },
-          { label: "Header Image", name: "image", widget: "image", i18n: true },
+          { label: "Header Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
           { label: "注册", name: "register", widget: string, i18n: true },
           { label: "版权", name: "copyright", widget: string, i18n: true },
         ]
@@ -129,7 +129,7 @@ collections:
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
             { label: "PortText", name: "portText", widget: "text", i18n: true },
             { label: "Categories", name: "categories", widget: "list", i18n: true, fields: [
-              { label: "CoverImage", name: "coverImage", widget: string , i18n: true },
+              { label: "CoverImage", name: "coverImage", widget: "image" , media_folder: "/static/media", i18n: true },
               { label: "Name", name: "name", widget: string, i18n: true },
               { label: "Category", name: "cSlug", widget: select, i18n: true, options: [
                 { label: "纤维素醚", value: "c1" },
@@ -151,7 +151,7 @@ collections:
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
             { label: "PortText", name: "portText", widget: "text", i18n: true },
             { label: "scenes", name: "scenes", widget: "list", i18n: true, fields: [
-              { label: "CoverImage", name: "coverImage", widget: string , i18n: true },
+              { label: "CoverImage", name: "coverImage", widget: "image" , media_folder: "/static/media", i18n: true },
               { label: "Name", name: "name", widget: string, i18n: true },
               { label: "Scene", name: "cSlug", widget: select, i18n: true, options: [
                 { label: "化工", value: "s1" },
