@@ -1,9 +1,10 @@
 ---
-title: "what kind2"
-image: /media/category1.jpg
-nType: product
+nType: Iron oxide pigment
+title: Iron oxide pigment
 categories:
-    - c2
+  - c3
+image: /media/category1.jpg
+summary: "111"
 ---
 
 > Design is not just what it looks like and feels like. Design is how it works.
