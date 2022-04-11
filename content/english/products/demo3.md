@@ -1,8 +1,8 @@
 ---
 nType: product
-title: what kind3
+title: what kind4
 categories:
-  - c3
+  - c4
 image: img_3575.jpg
 summary: hadfasdfsdaf
 ---
