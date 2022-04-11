@@ -3,7 +3,7 @@ nType: Re-dispersible polymer powder
 title: Re-dispersible polymer powder
 categories:
   - c4
-image: 产品应用-瓷砖胶.jpg
+image: 包装照片-rdp-40w.jpg
 summary: hadfasdfsdaf
 ---
 
