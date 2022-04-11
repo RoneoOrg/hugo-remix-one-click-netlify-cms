@@ -1,6 +1,6 @@
 ---
 nType: Re-dispersible polymer powder
-title: what kind4
+title: Re-dispersible polymer powder
 categories:
   - c4
 image: img_3575.jpg
