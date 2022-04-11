@@ -1,3 +1,0 @@
----
-nType: Iron oxide pigment
----
