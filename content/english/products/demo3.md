@@ -1,5 +1,5 @@
 ---
-nType: product
+nType: Re-dispersible polymer powder
 title: what kind4
 categories:
   - c4
