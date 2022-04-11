@@ -1,6 +1,6 @@
 ---
 nType: product
-title: what kind1
+title: Cellulose ethers
 categories:
   - c1
 image: /media/category1.jpg
