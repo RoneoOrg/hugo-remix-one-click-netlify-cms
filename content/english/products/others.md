@@ -1,6 +1,6 @@
 ---
-nType: product
-title: Others
+nType: Others construction and paints addtitives
+title: Others construction and paints addtitives
 categories:
   - c5
 image: p1.png

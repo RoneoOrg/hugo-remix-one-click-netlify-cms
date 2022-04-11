@@ -1,3 +1,3 @@
 ---
-nType: product
+nType: Others construction and paints addtitives
 ---
