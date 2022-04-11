@@ -2,7 +2,7 @@
 nType: product
 title: what kind3
 categories:
-  - c1
+  - c3
 image: /media/category1.jpg
 summary: hadfasdfsdaf
 ---
