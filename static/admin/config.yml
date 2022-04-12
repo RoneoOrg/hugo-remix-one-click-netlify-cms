@@ -28,7 +28,7 @@ collections:
     create: true
     fields:
       [
-        { label: "Type", name: "nType", widget: "string", i18n: "duplicate", default: "new" , options: ["new"] },
+        { label: "Type", name: "nType", widget: "select", i18n: "duplicate", default: "new" , options: ["new"] },
         { label: "Title", name: "title", widget: "string", i18n: true },
         { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
         { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
