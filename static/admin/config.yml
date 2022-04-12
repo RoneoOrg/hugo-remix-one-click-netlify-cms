@@ -59,7 +59,7 @@ collections:
         { label: "Summary", name: "summary", widget: "text", i18n: true },
         { label: "Body", name: "body", widget: "markdown", i18n: true },
       ]
-  - name: "scenes"
+  - name: "scene"
     label: "Scene"
     folder: "content"
     path: "scenes/{{slug}}"
