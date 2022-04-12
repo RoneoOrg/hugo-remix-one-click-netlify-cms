@@ -35,6 +35,10 @@ en:
       description: Kimresin C9 is aromatic hydrocarbon resin produced by the remaining
         (C9 fraction) of petroleum cracking, through catalyzed polymerization.
         It has the characteristics of low acid value
+    - name: Titanium dioxide
+      cSlug: c2
+      description: "1111"
+      coverImage: /static/media/category3.jpg
 zh:
   title: 我们的 <span>产品</span>
   backgroundTitle: 产品
