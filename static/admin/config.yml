@@ -69,21 +69,19 @@ collections:
       locales: [ english, chinese ]
     create: true
     fields:
-      - { label: "Type", name: "nType", widget: "string", i18n: "duplicate", default: "scene", options: ["scene"] }
-      - { label: "Title", name: "title", widget: "string" }
-      - label: "Scene"
-        name: "scenes"
-        widget: "select"
-        multiple: true
-        options: [
+      [
+        { label: "Type", name: "nType", widget: "select", i18n: "duplicate", default: "product", options: ["scene"] },
+        { label: "Title", name: "title", widget: "string" },
+        { label: "Scene", name: "scenes", widget: "select", multiple: true, options:  [
           { label: "化工", value: "s1" },
           { label: "食品", value: "s2" },
           { label: "石油", value: "s3" },
           { label: "制药", value: "s4" },
-        ]
-      - { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
-      - { label: "Summary", name: "summary", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
+        { label: "Summary", name: "summary", widget: "text", i18n: true },
+        { label: "Body", name: "body", widget: "markdown", i18n: true },
+      ]
   - name: "sections"
     label: "Sections"
     i18n:
