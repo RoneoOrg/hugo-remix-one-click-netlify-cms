@@ -3,7 +3,7 @@ nType: product
 title: Re-dispersible polymer powder
 categories:
   - c4
-image: 包装照片-rdp-40w.jpg
+image: /static/media/category6.jpg
 summary: hadfasdfsdaf
 ---
 
