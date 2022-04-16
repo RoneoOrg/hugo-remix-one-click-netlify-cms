@@ -23,7 +23,7 @@
 
         <div class="new" onclick="location.href = '{{ .RelPermalink }}';">
 
-            <img src=" {{ .Params.image }} " alt="">
+            <img src=" /media/{{ path.Base .Params.image }} " alt="">
             <div class="news-text">
                 <h4>{{ .Title }}</h4>
                 <!-- <h5>{{ .Date }}</h5> -->
