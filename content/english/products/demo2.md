@@ -3,7 +3,7 @@ nType: product
 title: Iron oxide pigment
 categories:
   - c3
-image: img_3576.jpg
+image: /static/media/category4.jpg
 summary: "111"
 ---
 
