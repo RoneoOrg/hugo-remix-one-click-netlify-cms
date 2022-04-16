@@ -19,9 +19,8 @@ i18n:
 collections:
   - name: "news"
     label: "News-EN"
-    folder: "content"
-    path: "english/news/{{slug}}"
-    filter: { field: "nType", value: "new" }
+    folder: "content/english/news"
+    path: "{{slug}}"
     create: true
     fields:
       [
@@ -36,7 +35,6 @@ collections:
     label: "News-中文"
     folder: "content/chinese/news"
     path: "{{slug}}"
-    filter: { field: "nType", value: "new" }
     create: true
     fields:
       [
