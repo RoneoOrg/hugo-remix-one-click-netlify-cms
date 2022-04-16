@@ -50,31 +50,44 @@ collections:
     create: true
     fields:
       [
-        { label: "Type", name: "nType", widget: "select", i18n: "duplicate", default: "product", options: ["product"] },
-        { label: "Title", name: "title", widget: "string", i18n: true},
+        { label: "Title", name: "title", widget: "string"},
         { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
           { label: "纤维素醚", value: "c1" },
           { label: "钛白粉", value: "c2" },
           { label: "氧化铁颜料", value: "c3" },
           { label: "可再分散乳胶粉", value: "c4" },
           { label: "其他建筑、涂料助剂", value: "c5" },
-        ],  i18n: "duplicate"},
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
-        { label: "Summary", name: "summary", widget: "text", i18n: true },
-        { label: "Body", name: "body", widget: "markdown", i18n: true },
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
       ]
-  - name: "scene"
-    label: "Scene"
-    folder: "content"
-    path: "scenes/{{slug}}"
-    filter: { field: "nType", value: "scene" }
-    i18n:
-      structure: multiple_folders
-      locales: [ english, chinese ]
+  - name: "products-zh"
+    label: "Products-中文"
+    folder: "content/chinese/products"
+    path: "{{slug}}"
     create: true
     fields:
       [
-        { label: "Type", name: "nType", widget: "select", i18n: "duplicate", default: "product", options: ["scene"] },
+        { label: "Title", name: "title", widget: "string"},
+        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
+          { label: "纤维素醚", value: "c1" },
+          { label: "钛白粉", value: "c2" },
+          { label: "氧化铁颜料", value: "c3" },
+          { label: "可再分散乳胶粉", value: "c4" },
+          { label: "其他建筑、涂料助剂", value: "c5" },
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+  - name: "scene"
+    label: "Scene-EN"
+    folder: "content/english/scenes"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
         { label: "Title", name: "title", widget: "string" },
         { label: "Scene", name: "scenes", widget: "select", multiple: true, options:  [
           { label: "化工", value: "s1" },
@@ -82,9 +95,27 @@ collections:
           { label: "石油", value: "s3" },
           { label: "制药", value: "s4" },
         ]},
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
-        { label: "Summary", name: "summary", widget: "text", i18n: true },
-        { label: "Body", name: "body", widget: "markdown", i18n: true },
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+  - name: "scene-zh"
+    label: "Scene-中文"
+    folder: "content/chinese/scenes"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string" },
+        { label: "Scene", name: "scenes", widget: "select", multiple: true, options:  [
+          { label: "化工", value: "s1" },
+          { label: "食品", value: "s2" },
+          { label: "石油", value: "s3" },
+          { label: "制药", value: "s4" },
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "sections"
     label: "Sections"
