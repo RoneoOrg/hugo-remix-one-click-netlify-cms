@@ -1,6 +1,17 @@
 {{ $data := index site.Data.scenes site.Language.Lang }}
 
 
+{{ $scenes := index $data "scenes"}}
+{{ $existScenes :=  site.Taxonomies.scenes }}
+
+{{ $sMapping := dict "" ""}}
+{{ range $scenes }}
+{{ $sMapping = merge $sMapping (dict .cSlug .)}}
+{{ end}}
+
+
+
+
 <section class="section sec4 content-sec" id="solution">
     <div class="main-title">
         <h2> {{ $data.title | safeHTML }}
@@ -14,14 +25,18 @@
     </p>
 
     <div class="scenes-box">
-        {{ range $data.scenes }}
+        {{range $curSceneSlug, $curSceneVar := $existScenes}}
+        {{ $curSceneCfg := index $sMapping $curSceneSlug}}
+        {{ $firstPage := index $curSceneVar 0}}
+
         <div class="item">
             <div class="img">
-                <img src="{{.coverImage}}">
+                <img src="{{$curSceneCfg.coverImage}}">
             </div>
+
             <div class="text">
-                <h3><i class="fa-solid {{.icon}}"></i>{{.title}}</h3>
-                <p>{{.description}}</p>
+                <h3><i class="fa-solid {{$curSceneCfg.icon}}"></i>{{$curSceneCfg.title}}</h3>
+                <p>{{$curSceneCfg.description}}</p>
             </div>
         </div>
         {{end}}
