@@ -18,13 +18,25 @@ i18n:
 # collections configuration
 collections:
   - name: "news"
-    label: "news"
+    label: "News-EN"
     folder: "content"
-    path: "news/{{slug}}"
+    path: "english/news/{{slug}}"
     filter: { field: "nType", value: "new" }
-    i18n:
-      structure: multiple_folders
-      locales: [ english, chinese ]
+    create: true
+    fields:
+      [
+        { label: "Type", name: "nType", widget: "select", i18n: "duplicate", default: "new" , options: ["new"] },
+        { label: "Title", name: "title", widget: "string", i18n: true },
+        { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
+        { label: "Summary", name: "summary", widget: "text", i18n: true },
+        { label: "Body", name: "body", widget: "markdown", i18n: true },
+      ]
+  - name: "news-zh"
+    label: "News-中文"
+    folder: "content/chinese/news"
+    path: "{{slug}}"
+    filter: { field: "nType", value: "new" }
     create: true
     fields:
       [
