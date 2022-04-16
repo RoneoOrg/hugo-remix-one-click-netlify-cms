@@ -125,7 +125,7 @@ collections:
     files:
       - file: "data/home.yml"
         i18n: true
-        label: "Home Section"
+        label: "首页-Home"
         name: "home"
         fields: [
           { label: "Title", name: "title", widget: string, i18n: true },
@@ -136,7 +136,7 @@ collections:
           { label: "版权", name: "copyright", widget: string, i18n: true },
         ]
       - file: "data/about.yml"
-        label: "About Section"
+        label: "首页-关于我们"
         name: "about"
         i18n: true
         description: "Go to edit the about section"
@@ -151,7 +151,7 @@ collections:
             }
           ]
       - file: "data/products.yml"
-        label: "Production Section"
+        label: "首页-产品"
         name: "productions"
         i18n: true
         fields:
@@ -173,7 +173,7 @@ collections:
             ] }
           ]
       - file: "data/scenes.yml"
-        label: "Industry Section"
+        label: "首页-场景"
         name: "industry"
         i18n: true
         fields:
@@ -195,7 +195,7 @@ collections:
             ] }
           ]
       - file: "data/news.yml"
-        label: "News Section"
+        label: "首页-新闻"
         name: "news"
         i18n: true
         fields:
@@ -205,7 +205,7 @@ collections:
             { label: "portText", name: "portText", widget: string, i18n: true },
           ]
       - file: "data/contact.yml"
-        label: "Contact Section"
+        label: "首页-联系我们"
         name: "contact"
         i18n: true
         fields:
@@ -221,7 +221,7 @@ collections:
             { label: "Languages", name: "languages", widget: string, i18n: true },
           ]
       - file: "data/glossary.yml"
-        label: "Glossary Section"
+        label: "词汇表"
         name: "glossary"
         i18n: true
         fields:
