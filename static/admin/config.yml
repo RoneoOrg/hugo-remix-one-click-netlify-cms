@@ -24,11 +24,11 @@ collections:
     create: true
     fields:
       [
-        { label: "Title", name: "title", widget: "string", i18n: true },
-        { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
-        { label: "Summary", name: "summary", widget: "text", i18n: true },
-        { label: "Body", name: "body", widget: "markdown", i18n: true },
+        { label: "Title", name: "title", widget: "string" },
+        { label: "Publish Date", name: "date", widget: "datetime"},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "news-zh"
     label: "News-中文"
@@ -37,20 +37,16 @@ collections:
     create: true
     fields:
       [
-        { label: "Title", name: "title", widget: "string", i18n: true },
+        { label: "Title", name: "title", widget: "string" },
         { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
-        { label: "Summary", name: "summary", widget: "text", i18n: true },
-        { label: "Body", name: "body", widget: "markdown", i18n: true },
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "products"
-    label: "Products"
-    folder: "content"
-    path: "products/{{slug}}"
-    filter: { field: "nType", value: "product" }
-    i18n:
-      structure: multiple_folders
-      locales: [ english, chinese ]
+    label: "Products-EN"
+    folder: "content/english/products"
+    path: "{{slug}}"
     create: true
     fields:
       [
