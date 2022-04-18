@@ -32,7 +32,7 @@ en:
     - name: Titanium dioxide
       cSlug: c2
       description: "1111"
-      coverImage: /media/category3.jpg
+      coverImage: /static/media/titanium-dioxide.jpg
 zh:
   title: 我们的 <span>产品</span>
   backgroundTitle: 产品
