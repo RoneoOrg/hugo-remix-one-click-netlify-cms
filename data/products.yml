@@ -3,7 +3,7 @@ en:
   backgroundTitle: Products
   portText: Kimix provides our customers high quality materials
   categories:
-    - coverImage: /media/category1.jpg
+    - coverImage: /static/media/cellulose-ethers-hec.jpg
       cSlug: c1
       name: Cellulose ethers
       description: Cellulose ethers comprise methylcellulose, ethylcellulose,
