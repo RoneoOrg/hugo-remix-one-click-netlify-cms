@@ -12,15 +12,15 @@ en:
   portText: Learn more about us
   items:
     - icon: fa-business-time
-      title: We're Creative
+      title: We provide high quality products
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
     - icon: fa-calculator
-      title: We're Professional
+      title: "We are proffessional "
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
     - icon: fa-bullseye
-      title: We're Genius
+      title: We provide products to world wide customers
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
 zh:
