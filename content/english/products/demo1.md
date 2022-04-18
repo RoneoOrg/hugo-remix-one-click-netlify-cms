@@ -3,7 +3,7 @@ nType: product
 title: Cellulose ethers
 categories:
   - c1
-image: /media/category1.jpg
+image: /static/media/cellulose-ethers-hec.jpg
 summary: hadfasdfsdaf
 ---
 Design is not just what it looks like and feels like. Design is how it works.
