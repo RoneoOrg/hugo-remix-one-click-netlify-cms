@@ -10,13 +10,21 @@
     <div class="right-header">
         <h1 class="name">{{ $data.title | safeHTML }}</h1>
         <p>{{ $data.shortDescription }}</p>
-
-        <div class="btn-container">
-            <a href="/#about"  data-id="about">
-                <span class="btn-text">Discover</span>
+        <div class="btn-container-group">
+          <div class="btn-container">
+            <a href="/#product"  data-id="product">
+                <span class="btn-text">Learn more</span>
                 <span class="btn-icon"><i class="fas fa-angle-down"></i></span>
                 <i class="bg"></i>
             </a>
+          </div>
+          <div class="btn-container">
+            <a href="https://app.netlify.com/start/deploy?repository=https://github.com/RoneoOrg/hugo-theme-remix-netlify-cms&stack=cms"  data-id="product" target="blank">
+                <span class="btn-text">Deploy</span>
+                <span class="btn-icon"><i class="fas fa-rocket"></i></span>
+                <i class="bg"></i>
+            </a>
+          </div>
         </div>
     </div>
 </section>
