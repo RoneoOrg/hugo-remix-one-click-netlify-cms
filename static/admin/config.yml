@@ -125,18 +125,18 @@ collections:
     files:
       - file: "data/home.yml"
         i18n: true
-        label: "首页-Home"
+        label: "Home"
         name: "home"
         fields: [
           { label: "Title", name: "title", widget: string, i18n: true },
           { label: "Slogan", name: "slogan", widget: string, i18n: true },
           { label: "Description", name: "shortDescription", widget: "text", i18n: true },
-          { label: "Header Image", name: "image", widget: "image" , media_folder: "/static/media", i18n: true },
-          { label: "注册", name: "register", widget: string, i18n: true },
-          { label: "版权", name: "copyright", widget: string, i18n: true },
+          { label: "Header Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
+          { label: "Register", name: "register", widget: string, i18n: true },
+          { label: "Copyright", name: "copyright", widget: string, i18n: true },
         ]
       - file: "data/about.yml"
-        label: "首页-关于我们"
+        label: "About"
         name: "about"
         i18n: true
         description: "Go to edit the about section"
@@ -151,7 +151,7 @@ collections:
             }
           ]
       - file: "data/products.yml"
-        label: "首页-产品"
+        label: "Products"
         name: "productions"
         i18n: true
         fields:
@@ -173,7 +173,7 @@ collections:
             ] }
           ]
       - file: "data/scenes.yml"
-        label: "首页-场景"
+        label: "Solutions"
         name: "industry"
         i18n: true
         fields:
@@ -195,7 +195,7 @@ collections:
             ] }
           ]
       - file: "data/news.yml"
-        label: "首页-新闻"
+        label: "News"
         name: "news"
         i18n: true
         fields:
@@ -205,7 +205,7 @@ collections:
             { label: "portText", name: "portText", widget: string, i18n: true },
           ]
       - file: "data/contact.yml"
-        label: "首页-联系我们"
+        label: "Contact"
         name: "contact"
         i18n: true
         fields:
@@ -221,7 +221,7 @@ collections:
             { label: "Languages", name: "languages", widget: string, i18n: true },
           ]
       - file: "data/glossary.yml"
-        label: "词汇表"
+        label: "Glossary"
         name: "glossary"
         i18n: true
         fields:
