@@ -99,9 +99,17 @@
         text-align: center;
         box-sizing: border-box;
         padding: 0 2rem;
+        background-color:  var(--color-primary);
 
         .name {
-          font-size: 2.4rem;
+          font-size: 2rem;
+          margin-top: 50vh;
+        }
+
+        p {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          margin-bottom: 1rem;
         }
 
         .btn-container {

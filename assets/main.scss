@@ -254,13 +254,14 @@
   }
 
   .right-header {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 15rem;
 
     .name {
-      font-size: 3.6rem;
+      font-size: 4.1rem;
       span {
         color: var(--color-secondary);
       }
@@ -268,7 +269,7 @@
 
     p {
       line-height: 2.2rem;
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       white-space: pre-wrap;
       word-wrap: break-word;
       margin-top: 1.5rem;
@@ -403,7 +404,7 @@
         opacity: 0;
         border-radius: 8px;
         transition: opacity 0.25s ease-in;
-        
+
         p {
           font-size: 1.4em;
           font-weight: 600;
@@ -578,6 +579,9 @@
       }
 
       .contact-info {
+        i {
+          margin-right: 0.4rem;
+        }
         .contact-item {
           display: flex;
           align-items: center;
