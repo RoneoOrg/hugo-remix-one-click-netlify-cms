@@ -3,7 +3,7 @@ nType: product
 title: Misc Lorem
 categories:
   - c5
-image: /media/00bien-wave.jpg
+image: /media/wave.jpg
 summary: |
   Commodo irure nostrud nostrud et eu.
 ---
