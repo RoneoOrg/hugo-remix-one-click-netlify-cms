@@ -245,6 +245,7 @@
       height: auto;
       // transform: translateX(-10%);
       transition: all 0.2s ease-in-out;
+      border-radius: 10px;
 
       &:hover {
         filter: grayscale(100%);
@@ -262,12 +263,11 @@
       font-size: 3.6rem;
       span {
         color: var(--color-secondary);
-        display: block;
       }
     }
 
     p {
-      line-height: 2rem;
+      line-height: 2.2rem;
       font-size: 1.4rem;
       white-space: pre-wrap;
       word-wrap: break-word;
@@ -401,14 +401,15 @@
         align-items: center;
         flex-direction: column;
         opacity: 0;
-        transition: all 0.4s ease-in-out;
-        transform: scale(0);
         border-radius: 8px;
-
+        transition: opacity 0.25s ease-in;
+        
         p {
+          font-size: 1.4em;
+          font-weight: 600;
           text-align: center;
-          color: var(--color-white);
-          padding: 2rem 1rem 1rem;
+          color: var(--color-primary);
+          padding: 1rem 1rem 1rem;
         }
 
         .show-more {
