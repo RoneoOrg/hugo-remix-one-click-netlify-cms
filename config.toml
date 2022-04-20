@@ -1,6 +1,6 @@
-baseURL = 'https://kimix.com/'
+baseURL = 'https://remix.roneo.app/'
 languageCode = 'en-us'
-title = 'Kimx Chemical Col.Ltd'
+title = 'Remix, a theme for Hugo fully editable with Netlify CMS'
 defaultContentLanguage = 'en'
 
 

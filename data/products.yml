@@ -1,11 +1,11 @@
 en:
-  title: Our <span>services</span>
-  backgroundTitle: Services
+  title: <span>Features</span>
+  backgroundTitle: Features
   portText: Ipsum cillum sint fugiat esse ipsum commodo. Fugiat laborum qui aliqua in.
   categories:
     - coverImage: /media/00-stairs.jpg
       cSlug: c1
-      name: Service 24/7
+      name: Free and open-source
       description: |
         Nulla magna eiusmod ea eu irure exercitation non incididunt.
     - coverImage: /media/wave.jpg
@@ -23,12 +23,11 @@ en:
         enhance the properties of dry mortar blends, able to re-dispersible in
         water and  react with hydrate product of cement/gypsum and stuffing,
         form composite membrane with good mechanics intensity
-    - coverImage: /media/cer1w7bw6fc5oryfrybt.jpg
+    - coverImage: /media/web_svg.svg
       cSlug: c5
-      name: "And more "
-      description: Consectetur sint laborum est incididunt eiusmod. Consequat amet
-        anim laboris occaecat enim sunt est. Adipisicing ullamco ex id deserunt
-        ea adipisicing.
+      name: "Multilingual"
+      description: Multiple language can be used for the content,
+        and the editor is available in 30 languages
     - name: Ipsum cillum
       cSlug: c2
       description: Fugiat laborum qui aliqua in. In tempor esse aute sint Lorem. Dolor

@@ -1,9 +1,14 @@
 ---
 nType: product
-title: Titanium dioxide
+title: Free and open-source
 categories:
   - c2
 image: /static/media/titanium-dioxide.jpg
 summary: "1111"
 ---
-11111
+
+License: Apache
+
+![](/media/license-apache.png)
+
+[Source](https://github.com/OhBonsai/kimix/blob/main/LICENSE)
