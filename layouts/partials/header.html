@@ -41,19 +41,21 @@
                 </ul>
             </a>
             
-            <a class="item" href="/#solution" data-id="solution">
-                <span>{{$glossary.solution}}</span>
-                <i class="fa-solid fa-angle-down"></i>
-                <ul>
-                    {{range $sSlug, $s := $existScenes}}
-                    <li onclick="location.href='{{ (index $s 0).RelPermalink }}'">
-                        {{$curScene := index $sMapping $sSlug }}
-                        <i class="fa-solid {{$curScene.icon}}"></i>
-                        {{ $curScene.name }}
-                    </li>
-                    {{ end }}
-                </ul>
-            </a>
+            <a class="item" href="/#about" data-id="about">{{$glossary.about}}</a>
+
+              <!-- <a class="item" href="/#solution" data-id="solution">
+                  <span>{{$glossary.solution}}</span>
+                  <i class="fa-solid fa-angle-down"></i>
+                  <ul>
+                      {{range $sSlug, $s := $existScenes}}
+                      <li onclick="location.href='{{ (index $s 0).RelPermalink }}'">
+                          {{$curScene := index $sMapping $sSlug }}
+                          <i class="fa-solid {{$curScene.icon}}"></i>
+                          {{ $curScene.name }}
+                      </li>
+                      {{ end }}
+                  </ul>
+              </a> -->
 
 
             <a class="item" href="/#news" data-id="news">{{$glossary.news}}</a>
