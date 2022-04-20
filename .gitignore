@@ -2,3 +2,7 @@
 public
 resources/*
 .idea
+
+# Local Netlify folder
+.netlify
+.vscode/
