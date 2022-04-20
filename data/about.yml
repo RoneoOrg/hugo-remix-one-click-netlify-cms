@@ -1,10 +1,10 @@
 en:
-  title: About <span>Us</span>
+  title: <span>About</span>
   backgroundTitle: About
-  portText: Learn more about us
+  portText:
   items:
     - icon: fa-award
-      title: We provide high quality products
+      title: Lorem ipsum dolor sit amet
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
     - icon: fa-compass

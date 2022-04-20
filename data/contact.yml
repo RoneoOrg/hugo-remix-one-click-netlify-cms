@@ -4,9 +4,9 @@ en:
   detail: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero,
     provident, eum eligendi blanditiis ex explica
   location: Rennes, Bretagne
-  subtitle: Let's connect!
+  subtitle:
   title: <span>Contact</span> Us
-  languages: English,French,German
+  languages: English, French, German
   email: contact@example.org
   fax: +86 123 4556 789
 zh:
