@@ -1,0 +1,5 @@
+
+[build]
+  command = "hugo"
+  functions = "netlify/functions"
+  publish = "public"
