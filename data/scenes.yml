@@ -1,28 +1,37 @@
 en:
-  title: <span>Solutions</span> by Industry
-  backgroundTitle: Welcome
-  portText: " Here are our industry solutions that have helped many customers"
+  title: Custom <span>Solutions</span>
+  backgroundTitle: Solutions
+  portText: In tempor esse aute sint Lorem. Dolor velit qui anim sunt mollit
+    excepteur ipsum mollit quis.
   scenes:
-    - coverImage: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-oq2vsW5QzZX3Bwq_D9gqKkIR42jEHz2Iw&usqp=CAU
-      name: construction
+    - coverImage: /media/laptop-loading.svg
+      name: Performance
       cSlug: s1
-      icon: fa-person-digging
-      description: Cellulose ethers comprise methylcellulose
-    - coverImage: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1AjuDLTXmKu9Gjw0PSIvlEXAQ45XaV_W8g&usqp=CAU
-      name: food
+      icon: fa-gear
+      description: Choose the right technologies
+    - coverImage: /media/books_png.png
+      name: Documentation
       cSlug: s2
-      icon: fa-burger
-      description: Cellulose ethers comprise methylcellulose
-    - coverImage: https://is4-ssl.mzstatic.com/image/thumb/Purple115/v4/f2/29/cd/f229cd5e-c9be-048c-73fd-4af6a1b0dc33/source/256x256bb.jpg
-      name: oil
+      icon: fa-book
+      description: Occaecat velit elit consectetur adipisicing.
+    - coverImage: /media/security_svg.svg
+      name: Security
       cSlug: s3
-      icon: fa-oil-well
-      description: Cellulose ethers comprise methylcellulose,
-    - coverImage: /media/scene1.jpg
-      name: pill
+      icon: fa-lock
+      description: Caecat velit elit consectetur adipisicing.
+    - coverImage: /media/web_svg.svg
+      name: Multilingue
+      cSlug: s2
+      icon: fa-globe
+      description: Velit elit consectetur adipisicing occaecat.
+    - coverImage: /media/telemedicine_svg.svg
+      name: Relation
       cSlug: s4
-      icon: fa-capsules
-      description: Cellulose ethers comprise methylcellulose
+      description: Adipisicing ullamco ex id deserunt ea adipisicing. Enim in sint non
+        reprehenderit sunt aliquip sunt et dolore ipsum nisi aute. Cupidatat
+        pariatur pariatur occaecat eiusmod magna aute aliqua exercitation.
+        Exercitation et amet nisi sunt id sit ex eiusmod sit deserunt.
+      icon: fa-heart
 zh:
   title: <span>Solutions</span> by Industry
   backgroundTitle: Welcome

@@ -1,38 +1,39 @@
 en:
-  title: Our <span>Products</span>
-  backgroundTitle: Products
-  portText: Kimix provides our customers high quality materials
+  title: Our <span>services</span>
+  backgroundTitle: Services
+  portText: Ipsum cillum sint fugiat esse ipsum commodo. Fugiat laborum qui aliqua in.
   categories:
-    - coverImage: /static/media/cellulose-ethers-hec.jpg
+    - coverImage: /media/00-stairs.jpg
       cSlug: c1
-      name: Cellulose ethers
-      description: Cellulose ethers comprise methylcellulose, ethylcellulose,
-        hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
-    - coverImage: /media/category3.jpg
+      name: Service 24/7
+      description: |
+        Nulla magna eiusmod ea eu irure exercitation non incididunt.
+    - coverImage: /media/00bien-wave.jpg
       cSlug: c3
-      name: Iron oxide pigment
+      name: Cupidatat pariatur pariat
       description: Kimix Titanium Dioxide covers both Rutile and Anatase types. With
         year's development, it enjoys a good reputation in worldwide market for
         the consistent quality, good whiteness, strong hiding power and reducing
         power
-    - coverImage: /media/category4.jpg
+    - coverImage: /media/brainstorming-session-_monochromatic.svg
       cSlug: c4
-      name: Re-dispersible polymer powder
+      name: Aute elit minim magna
       description: Kimpolyer re-dispersible polymer powders is spray dried
         re-dispersible emulsion power, designed for the construction industry to
         enhance the properties of dry mortar blends, able to re-dispersible in
         water and  react with hydrate product of cement/gypsum and stuffing,
         form composite membrane with good mechanics intensity
-    - coverImage: /media/category5.jpg
+    - coverImage: /media/cer1w7bw6fc5oryfrybt.jpg
       cSlug: c5
-      name: "Others "
-      description: Kimresin C9 is aromatic hydrocarbon resin produced by the remaining
-        (C9 fraction) of petroleum cracking, through catalyzed polymerization.
-        It has the characteristics of low acid value
-    - name: Titanium dioxide
+      name: "And more "
+      description: Consectetur sint laborum est incididunt eiusmod. Consequat amet
+        anim laboris occaecat enim sunt est. Adipisicing ullamco ex id deserunt
+        ea adipisicing.
+    - name: Ipsum cillum
       cSlug: c2
-      description: "1111"
-      coverImage: /static/media/titanium-dioxide.jpg
+      description: Fugiat laborum qui aliqua in. In tempor esse aute sint Lorem. Dolor
+        velit qui anim sunt mollit excepteur ipsum mollit quis.
+      coverImage: /media/00bien-symetry.jpg
 zh:
   title: 我们的 <span>产品</span>
   backgroundTitle: 产品

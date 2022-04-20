@@ -1,26 +1,18 @@
 en:
   title: About <span>Us</span>
-  backgroundTitle: Kimix Chemical was founded in 2008 in Hangzhou China, as a
-    member of Vink Chemical GmbH & Co. KG. German based Vink Chemicals is a
-    specialist for biocides and offers genuine all-in-one service, providing
-    customers not only with the biocide formulation, but also research and
-    development, raw material acquisition, and regulatory support. To provide
-    professional service on the microbiological preservative for Asian market,
-    one more Chinese branch was established with laboratory in Shanghai. In
-    early 2019, the new member Vink Chemicals Canada Ltd. was established to
-    explore American markets.
+  backgroundTitle: About
   portText: Learn more about us
   items:
-    - icon: fa-business-time
+    - icon: fa-award
       title: We provide high quality products
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-calculator
-      title: "We are professional "
+    - icon: fa-compass
+      title: "We are on your side."
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
-    - icon: fa-bullseye
-      title: We provide products to world wide customers
+    - icon: fa-leaf
+      title: We care.
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
 zh:

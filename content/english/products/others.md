@@ -1,9 +1,10 @@
 ---
 nType: product
-title: Others construction and paints addtitives
+title: Misc Lorem
 categories:
   - c5
-image: p1.png
-summary: "111"
+image: /media/00bien-wave.jpg
+summary: |
+  Commodo irure nostrud nostrud et eu.
 ---
-11111
+Occaecat velit elit consectetur adipisicing. Aute eu id elit minim magna consequat ut. Ut quis cillum excepteur duis reprehenderit magna. Ipsum cillum sint fugiat esse ipsum commodo. Fugiat laborum qui aliqua in. In tempor esse aute sint Lorem. Dolor velit qui anim sunt mollit excepteur ipsum mollit quis.
