@@ -79,6 +79,8 @@
 
     .sec1 {
       position: relative;
+      height: 100vh;
+      overflow: auto;
       .left-header {
         width: 100%;
         .h-shape {
@@ -98,26 +100,23 @@
         height: 100%;
         text-align: center;
         box-sizing: border-box;
-        padding: 0 2rem;
+        padding: 0 10vw;
         background-color:  var(--color-primary);
 
         .name {
           font-size: 2rem;
-          margin-top: 50vh;
+          margin-top: 20vh;
         }
 
         p {
-          font-size: 1.5rem;
+          font-size: clamp(1.2rem, 2.5vw, 2rem);
           line-height: 1.8rem;
           margin-bottom: 1rem;
+          text-align: left;
+          padding-left: 5vw;
         }
 
-        .btn-container {
-          a {
-            margin: 0 auto;
-            background-color: var(--color-primary);
-          }
-        }
+
       }
     }
 
