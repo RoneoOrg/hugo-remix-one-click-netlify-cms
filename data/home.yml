@@ -9,8 +9,8 @@ en:
 
     → It's free and open-source!
   image: /media/wave.jpg
-  copyright: 2022 - roneo.org
-  register: jamstack.club
+  copyright: "  © 2017-2022 - OhBonsaï &"
+  register: Roneo.org
   registerUrl: "https://roneo.org/en"
 zh:
   image: /media/header.png
