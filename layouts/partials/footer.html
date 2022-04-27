@@ -9,3 +9,12 @@
         {{ $data.register}}
     </a>
 </div>
+
+
+<script>
+  // Fixes Netlify Identity email confirmation
+  // Ref https://answers.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690/26
+  if (window.location.hash.includes('_token=')) {
+    window.location.assign('/admin/' + window.location.hash);
+  }
+  </script>
