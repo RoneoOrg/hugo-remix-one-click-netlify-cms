@@ -1,6 +1,6 @@
 ---
 nType: new
-title: A sunny day in 2047
+title: Occaecat velit elit consectetur adipisicing
 date: 2022-04-12T09:18:42.079Z
 image: /media/cer1w7bw6fc5oryfrybt.jpg
 summary: |

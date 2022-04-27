@@ -1,11 +1,13 @@
 en:
-  title: Remix, a <span>theme for Hugo</span> fully editable </br> with <span>Netlify CMS</span>
+  title: Remix, a <span>theme for Hugo</span> fully editable with <span>Netlify CMS</span>
   slogan: Nulla magna eiusmod ea eu irure exercitation non incididunt.
-  shortDescription: Get your own copy of this website in minutes.
+  shortDescription: >
 
-    Edit everything without writing a single line of code.
+    → Get your own copy of this website in minutes.
 
-    It's free and open-source!  
+    → Edit everything with no single line of code.
+
+    → It's free and open-source!
   image: /media/wave.jpg
   copyright: 2022 - roneo.org
   register: jamstack.club

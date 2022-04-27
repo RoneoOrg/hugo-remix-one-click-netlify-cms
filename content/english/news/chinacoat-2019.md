@@ -1,6 +1,6 @@
 ---
 nType: new
-title: Lorem ipsum 2020
+title: Lorem ipsum magna eiusmod
 date: 2022-04-11T03:23:40.860Z
 image: /media/00cat.jpg
 summary: |

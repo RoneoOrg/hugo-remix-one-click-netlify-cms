@@ -5,7 +5,7 @@ defaultContentLanguage = 'en'
 
 
 
-# Languages  
+# Languages
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"

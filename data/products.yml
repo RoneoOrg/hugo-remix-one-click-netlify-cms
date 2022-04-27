@@ -5,7 +5,7 @@ en:
   categories:
     - coverImage: /media/00-stairs.jpg
       cSlug: c1
-      name: Free and open-source
+      name: Lorem ipsum ea voluptate
       description: |
         Nulla magna eiusmod ea eu irure exercitation non incididunt.
     - coverImage: /media/wave.jpg
@@ -15,7 +15,7 @@ en:
         year's development, it enjoys a good reputation in worldwide market for
         the consistent quality, good whiteness, strong hiding power and reducing
         power
-    - coverImage: /media/brainstorming-session-_monochromatic.svg
+    - coverImage: /media/fog.jpg
       cSlug: c4
       name: Aute elit minim magna
       description: Kimpolyer re-dispersible polymer powders is spray dried
@@ -23,9 +23,9 @@ en:
         enhance the properties of dry mortar blends, able to re-dispersible in
         water and  react with hydrate product of cement/gypsum and stuffing,
         form composite membrane with good mechanics intensity
-    - coverImage: /media/web_svg.svg
+    - coverImage: /media/sand.jpeg
       cSlug: c5
-      name: "Multilingual"
+      name: "Fugiat laborum qui aliqua in"
       description: Multiple language can be used for the content,
         and the editor is available in 30 languages
     - name: Ipsum cillum
