@@ -1,22 +1,21 @@
 en:
-  title: Remix, a <span>theme for Hugo</span> fully editable with <span>Netlify CMS</span>
+  title: Remix, a <span>theme for Hugo</span> fully editable with <span>Netlify
+    CMS</span>
   slogan: Nulla magna eiusmod ea eu irure exercitation non incididunt.
-  shortDescription: >
-
+  shortDescription: |
+    
     → Get your own copy of this website in minutes.
-
     → Edit everything with no single line of code.
-
     → It's free and open-source!
   image: /media/wave.jpg
   copyright: "  © 2017-2022 - OhBonsaï &"
   register: Roneo.org
-  registerUrl: "https://roneo.org/en"
+  registerUrl: https://roneo.org/en
 zh:
-  image: /media/header.png
+  image: /media/wave.jpg
   title: 你好，我们是 <span>凯美斯</span>
-  slogan: 你好我好大家好
+  slogan: Nulla magna eiusmod ea eu irure exercitation non incididunt.
   shortDescription: 我们老专业了，我们老聪明了，我们老牛逼了
-  copyright: " © 2017-2022 copyright"
-  register: 京公网安备11000002000001号 京ICP证030173号
+  copyright: "  © 2017-2022 - OhBonsaï &"
+  register: Roneo.org
   registerUrl: ""
