@@ -17,109 +17,6 @@ i18n:
 
 # collections configuration
 collections:
-  - name: "news"
-    label: "News (English)"
-    folder: "content/english/news"
-    path: "{{slug}}"
-    media_folder: "{{media_folder}}"
-    public_folder: "{{public_folder}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string" },
-        { label: "Publish Date", name: "date", widget: "datetime"},
-        { label: "Cover Image", name: "image", widget: "image" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
-  - name: "news-zh"
-    label: "News (中文)"
-    folder: "content/chinese/news"
-    path: "{{slug}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string" },
-        { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
-        { label: "Cover Image", name: "image", widget: "image" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
-  - name: "products"
-    label: "Products (English)"
-    folder: "content/english/products"
-    public_folder: "/media"
-    path: "{{slug}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string"},
-        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
-          { label: "纤维素醚", value: "c1" },
-          { label: "钛白粉", value: "c2" },
-          { label: "氧化铁颜料", value: "c3" },
-          { label: "可再分散乳胶粉", value: "c4" },
-          { label: "其他建筑、涂料助剂", value: "c5" },
-        ]},
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
-  - name: "products-zh"
-    label: "Products (中文)"
-    folder: "content/chinese/products"
-    path: "{{slug}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string"},
-        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
-          { label: "纤维素醚", value: "c1" },
-          { label: "钛白粉", value: "c2" },
-          { label: "氧化铁颜料", value: "c3" },
-          { label: "可再分散乳胶粉", value: "c4" },
-          { label: "其他建筑、涂料助剂", value: "c5" },
-        ]},
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
-  - name: "scene"
-    label: "Scene (English)"
-    folder: "content/english/scenes"
-    path: "{{slug}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string" },
-        { label: "Scene", name: "scenes", widget: "select", multiple: true, options:  [
-          { label: "化工", value: "s1" },
-          { label: "食品", value: "s2" },
-          { label: "石油", value: "s3" },
-          { label: "制药", value: "s4" },
-        ]},
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
-  - name: "scene-zh"
-    label: "Scene  (中文)"
-    folder: "content/chinese/scenes"
-    path: "{{slug}}"
-    create: true
-    fields:
-      [
-        { label: "Title", name: "title", widget: "string" },
-        { label: "Scene", name: "scenes", widget: "select", multiple: true, options:  [
-          { label: "化工", value: "s1" },
-          { label: "食品", value: "s2" },
-          { label: "石油", value: "s3" },
-          { label: "制药", value: "s4" },
-        ]},
-        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
-      ]
   - name: "sections"
     label: "Global settings"
     i18n:
@@ -237,3 +134,106 @@ collections:
             { label: "contact", name: "contact", widget: string, i18n: true },
             { label: "list", name: "list", widget: string, i18n: true },
           ]
+  - name: "news"
+    label: "News (English)"
+    folder: "content/english/news"
+    path: "{{slug}}"
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string" },
+        { label: "Publish Date", name: "date", widget: "datetime"},
+        { label: "Cover Image", name: "image", widget: "image" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+  - name: "news-zh"
+    label: "News (中文)"
+    folder: "content/chinese/news"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string" },
+        { label: "Publish Date", name: "date", widget: "datetime", i18n: "duplicate" },
+        { label: "Cover Image", name: "image", widget: "image" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+  - name: "products"
+    label: "Products (English)"
+    folder: "content/english/products"
+    public_folder: "/media"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string"},
+        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
+          { label: "纤维素醚", value: "c1" },
+          { label: "钛白粉", value: "c2" },
+          { label: "氧化铁颜料", value: "c3" },
+          { label: "可再分散乳胶粉", value: "c4" },
+          { label: "其他建筑、涂料助剂", value: "c5" },
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+  - name: "products-zh"
+    label: "Products (中文)"
+    folder: "content/chinese/products"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string"},
+        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
+          { label: "纤维素醚", value: "c1" },
+          { label: "钛白粉", value: "c2" },
+          { label: "氧化铁颜料", value: "c3" },
+          { label: "可再分散乳胶粉", value: "c4" },
+          { label: "其他建筑、涂料助剂", value: "c5" },
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+  - name: "scene"
+    label: "Scene (English)"
+    folder: "content/english/scenes"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string" },
+        { label: "Scene", name: "scenes", widget: "select", multiple: true, options:  [
+          { label: "化工", value: "s1" },
+          { label: "食品", value: "s2" },
+          { label: "石油", value: "s3" },
+          { label: "制药", value: "s4" },
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
+  - name: "scene-zh"
+    label: "Scene  (中文)"
+    folder: "content/chinese/scenes"
+    path: "{{slug}}"
+    create: true
+    fields:
+      [
+        { label: "Title", name: "title", widget: "string" },
+        { label: "Scene", name: "scenes", widget: "select", multiple: true, options:  [
+          { label: "化工", value: "s1" },
+          { label: "食品", value: "s2" },
+          { label: "石油", value: "s3" },
+          { label: "制药", value: "s4" },
+        ]},
+        { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
+        { label: "Summary", name: "summary", widget: "text" },
+        { label: "Body", name: "body", widget: "markdown" },
+      ]
