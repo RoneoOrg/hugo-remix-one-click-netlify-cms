@@ -215,12 +215,12 @@ collections:
           [
             { label: "Title", name: "title", widget: string, i18n: true },
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
-            { label: "Subtitle", name: "subtitle", widget: string, i18n: true },
+            { label: "Subtitle", name: "subtitle", widget: string, i18n: true, required: false },
             { label: "Detail", name: "detail", widget: string, i18n: true },
             { label: "Location", name: "location", widget: string , i18n: true },
-            { label: "Email", name: "email", widget: string , i18n: true },
-            { label: "Fax", name: "fax", widget: string, i18n: true },
-            { label: "Phone", name: "phone", widget: string , i18n: true },
+            { label: "Email", name: "email", widget: string , i18n: true, required: false },
+            { label: "Fax", name: "fax", widget: string, i18n: true, required: false },
+            { label: "Phone", name: "phone", widget: string , i18n: true, required: false },
             { label: "Languages", name: "languages", widget: string, i18n: true },
           ]
       - file: "data/glossary.yml"
