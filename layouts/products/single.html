@@ -30,8 +30,8 @@
 {{ $productStyle := resources.Get "markdown.scss" | resources.ToCSS | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
 
-{{ $productJs := resources.Get "product.js" }}
-<script src="{{$productJs.RelPermalink}}"></script>
+<!-- {{ $productJs := resources.Get "product.js" }}
+<script src="{{$productJs.RelPermalink}}"></script> -->
 
 <body>
     <!-- navigation header -->
@@ -48,7 +48,7 @@
 
         <div class="container">
             <div class="side-menu">
-                <div class="title">
+                <!-- <div class="title">
                     {{printf "%s %s" $curCategoryCfg.name $glossary.list}}
                 </div>
 
@@ -60,7 +60,7 @@
                         </div>
                     </li>
                     {{end}}
-                </ul>
+                </ul> -->
             </div>
 
             <div class="main">
