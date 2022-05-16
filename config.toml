@@ -1,8 +1,11 @@
 baseURL = 'https://remix.roneo.app/'
 languageCode = 'en-us'
-title = 'Remix, a theme for Hugo fully editable with Netlify CMS'
 defaultContentLanguage = 'en'
 
+
+[params]
+  title = 'Remix, a theme for Hugo fully editable with Netlify CMS'
+  metaDescription = "Here is the meta description"
 
 
 # Languages
@@ -24,4 +27,3 @@ mark = "中"
 [taxonomies]
   category= "categories"
   scene = "scenes"
-
