@@ -4,7 +4,7 @@
 <section class="section sec6  content-sec" id="contact">
     <div class="main-title">
         <h2> {{ $data.title | safeHTML }}
-            <span class="bg-text"> {{ $data.backgroundTitle }}</span>
+            <span class="bg-text" aria-hidden="true"> {{ $data.backgroundTitle }}</span>
         </h2>
         <div class="border"></div>
     </div>
@@ -63,11 +63,13 @@
             </div>
             <div class="contact-icons">
                 <div class="contact-icon">
-                    <a href="www.facebook.com" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
+                    <a href="https://www.facebock.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <span class="fa-sr-only">Visit our Facebook page</span>
                     </a>
-                    <a href="wwww.twttier.com" target="_blank">
-                        <i class="fab fa-twitter"></i>
+                    <a href="https://wwww.twttier.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"  aria-hidden="true"></i>
+                        <span class="fa-sr-only">Join us on Twitter</span>
                     </a>
                 </div>
             </div>
