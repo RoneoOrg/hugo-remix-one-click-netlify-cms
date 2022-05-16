@@ -13,3 +13,4 @@
 - cleanup contact form
 - enable smooth scrolling
 - fix scroll-margin-top
+- improve documentation

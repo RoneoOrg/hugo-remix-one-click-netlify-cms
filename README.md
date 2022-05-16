@@ -6,6 +6,7 @@
 
 - [Demo](https://remix.roneo.app)
 - Source code: [Gitlab](https://gitlab.com/Roneo/hugo-remix-one-click-netlify-cms.git) | [Github](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms)
+- Deployment:
 
 <div align="center">
 
@@ -16,15 +17,15 @@
 ## Features
 
 - [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms&stack=cms) in minutes
-- Edit everything with [Netlify CMS](https://www.netlifycms.org/)
+- Hassle-free edition with [Netlify CMS](https://www.netlifycms.org/)
 - Multilingual support
 - Dark and light themes
-- No external librairies
 - Fully responsive
+- No external librairies
 - Easy customization with [CSS variables](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms/blob/main/assets/normalize.scss)
 - Contact form
 - [Font Awesome 6](https://fontawesome.com/search?m=free)
-- Respectable [results on Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A//remix.roneo.app/&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo):
+- Excellent [results on Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A//remix.roneo.app/&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo):
 
 ![Nearly perfect results on Google's benchmarks](static/img/lighthouse.png)
 
@@ -34,11 +35,12 @@
 
 ### Deploy to Netlify
 
-[Follow this link](https://app.netlify.com/start/deploy?repository=https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms&stack=cms) to deploy to Netlify.
+You can generate your own website based on Remix with [this link](https://app.netlify.com/start/deploy?repository=https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms&stack=cms). You will be guided through the following steps:
 
-Netlify CMS is automatically activated, along with required features (Netlify Identity and the Git Gateway).
+1. this repo will be duplicated on Github or Gitlab. An account is required and will be created on the way if needed.
+2. Netlify will then use these files to build your website. Hosting, SSL certificate and domain are automatically set up. For free!
+3. When your website is ready, Netlify sends you an email with an invitation link. Open this link, set up your password and you are in!
 
-When your site is ready, you will receive an email from Netlify allowing you to set up your password and access the CMS.
 
 ### Run locally
 
