@@ -18,7 +18,7 @@ i18n:
 # collections configuration
 collections:
   - name: "news"
-    label: "News-EN"
+    label: "News (English)"
     folder: "content/english/news"
     path: "{{slug}}"
     media_folder: "{{media_folder}}"
@@ -33,7 +33,7 @@ collections:
         { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "news-zh"
-    label: "News-中文"
+    label: "News (中文)"
     folder: "content/chinese/news"
     path: "{{slug}}"
     create: true
@@ -46,8 +46,9 @@ collections:
         { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "products"
-    label: "Products-EN"
+    label: "Products (English)"
     folder: "content/english/products"
+    public_folder: "/media"
     path: "{{slug}}"
     create: true
     fields:
@@ -65,7 +66,7 @@ collections:
         { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "products-zh"
-    label: "Products-中文"
+    label: "Products (中文)"
     folder: "content/chinese/products"
     path: "{{slug}}"
     create: true
@@ -84,7 +85,7 @@ collections:
         { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "scene"
-    label: "Scene-EN"
+    label: "Scene (English)"
     folder: "content/english/scenes"
     path: "{{slug}}"
     create: true
@@ -102,7 +103,7 @@ collections:
         { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "scene-zh"
-    label: "Scene-中文"
+    label: "Scene  (中文)"
     folder: "content/chinese/scenes"
     path: "{{slug}}"
     create: true
@@ -120,7 +121,7 @@ collections:
         { label: "Body", name: "body", widget: "markdown" },
       ]
   - name: "sections"
-    label: "Sections"
+    label: "Global settings"
     i18n:
       structure: single_file
       locales: [ en, zh ]
