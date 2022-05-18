@@ -14,3 +14,4 @@
 - enable smooth scrolling
 - fix scroll-margin-top
 - improve documentation
+- enable SASS / CSS sourcemap
