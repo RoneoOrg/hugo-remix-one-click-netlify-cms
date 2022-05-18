@@ -4,11 +4,12 @@
 {{ partial "head.html" .}}
 
 
-{{ $productStyle := resources.Get "news.scss" | resources.ToCSS | resources.Fingerprint }}
+<!-- Generate CSS -->
+{{ $options := (dict "enableSourceMap" true ) }}
+{{ $productStyle := resources.Get "news.scss" | resources.ToCSS $options | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
 
-
-{{ $productStyle := resources.Get "markdown.scss" | resources.ToCSS | resources.Fingerprint }}
+{{ $productStyle := resources.Get "markdown.scss" | resources.ToCSS $options | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
 
 

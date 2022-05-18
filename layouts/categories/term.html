@@ -3,8 +3,10 @@
 
 {{ partial "head.html" .}}
 
+<!-- Generate CSS -->
+{{ $options := (dict "enableSourceMap" true ) }}
 {{ $productSass := resources.Get "product.scss" }}
-{{ $productStyle := $productSass | resources.ToCSS | resources.Fingerprint }}
+{{ $productStyle := $productSass | resources.ToCSS $options | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
 
 {{ $productJs := resources.Get "product.js" }}
