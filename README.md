@@ -21,6 +21,7 @@
 - Multilingual support
 - Dark and light themes
 - Fully responsive
+- No npm required
 - No external librairies
 - Easy customization with [CSS variables](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms/blob/main/assets/normalize.scss)
 - Contact form
@@ -67,7 +68,7 @@ Remix is based on [Kimix](https://github.com/OhBonsai/kimix), by [OhBonsaï](htt
 
 ![Homepage of Netlify CMS](static/img/admin.png)
 
-### Global settings
+### Configure global settings
 
 ![Side-by-side edition](static/img/translation.png)
 
