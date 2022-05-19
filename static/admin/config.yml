@@ -1,3 +1,8 @@
+
+#####################
+# VERSION FRANCAISE
+#####################
+
 # using git as backend store
 backend:
   name: git-gateway
@@ -18,14 +23,14 @@ i18n:
 # collections configuration
 collections:
   - name: "sections"
-    label: "Global settings"
+    label: "Configuration"
     i18n:
       structure: single_file
       locales: [ en, zh ]
     files:
       - file: "data/home.yml"
         i18n: true
-        label: "Home"
+        label: "Accueil"
         name: "home"
         fields: [
           { label: "Title", name: "title", widget: string, i18n: true },
@@ -36,7 +41,7 @@ collections:
           { label: "Copyright", name: "copyright", widget: string, i18n: true },
         ]
       - file: "data/about.yml"
-        label: "About"
+        label: "À propos"
         name: "about"
         i18n: true
         description: "Go to edit the about section"
@@ -143,11 +148,11 @@ collections:
     create: true
     fields:
       [
-        { label: "Title", name: "title", widget: "string" },
-        { label: "Publish Date", name: "date", widget: "datetime"},
-        { label: "Cover Image", name: "image", widget: "image" },
-        { label: "Summary", name: "summary", widget: "text" },
-        { label: "Body", name: "body", widget: "markdown" },
+        { label: "Titre", name: "title", widget: "string" },
+        # { label: "Publish Date", name: "date", widget: "datetime"},
+        # { label: "Cover Image", name: "image", widget: "image" },
+        # { label: "Summary", name: "summary", widget: "text" },
+        { label: "", name: "body", widget: "markdown" },
       ]
   - name: "news-zh"
     label: "News (中文)"

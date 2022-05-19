@@ -18,3 +18,10 @@
     window.location.assign('/admin/' + window.location.hash);
   }
   </script>
+
+<!-- Set Netlify CMS language -->
+<script>
+    window.onload = function() {
+      netlifyIdentity.setLocale('fr')
+    }
+</script>
