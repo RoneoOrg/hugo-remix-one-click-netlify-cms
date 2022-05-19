@@ -1,7 +1,7 @@
 ---
 nType: product
 title: Nulla magna eiusmod
-categories:
+theme:
   - c1
 image: /static/media/00bien-symetry.jpg
 summary: Commodo irure nostrud nostrud et eu.
