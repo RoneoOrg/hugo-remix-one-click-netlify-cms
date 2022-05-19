@@ -16,9 +16,9 @@ en:
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
 fr:
-  title: About <span>Us</span>
-  backgroundTitle: Learn more
-  portText: Learn more about us
+  title: <span>À propos</span>
+  backgroundTitle: À propos
+  portText: Magna dolor nisi reprehenderit irure aliqua
   items:
     - icon: fa-business-time
       title: Notre expérience, à vos côtés
