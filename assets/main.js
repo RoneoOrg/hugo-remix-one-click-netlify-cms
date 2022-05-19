@@ -88,9 +88,9 @@ function initNav() {
           setTimeout(() => {
             changeHash(id);
           }, 1000);
-        } else if (location.pathname !== "/" || location.pathname !== "/zh/") {
-          if (location.pathname.indexOf("/zh") > -1) {
-            location.href = "/zh/#" + id;
+        } else if (location.pathname !== "/" || location.pathname !== "/fr/") {
+          if (location.pathname.indexOf("/fr") > -1) {
+            location.href = "/fr/#" + id;
           } else {
             location.href = "/#" + id;
           }
@@ -115,9 +115,9 @@ function initNav() {
     langEle.onclick = function () {
       switch (langEle.innerText) {
         case "en":
-          location.href = "/zh";
+          location.href = "/fr";
           break;
-        case "zh":
+        case "fr":
           location.href = "/";
           break;
       }

@@ -1,6 +1,6 @@
 baseURL = 'https://remix.roneo.app/'
-languageCode = 'en-us'
-defaultContentLanguage = 'en'
+languageCode = 'fr-fr'
+defaultContentLanguage = 'fr'
 
 
 [params]
@@ -16,12 +16,12 @@ contentDir = "content/english"
 weight = 1
 mark = "EN"
 
-[Languages.zh]
-languageName = "中文"
-languageCode = "zh-zh"
-contentDir = "content/chinese"
+[Languages.fr]
+languageName = "fr"
+languageCode = "fr-fr"
+contentDir = "content/fr"
 weight = 2
-mark = "中"
+mark = "FR"
 
 
 [taxonomies]

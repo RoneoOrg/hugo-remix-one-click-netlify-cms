@@ -15,7 +15,7 @@ local_backend: true
 # i18n https://www.netlifycms.org/docs/beta-features/#i18n-support
 i18n:
   structure: multiple_folders
-  locales: [ en, zh ]
+  locales: [ en, fr ]
   default_locale: en
 
 
@@ -25,7 +25,7 @@ collections:
     label: "Global settings"
     i18n:
       structure: single_file
-      locales: [ en, zh ]
+      locales: [ en, fr ]
     files:
       - file: "data/home.yml"
         i18n: true
@@ -67,11 +67,11 @@ collections:
               { label: "CoverImage", name: "coverImage", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
               { label: "Name", name: "name", widget: string, i18n: true },
               { label: "Category", name: "cSlug", widget: select, i18n: true, options: [
-                { label: "纤维素醚", value: "c1" },
-                { label: "钛白粉", value: "c2" },
-                { label: "氧化铁颜料", value: "c3" },
-                { label: "可再分散乳胶粉", value: "c4" },
-                { label: "其他建筑、涂料助剂", value: "c5" },
+                { label: "c1", value: "c1" },
+                { label: "c2", value: "c2" },
+                { label: "c3", value: "c3" },
+                { label: "c4", value: "c4" },
+                { label: "c5", value: "c5" },
               ] },
               { label: "Description", name: "description", widget: text , i18n: true },
             ] }
@@ -153,9 +153,9 @@ collections:
         # { label: "Summary", name: "summary", widget: "text" },
         { label: ".", name: "body", widget: "markdown" },
       ]
-  - name: "news-zh"
-    label: "News (中文)"
-    folder: "content/chinese/news"
+  - name: "news-fr"
+    label: "News (fr)"
+    folder: "content/fr/news"
     path: "{{slug}}"
     create: true
     fields:
@@ -176,30 +176,30 @@ collections:
       [
         { label: "Title", name: "title", widget: "string"},
         { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
-          { label: "纤维素醚", value: "c1" },
-          { label: "钛白粉", value: "c2" },
-          { label: "氧化铁颜料", value: "c3" },
-          { label: "可再分散乳胶粉", value: "c4" },
-          { label: "其他建筑、涂料助剂", value: "c5" },
+          { label: "c1", value: "c1" },
+          { label: "c2", value: "c2" },
+          { label: "c3", value: "c3" },
+          { label: "c4", value: "c4" },
+          { label: "c5", value: "c5" },
         ]},
         { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
         { label: "Summary", name: "summary", widget: "text" },
         { label: "Body", name: "body", widget: "markdown" },
       ]
-  - name: "products-zh"
-    label: "Products (中文)"
-    folder: "content/chinese/products"
+  - name: "products-fr"
+    label: "Products (fr)"
+    folder: "content/fr/products"
     path: "{{slug}}"
     create: true
     fields:
       [
         { label: "Title", name: "title", widget: "string"},
         { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
-          { label: "纤维素醚", value: "c1" },
-          { label: "钛白粉", value: "c2" },
-          { label: "氧化铁颜料", value: "c3" },
-          { label: "可再分散乳胶粉", value: "c4" },
-          { label: "其他建筑、涂料助剂", value: "c5" },
+          { label: "c1", value: "c1" },
+          { label: "c2", value: "c2" },
+          { label: "c3", value: "c3" },
+          { label: "c4", value: "c4" },
+          { label: "c5", value: "c5" },
         ]},
         { label: "Cover Image", name: "image", widget: "image" , media_folder: "/static/media" , public_folder: "/media" },
         { label: "Summary", name: "summary", widget: "text" },
@@ -223,9 +223,9 @@ collections:
         { label: "Summary", name: "summary", widget: "text" },
         { label: "Body", name: "body", widget: "markdown" },
       ]
-  - name: "scene-zh"
-    label: "Scene  (中文)"
-    folder: "content/chinese/scenes"
+  - name: "scene-fr"
+    label: "Scene (fr)"
+    folder: "content/fr/scenes"
     path: "{{slug}}"
     create: true
     fields:
