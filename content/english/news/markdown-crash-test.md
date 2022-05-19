@@ -1,7 +1,7 @@
 ---
 title: Markdown Crash Test
 date: 2022-05-04T02:12:07.432Z
-image: /media/illustration-large.jpg
+image: /media/books_png.png
 summary: Let's check the support of Markdown
 ---
 
