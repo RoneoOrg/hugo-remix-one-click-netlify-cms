@@ -21,14 +21,14 @@ fr:
   portText: Learn more about us
   items:
     - icon: fa-business-time
-      title: 我们贼有创意
+      title: Notre expérience, à vos côtés
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
     - icon: fa-calculator
-      title: We're Professional
+      title: Des prix clairs sur toute la ligne
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.
     - icon: fa-bullseye
-      title: We're Genius
+      title: Performance & transparence
       content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil,
         libero, perspiciatis eos provident laborum eum dignissimos.

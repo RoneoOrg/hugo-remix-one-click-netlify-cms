@@ -33,7 +33,7 @@ fr:
   theme:
     - name: Aquarelles
       cSlug: c1
-      name: 纤维素醚
+      coverImage: /media/couple-cerf-aquarelle-vanessa-belleperche.jpg
       description: Cellulose ethers comprise methylcellulose, ethylcellulose,
         hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
     - name: Croquis

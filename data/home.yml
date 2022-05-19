@@ -13,9 +13,9 @@ en:
   registerUrl: https://roneo.org/en
 fr:
   image: /media/wave.jpg
-  title: 你好，我们是 <span>凯美斯</span>
-  slogan: Nulla magna eiusmod ea eu irure exercitation non incididunt.
-  shortDescription: 我们老专业了，我们老聪明了，我们老牛逼了
+  title: Remix, un <span>theme pour Hugo</span> branché sur <span>Netlify CMS</span>
+  slogan: Lorem magna eiusmod ea eu irure exercitation non incididunt.
+  shortDescription: « Quis do pariatur quis nostrud elit in»
   copyright: "  © 2017-2022 - OhBonsaï &"
   register: Roneo.org
-  registerUrl: "https://roneo.org/en"
+  registerUrl: https://roneo.org/en
