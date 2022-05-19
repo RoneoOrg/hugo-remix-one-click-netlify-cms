@@ -15,3 +15,5 @@
 - fix scroll-margin-top
 - improve documentation
 - enable SASS / CSS sourcemap
+- translate to french
+- rename "categories" → "theme"
