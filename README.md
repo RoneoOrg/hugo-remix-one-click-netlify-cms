@@ -18,11 +18,10 @@
 
 - [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms&stack=cms) in minutes
 - Hassle-free edition with [Netlify CMS](https://www.netlifycms.org/)
-- Multilingual support
 - Dark and light themes
 - Fully responsive
-- No npm required
-- No external librairies
+- Beginner-friendly: no submodule, no npm required
+- Multilingual support
 - Easy customization with [CSS variables](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms/blob/main/assets/normalize.scss)
 - Contact form
 - [Font Awesome 6](https://fontawesome.com/search?m=free)
@@ -39,7 +38,7 @@
 You can generate your own website based on Remix with [this link](https://app.netlify.com/start/deploy?repository=https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms&stack=cms). You will be guided through the following steps:
 
 1. this repo will be duplicated on Github or Gitlab. An account is required and will be created on the way if needed.
-2. Netlify will then use these files to build your website. Hosting, SSL certificate and domain are automatically set up. For free!
+2. [Netlify](https://www.netlify.com/) will then use these files to build your website. Hosting, SSL certificate and domain are automatically set up. For free!
 3. When your website is ready, Netlify sends you an email with an invitation link. Open this link, set up your password and you are in!
 
 
