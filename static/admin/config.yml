@@ -23,14 +23,14 @@ i18n:
 # collections configuration
 collections:
   - name: "sections"
-    label: "Configuration"
+    label: "Global settings"
     i18n:
       structure: single_file
       locales: [ en, zh ]
     files:
       - file: "data/home.yml"
         i18n: true
-        label: "Accueil"
+        label: "Home"
         name: "home"
         fields: [
           { label: "Title", name: "title", widget: string, i18n: true },
@@ -41,7 +41,7 @@ collections:
           { label: "Copyright", name: "copyright", widget: string, i18n: true },
         ]
       - file: "data/about.yml"
-        label: "À propos"
+        label: "About"
         name: "about"
         i18n: true
         description: "Go to edit the about section"
@@ -140,7 +140,7 @@ collections:
             { label: "list", name: "list", widget: string, i18n: true },
           ]
   - name: "news"
-    label: "News (English)"
+    label: "Articles"
     folder: "content/english/news"
     path: "{{slug}}"
     media_folder: "{{media_folder}}"
@@ -152,7 +152,7 @@ collections:
         # { label: "Publish Date", name: "date", widget: "datetime"},
         # { label: "Cover Image", name: "image", widget: "image" },
         # { label: "Summary", name: "summary", widget: "text" },
-        { label: "", name: "body", widget: "markdown" },
+        { label: ".", name: "body", widget: "markdown" },
       ]
   - name: "news-zh"
     label: "News (中文)"
