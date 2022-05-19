@@ -1,16 +1,14 @@
-
-#####################
-# VERSION FRANCAISE
-#####################
-
 # using git as backend store
 backend:
   name: git-gateway
   branch: main
 media_folder: "/static/media" # Folder where user uploaded files should go
 public_folder: "/media"
+editor:
+  preview: false
 
-# allow local visit
+# Allow local visit
+# You need to run at the root of the project `npx netlify-cms-proxy-server`
 local_backend: true
 
 # i18n https://www.netlifycms.org/docs/beta-features/#i18n-support
