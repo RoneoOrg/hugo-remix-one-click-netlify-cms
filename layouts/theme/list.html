@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head.html" .}}
+
+<body>
+
+              {{ range .Pages }}
+
+                <div class="main">
+                  <div class="title">
+                      {{.Title}}
+                  </div>
+                  <div class="img-single">
+                    <img src="{{.Params.Image}}" alt="">
+                  </div>
+                  <div class="md-content">
+                      {{ .Content }}
+                  </div>
+              </div>
+                {{ end }}
+</body>
+</html>

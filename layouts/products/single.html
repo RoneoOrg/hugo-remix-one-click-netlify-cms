@@ -1,17 +1,17 @@
 <!--data-->
 
 
-{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
-{{ $existCategories :=  site.Taxonomies.categories }}
+{{ $theme := index (index site.Data.products site.Language.Lang) "theme"}}
+{{ $existtheme :=  site.Taxonomies.theme }}
 {{ $cMapping := dict "" ""}}
-{{ range $categories }}
+{{ range $theme }}
 {{ $cMapping = merge $cMapping (dict .cSlug .)}}
 {{ end}}
 
 
-{{ $curCategorySlug := index .Params.categories 0}}
+{{ $curCategorySlug := index .Params.theme 0}}
 {{ $curCategoryCfg := index $cMapping $curCategorySlug}}
-{{ $curCategoryVar := index site.Taxonomies.categories $curCategorySlug}}
+{{ $curCategoryVar := index site.Taxonomies.theme $curCategorySlug}}
 
 {{ $glossary := index site.Data.glossary site.Language.Lang }}
 
