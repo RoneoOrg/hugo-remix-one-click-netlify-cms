@@ -1,5 +1,9 @@
 @media only screen and (max-width: 1000px) {
   html {
+    .name h1 {
+      font-size: 2rem;
+      // padding-top: 90vh !important;
+    }
     .main-title {
       h2 {
         font-size: 2.4rem;

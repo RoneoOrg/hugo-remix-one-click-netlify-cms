@@ -268,17 +268,18 @@
 
     .name {
       font-size: clamp(1.8rem, 3vw, 4.1rem);
+      padding-top: 10vh;
       span {
         color: var(--color-secondary);
       }
     }
 
     p {
-      line-height: 2.2rem;
-      font-size: clamp(1.4rem, 1.6vw, 3.6rem);
+      line-height: 2rem;
+      font-size: clamp(1.4rem, 1.4vw, 3.6rem);
       white-space: pre-wrap;
       word-wrap: break-word;
-      margin-top: 1.5rem;
+      margin-top: 0.2rem;
     }
     .btn-container {
       a {

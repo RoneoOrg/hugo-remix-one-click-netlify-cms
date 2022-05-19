@@ -44,7 +44,7 @@
     line-height: 1.2;
     text-align: left;
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--color-grey-0);
     position: relative;
   }
 
@@ -100,7 +100,7 @@
   code {
     margin: 0 2px;
     padding: 3px 5px;
-    color: var(--color-secondary);
+    color: var(--color-secondary-dark);
     border-radius: 2px;
     white-space: inherit;
     background-color: var(--color-white);
