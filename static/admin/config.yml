@@ -64,7 +64,7 @@ collections:
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
             { label: "PortText", name: "portText", widget: "text", i18n: true },
             { label: "Categories", name: "theme", widget: "list", i18n: true, fields: [
-              { label: "CoverImage", name: "coverImage", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
+              { label: "Image", name: "coverImage", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
               { label: "Name", name: "name", widget: string, i18n: true },
               { label: "theme", name: "cSlug", widget: select, i18n: true, options: [
                 { label: "c1", value: "c1" },
