@@ -3,7 +3,7 @@ nType: product
 title: Lorem lorem
 theme:
   - c4
-image: /media/00cat.jpg
+image: /media/cat.jpg
 summary: |
   Nulla magna eiusmod ea eu irure exercitation non incididunt.
 ---

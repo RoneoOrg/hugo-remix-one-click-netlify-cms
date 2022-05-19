@@ -2,7 +2,7 @@
 nType: new
 title: Occaecat velit elit consectetur adipisicing
 date: 2022-04-12T09:18:42.079Z
-image: /media/cer1w7bw6fc5oryfrybt.jpg
+image: /media/light.jpg
 summary: |
   Commodo irure nostrud nostrud et eu.
 ---

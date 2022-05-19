@@ -1,7 +1,7 @@
 ---
 title: Lorem ipsum esse proident voluptate aute velit nisi voluptate.
 date: 2022-04-18T01:44:41.653Z
-image: /static/media/forest-bro-bien-bien.svg
+image: /static/media/forest_svg.svg
 summary: Ipsum cillum sint fugiat esse ipsum commodo. Fugiat laborum qui aliqua in.
 ---
 Since its inception in 1996, CHINACOAT has been dedicated to providing an international trading platform for suppliers and manufacturers of the coatings industry to connect with global trade visitors, particularly from China and Asia. The show is held annually and alternates its venue between the cities of Guangzhou and Shanghai, P. R. China
