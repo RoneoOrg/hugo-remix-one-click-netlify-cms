@@ -1,6 +1,6 @@
 ---
 title: Multilingual support
-categories:
+theme:
   - c5
 image: /media/wave.jpg
 summary: |

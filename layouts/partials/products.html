@@ -1,13 +1,13 @@
 <!-- {{ $data := index site.Data site.Language.Lang}} -->
 {{ $data := index site.Data.products site.Language.Lang }}
 
-{{ $categories := index $data "categories"}}
+{{ $theme := index $data "theme"}}
 {{ $cMapping := dict "" ""}}
-{{ range $categories }}
+{{ range $theme }}
 {{ $cMapping = merge $cMapping (dict .cSlug .)}}
 {{ end}}
 
-{{ $existCategories :=  site.Taxonomies.categories }}
+{{ $existtheme :=  site.Taxonomies.theme }}
 
 
 <section class="section sec3 content-sec" id="product">
@@ -26,7 +26,7 @@
 
     <div class="categories">
 
-        {{range $curCategorySlug, $curCategoryVar := $existCategories}}
+        {{range $curCategorySlug, $curCategoryVar := $existtheme}}
         {{ $curCategoryCfg := index $cMapping $curCategorySlug}}
         {{ $firstPage := index $curCategoryVar 0}}
 

@@ -2,7 +2,7 @@ en:
   title: <span>Features</span>
   backgroundTitle: Features
   portText: Ipsum cillum sint fugiat esse ipsum commodo. Fugiat laborum qui aliqua in.
-  categories:
+  theme:
     - coverImage: /media/00-stairs.jpg
       cSlug: c1
       name: Lorem ipsum ea voluptate
@@ -30,10 +30,10 @@ fr:
   title: Galeries
   backgroundTitle: Galeries
   portText: Esse est dolor anim velit sunt aliquip ipsum incididunt labore.
-  categories:
+  theme:
     - name: Aquarelles
       cSlug: c1
-      coverImage: /media/couple-cerf-aquarelle-vanessa-belleperche.jpg
+      name: 纤维素醚
       description: Cellulose ethers comprise methylcellulose, ethylcellulose,
         hydroxyethylcellulose, hydroxypropylcellulose, and their derivatives.
     - name: Croquis
