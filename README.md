@@ -86,6 +86,15 @@ Remix is based on [Kimix](https://github.com/OhBonsai/kimix), by [OhBonsaï](htt
 
 [Remix](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms) is released under the [Apache 2.0 license](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms/blob/main/LICENSE)
 
+## Contribute
+
+This project is open to contribution. I personnaly [use this Gitlab repo](https://gitlab.com/Roneo/hugo-remix-one-click-netlify-cms/-/boards/4323820) but feel free to open a ticket on Github
+
+## Going further
+
+- Please star this repo [on Github](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms) or [Gitlab](https://gitlab.com/Roneo/hugo-remix-one-click-netlify-cms), to help this project gain some visibility and reach new contributors
+- To get more, follow me [on Github](https://github.com/RoneoOrg) or [Gitlab](https://gitlab.com/Roneo), have a look to this [other Hugo project](https://jamstack.club/), and checkout my [recent posts on Hugo](https://roneo.org/en/)
+
 <div align="center">
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms&stack=cms)
