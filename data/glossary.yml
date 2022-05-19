@@ -6,12 +6,9 @@ en:
   news: News
   contact: Contact
   list: List
+  cta1: See the demo
+  cta2: Get it
 
 fr:
-  home: 主页
-  about: 关于我们
-  product: 产品
-  solution: 场景
-  news: 新闻
-  contact: 联系我们
-  list: 列表
+  cta1: Demo
+  cta2: Installation

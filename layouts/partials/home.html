@@ -1,6 +1,8 @@
-<!-- {{ $data := index site.Data site.Language.Lang}} -->
+{{ $data := index site.Data site.Language.Lang}}
 {{ $data := index site.Data.home  site.Language.Lang }}
 
+{{ $ := index site.Data.header site.Language.Lang }}
+{{ $glossary := index site.Data.glossary site.Language.Lang }}
 
 <section class="section sec1" id="home">
     <div class="left-header">
@@ -13,14 +15,14 @@
         <div class="btn-container-group">
           <div class="btn-container">
             <a href="/#product"  data-id="product">
-                <span class="btn-text">Browse demo</span>
+                <span class="btn-text">{{$glossary.cta1}}</span>
                 <span class="btn-icon"><i class="fas fa-angle-down"></i></span>
                 <i class="bg"></i>
             </a>
           </div>
           <div class="btn-container">
             <a href="https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms#readme"  data-id="product" target="blank">
-                <span class="btn-text">Get it</span>
+                <span class="btn-text">{{$glossary.cta2}}</span>
                 <span class="btn-icon btn-icon-deploy"><i class="fas fa-rocket"></i></span>
                 <i class="bg"></i>
             </a>
