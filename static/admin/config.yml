@@ -6,6 +6,7 @@ media_folder: "/static/media" # Folder where user uploaded files should go
 public_folder: "/media"
 editor:
   preview: false
+locale: 'fr'
 
 # Allow local visit
 # You need to run at the root of the project `npx netlify-cms-proxy-server`
