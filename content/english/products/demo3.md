@@ -1,7 +1,7 @@
 ---
 nType: product
 title: Lorem lorem
-categories:
+theme:
   - c4
 image: /media/00cat.jpg
 summary: |

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head.html" .}}
+
+<!-- Generate CSS -->
+{{ $options := (dict "enableSourceMap" true ) }}
+{{ $productSass := resources.Get "product.scss" }}
+{{ $productStyle := $productSass | resources.ToCSS $options | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $productStyle.RelPermalink }}" integrity="{{ $productStyle.Data.Integrity }}" />
+
+{{ $productJs := resources.Get "product.js" }}
+<script src="{{$productJs.RelPermalink}}"></script>
+
+
+
+<body>
+<!-- navigation header -->
+<div class="white-header">
+    {{ partial "header.html" .}}
+</div>
+
+
+<div class="product-page">
+    <div class="banner">
+        <!-- <img src="/media/category3.jpg">
+        <h1> {{ .Title}} </h1> -->
+    </div>
+
+
+    <div class="container">
+        {{ range .Pages }}
+
+        <div class="main">
+          <div class="title">
+              {{.Title}}
+          </div>
+          <div class="img-single">
+            <img src="{{.Params.Image}}" alt="">
+          </div>
+          <div class="md-content">
+              {{ .Content }}
+          </div>
+      </div>
+        {{ end }}
+    </div>
+
+<!-- footer copyright -->
+{{ partial "footer.html" .}}
+</body>
+
+</html>

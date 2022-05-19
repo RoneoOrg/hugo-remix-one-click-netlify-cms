@@ -9,10 +9,10 @@
 {{ end}}
 
 
-{{ $categories := index (index site.Data.products site.Language.Lang) "categories"}}
-{{ $existCategories :=  site.Taxonomies.categories }}
+{{ $theme := index (index site.Data.products site.Language.Lang) "theme"}}
+{{ $existtheme :=  site.Taxonomies.theme }}
 {{ $cMapping := dict "" ""}}
-{{ range $categories }}
+{{ range $theme }}
     {{ $cMapping = merge $cMapping (dict .cSlug .)}}
 {{ end}}
 
@@ -33,7 +33,7 @@
                 <span>{{$glossary.product}}</span>
                 <i class="fa-solid fa-angle-down"></i>
                 <ul>
-                    {{range $cSlug, $c := $existCategories}}
+                    {{range $cSlug, $c := $existtheme}}
                     {{$curCategory := index $cMapping $cSlug }}
                     <li onclick="handleHeaderSubMenuClick(event, '{{ (index $c 0).RelPermalink }}')">{{ $curCategory.name }}</li>
                     {{ end }}

@@ -59,10 +59,10 @@ collections:
             { label: "Title", name: "title", widget: string, i18n: true },
             { label: "BackgroundTitle", name: "backgroundTitle", widget: string, i18n: true },
             { label: "PortText", name: "portText", widget: "text", i18n: true },
-            { label: "Categories", name: "categories", widget: "list", i18n: true, fields: [
+            { label: "Categories", name: "theme", widget: "list", i18n: true, fields: [
               { label: "CoverImage", name: "coverImage", widget: "image" , media_folder: "/static/media" , public_folder: "/media", i18n: true },
               { label: "Name", name: "name", widget: string, i18n: true },
-              { label: "Category", name: "cSlug", widget: select, i18n: true, options: [
+              { label: "theme", name: "cSlug", widget: select, i18n: true, options: [
                 { label: "纤维素醚", value: "c1" },
                 { label: "钛白粉", value: "c2" },
                 { label: "氧化铁颜料", value: "c3" },
@@ -171,7 +171,7 @@ collections:
     fields:
       [
         { label: "Title", name: "title", widget: "string"},
-        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
+        { label: "Category", name: "theme", widget: "select", multiple: true, options:  [
           { label: "纤维素醚", value: "c1" },
           { label: "钛白粉", value: "c2" },
           { label: "氧化铁颜料", value: "c3" },
@@ -190,7 +190,7 @@ collections:
     fields:
       [
         { label: "Title", name: "title", widget: "string"},
-        { label: "Category", name: "categories", widget: "select", multiple: true, options:  [
+        { label: "Category", name: "theme", widget: "select", multiple: true, options:  [
           { label: "纤维素醚", value: "c1" },
           { label: "钛白粉", value: "c2" },
           { label: "氧化铁颜料", value: "c3" },

@@ -1,7 +1,7 @@
 ---
 nType: product
 title: Free and open-source
-categories:
+theme:
   - c2
 image: /static/media/titanium-dioxide.jpg
 summary: "1111"
