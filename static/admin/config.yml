@@ -157,6 +157,8 @@ collections:
     label: "News (fr)"
     folder: "content/fr/news"
     path: "{{slug}}"
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
     create: true
     fields:
       [
@@ -169,8 +171,9 @@ collections:
   - name: "products"
     label: "Products (English)"
     folder: "content/english/products"
-    public_folder: "/media"
     path: "{{slug}}"
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
     create: true
     fields:
       [
@@ -190,6 +193,8 @@ collections:
     label: "Products (fr)"
     folder: "content/fr/products"
     path: "{{slug}}"
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
     create: true
     fields:
       [
@@ -209,6 +214,8 @@ collections:
     label: "Scene (English)"
     folder: "content/english/scenes"
     path: "{{slug}}"
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
     create: true
     fields:
       [
@@ -227,6 +234,8 @@ collections:
     label: "Scene (fr)"
     folder: "content/fr/scenes"
     path: "{{slug}}"
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
     create: true
     fields:
       [
