@@ -1,4 +1,4 @@
-baseURL = 'https://remix.roneo.app/'
+baseURL = '/'
 languageCode = 'en-us'
 defaultContentLanguage = 'en'
 
