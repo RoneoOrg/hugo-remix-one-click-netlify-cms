@@ -1,5 +1,5 @@
 
-# Remix, a theme for Hugo featuring Netlify CMS
+# Deploy Hugo + Netlify CMS in minutes!
 
 
 [![Hugo theme Remix, screenshot of the Homepage](static/img/screenshot.jpg)](https://remix.roneo.app)
