@@ -45,7 +45,7 @@ You can generate your own website based on Remix with [this link](https://app.ne
 ### Run locally
 
 1. [Install Hugo](https://gohugo.io/getting-started/installing/).  
-Hugo versions 0.71, 0.80 and 0.96 was successfully tested. Note that Hugo **extended** is required. 
+Hugo versions 0.71, 0.80 and 0.96 was successfully tested. Note that Hugo **extended** is required.
 2. Clone the repo: `git clone https://gitlab.com/Roneo/hugo-remix-one-click-netlify-cms.git remix`
 3. Run: `cd remix && hugo server`
 
@@ -67,10 +67,6 @@ Remix is based on [Kimix](https://github.com/OhBonsai/kimix), by [OhBonsaï](htt
 
 ![Homepage of Netlify CMS](static/img/admin.png)
 
-### Configure global settings
-
-![Side-by-side edition](static/img/translation.png)
-
 ### Edition
 
 ![Single post edition](static/img/edition.png)
@@ -88,18 +84,13 @@ Remix is based on [Kimix](https://github.com/OhBonsai/kimix), by [OhBonsaï](htt
 
 ## Contribute
 
-This project is open to contribution. I personnaly [use this Gitlab repo](https://gitlab.com/Roneo/hugo-remix-one-click-netlify-cms/-/boards/4323820) but feel free to open a ticket on Github
+This project is open to contribution. I personnaly [use this Gitlab repo](https://gitlab.com/Roneo/hugo-remix-one-click-netlify-cms/-/boards/4323820) but feel free to open a ticket or submit a PR [on Github](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms)
 
 ## Going further
 
 - Please star this repo [on Github](https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms) or [Gitlab](https://gitlab.com/Roneo/hugo-remix-one-click-netlify-cms), to help this project gain some visibility and reach new contributors
-- To get more, follow me [on Github](https://github.com/RoneoOrg) or [Gitlab](https://gitlab.com/Roneo), have a look to this [other Hugo project](https://jamstack.club/), and checkout my [recent posts on Hugo](https://roneo.org/en/)
+- To get more, follow me [on Github](https://github.com/RoneoOrg) or [Gitlab](https://gitlab.com/Roneo), and checkout my [recent posts on Hugo](https://roneo.org/en/)
 
-<div align="center">
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RoneoOrg/hugo-remix-one-click-netlify-cms&stack=cms)
-
-</div>
 
 <!-- 
 ### code tree
